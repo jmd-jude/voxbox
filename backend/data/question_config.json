@@ -1,0 +1,27 @@
+{
+  "Age": {
+    "18-24": 0.15,
+    "25-34": 0.2,
+    "35-44": 0.2,
+    "45-54": 0.2,
+    "55-64": 0.15,
+    "65+": 0.1
+  },
+  "Gender": {
+    "Male": 0.48,
+    "Female": 0.52
+  },
+  "Ethnicity": {
+    "White": 0.5,
+    "Black": 0.15,
+    "Hispanic or Latino": 0.2,
+    "Asian": 0.1,
+    "Other": 0.05
+  },
+  "GeographicRegion": {
+    "Northeast": 0.2,
+    "Midwest": 0.25,
+    "South": 0.35,
+    "West": 0.2
+  }
+}

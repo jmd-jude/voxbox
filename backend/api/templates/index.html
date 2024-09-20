@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoxPop: Your Pocket Pollster</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Landing Page -->
+        <section id="landing" class="view">
+            <h1>VoxPop: Your Pocket Pollster for Life's Biggest, Smallest, and Fantastically Silliest Questions</h1>
+            <div class="coming-soon">Coming soon! VoxBox: Exclusive focus group voices just for you!</div>
+            <p>Need advice or just want to know what people think? Ask a question!</p>
+            <div class="example-questions">
+                <p>Should I quit my job and travel the world?</p>
+                <p>Will humanity ever colonize Mars?</p>
+                <p>Should I have cereal or toast for breakfast?</p>
+                <p>Do I really need to fold my laundry right now?</p>
+                <p>Is it time to finally become a professional unicorn trainer?</p>
+                <p>If I sleepwalk to the fridge and eat, is it considered breakfast?</p>
+            </div>
+            <button id="get-started">Get Started</button>
+        </section>
+
+        <!-- Question Input -->
+        <section id="question-input" class="view hidden">
+            <h2>What's on your mind?</h2>
+            <p>Need advice or just want to know what people think? Type your question here!</p>
+            <textarea id="user-question" placeholder="Enter your question (up to 100 words)" maxlength="100"></textarea>
+            <button id="generate-poll">Generate Poll Question</button>
+        </section>
+
+        <!-- Question Refinement -->
+        <section id="question-refinement" class="view hidden">
+            <h2>Your Poll-Ready Question</h2>
+            <p>Our team of super-smart, data-crunching scientists (okay, it's just VoxPop) worked tirelessly (not really) to transform your question into a poll-ready masterpiece for the masses.</p>
+            <div id="original-question"></div>
+            <div id="refined-question"></div>
+            <button id="approve-question">This Looks Good!</button>
+            <button id="try-again">Let's Try Again</button>
+        </section>
+
+        <!-- Loading Animation -->
+        <section id="loading" class="view hidden">
+            <div class="loading-animation"></div>
+            <p>VoxPop's elite data scientists have dropped everything to focus solely on this question. Hundreds of hours of research... about to unfold.</p>
+        </section>
+
+        <!-- Results Display -->
+        <section id="results" class="view hidden">
+            <h2>And the nation has spoken!</h2>
+            <div id="results-content"></div>
+            <button id="new-question">Let's Go Again</button>
+        </section>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>

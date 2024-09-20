@@ -1,0 +1,14 @@
+{
+  "visualizations": [
+    {
+      "type": "Bar Chart",
+      "title": "Preference for Seating Arrangements",
+      "description": "A comparison of the percentage preferences for chairs, tables, both tables and chairs, and neither tables nor chairs."
+    },
+    {
+      "type": "Pie Chart",
+      "title": "Distribution of Seating Preferences",
+      "description": "Visual representation of the proportion of respondents' preferences for different seating arrangements."
+    }
+  ]
+}

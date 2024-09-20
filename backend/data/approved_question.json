@@ -1,0 +1,14 @@
+{
+  "original": "Rain or shine or fog?",
+  "transformed": {
+    "question": "Which type of weather do you prefer the most?",
+    "type": "multiple choice",
+    "options": {
+      "a": "Rain",
+      "b": "Sunshine",
+      "c": "Fog",
+      "d": "None of the above",
+      "e": "All of the above"
+    }
+  }
+}

@@ -1,0 +1,145 @@
+2024-09-17 21:00:18,965 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-17 21:00:18,965 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 21:00:18,966 - INFO -  * Restarting with stat
+2024-09-17 21:00:19,427 - WARNING -  * Debugger is active!
+2024-09-17 21:00:19,435 - INFO -  * Debugger PIN: 960-184-702
+2024-09-17 21:02:11,663 - INFO - Data loaded successfully
+2024-09-17 21:02:11,663 - INFO - Profiles DataFrame columns: ['ProfileID', 'Age', 'Gender', 'Race', 'Ethnicity', 'Income', 'EmploymentStatus', 'Education', 'HouseholdType', 'HousingStatus', 'FamilyComposition', 'Urbanicity', 'HealthStatus', 'InternetUsage', 'GeographicRegion', 'PoliticalAffiliation', 'ReligiousAffiliation', 'HealthInsurance', 'DateOfBirth']
+2024-09-17 21:02:11,663 - INFO - Census DataFrame columns: ['DemographicVariable', 'Category', 'Proportion']
+2024-09-17 21:02:11,664 - INFO - Data validation passed
+2024-09-17 21:02:11,664 - INFO - Validated dimensions: ['Gender', 'Race', 'Ethnicity', 'Age', 'Income', 'Education', 'HouseholdType', 'HousingStatus', 'EmploymentStatus', 'HealthStatus', 'FamilyComposition', 'GeographicRegion', 'Urbanicity', 'InternetUsage', 'PoliticalAffiliation', 'ReligiousAffiliation', 'HealthInsurance', 'OccupationStatus']
+2024-09-17 21:02:11,664 - INFO - Validated column mapping: {'Gender': 'Gender', 'Race': 'Race', 'Ethnicity': 'Ethnicity', 'Age': 'Age', 'Income': 'Income', 'Education': 'Education', 'HouseholdType': 'HouseholdType', 'HousingStatus': 'HousingStatus', 'EmploymentStatus': 'EmploymentStatus', 'HealthStatus': 'HealthStatus', 'FamilyComposition': 'FamilyComposition', 'GeographicRegion': 'GeographicRegion', 'Urbanicity': 'Urbanicity', 'InternetUsage': 'InternetUsage', 'PoliticalAffiliation': 'PoliticalAffiliation', 'ReligiousAffiliation': 'ReligiousAffiliation', 'HealthInsurance': 'HealthInsurance', 'OccupationStatus': 'EmploymentStatus'}
+2024-09-17 21:02:11,666 - INFO - Survey data prepared. Columns: ['Gender', 'Race', 'Ethnicity', 'Age', 'Income', 'Education', 'HouseholdType', 'HousingStatus', 'EmploymentStatus', 'HealthStatus', 'FamilyComposition', 'GeographicRegion', 'Urbanicity', 'InternetUsage', 'PoliticalAffiliation', 'ReligiousAffiliation', 'HealthInsurance', 'OccupationStatus', 'weight']
+2024-09-17 21:02:11,670 - INFO - Marginals prepared for dimensions: ['Gender', 'Race', 'Ethnicity', 'Age', 'Income', 'Education', 'HouseholdType', 'HousingStatus', 'EmploymentStatus', 'HealthStatus', 'FamilyComposition', 'GeographicRegion', 'Urbanicity', 'InternetUsage', 'PoliticalAffiliation', 'ReligiousAffiliation', 'HealthInsurance', 'OccupationStatus']
+2024-09-17 21:02:14,211 - WARNING - Raking did not fully converge, but completed maximum iterations
+2024-09-17 21:02:14,211 - INFO - Question configuration validated successfully
+2024-09-17 21:02:14,212 - INFO - Survey questions read successfully. Number of questions: 20
+2024-09-17 21:02:14,241 - INFO - Survey simulation completed successfully
+2024-09-17 21:16:59,116 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-17 21:16:59,117 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 21:16:59,117 - INFO -  * Restarting with stat
+2024-09-17 21:16:59,573 - WARNING -  * Debugger is active!
+2024-09-17 21:16:59,582 - INFO -  * Debugger PIN: 873-171-222
+2024-09-17 21:21:37,769 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-17 21:21:37,769 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 21:21:37,770 - INFO -  * Restarting with stat
+2024-09-17 21:21:38,227 - WARNING -  * Debugger is active!
+2024-09-17 21:21:38,233 - INFO -  * Debugger PIN: 873-171-222
+2024-09-17 21:21:45,403 - INFO -  * Detected change in '/Users/JudeHoffner/Projects/voxbox-project/backend/run.py', reloading
+2024-09-17 21:21:45,507 - INFO -  * Restarting with stat
+2024-09-17 21:21:46,006 - WARNING -  * Debugger is active!
+2024-09-17 21:21:46,020 - INFO -  * Debugger PIN: 873-171-222
+2024-09-17 21:21:51,830 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-17 21:21:51,830 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 21:21:51,831 - INFO -  * Restarting with stat
+2024-09-17 21:21:52,304 - WARNING -  * Debugger is active!
+2024-09-17 21:21:52,314 - INFO -  * Debugger PIN: 873-171-222
+2024-09-17 21:23:03,724 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-17 21:23:03,725 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 21:23:03,725 - INFO -  * Restarting with stat
+2024-09-17 21:23:04,185 - WARNING -  * Debugger is active!
+2024-09-17 21:23:04,190 - INFO -  * Debugger PIN: 873-171-222
+2024-09-17 21:24:58,805 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-17 21:24:58,805 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 21:24:58,806 - INFO -  * Restarting with stat
+2024-09-17 21:24:59,265 - WARNING -  * Debugger is active!
+2024-09-17 21:24:59,271 - INFO -  * Debugger PIN: 873-171-222
+2024-09-17 21:26:38,108 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-17 21:26:38,109 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 21:26:38,110 - INFO -  * Restarting with stat
+2024-09-17 21:26:38,792 - WARNING -  * Debugger is active!
+2024-09-17 21:26:38,830 - INFO -  * Debugger PIN: 873-171-222
+2024-09-17 21:31:56,860 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-17 21:31:56,860 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 21:31:56,861 - INFO -  * Restarting with stat
+2024-09-17 21:31:57,324 - WARNING -  * Debugger is active!
+2024-09-17 21:31:57,330 - INFO -  * Debugger PIN: 873-171-222
+2024-09-17 21:32:45,362 - INFO -  * Detected change in '/Users/JudeHoffner/Projects/voxbox-project/backend/api/__init__.py', reloading
+2024-09-17 21:32:45,442 - INFO -  * Restarting with stat
+2024-09-17 21:32:46,160 - WARNING -  * Debugger is active!
+2024-09-17 21:32:46,167 - INFO -  * Debugger PIN: 873-171-222
+2024-09-17 21:36:49,503 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-17 21:36:49,503 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 21:36:49,504 - INFO -  * Restarting with stat
+2024-09-17 21:36:50,021 - WARNING -  * Debugger is active!
+2024-09-17 21:36:50,034 - INFO -  * Debugger PIN: 873-171-222
+2024-09-17 21:42:00,595 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-17 21:42:00,595 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 21:42:00,596 - INFO -  * Restarting with stat
+2024-09-17 21:42:01,067 - WARNING -  * Debugger is active!
+2024-09-17 21:42:01,074 - INFO -  * Debugger PIN: 873-171-222
+2024-09-17 21:44:03,702 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-17 21:44:03,702 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 21:44:03,703 - INFO -  * Restarting with stat
+2024-09-17 21:44:04,194 - WARNING -  * Debugger is active!
+2024-09-17 21:44:04,200 - INFO -  * Debugger PIN: 873-171-222
+2024-09-17 21:45:43,268 - INFO -  * Detected change in '/Users/JudeHoffner/Projects/voxbox-project/backend/run.py', reloading
+2024-09-17 21:45:43,363 - INFO -  * Restarting with stat
+2024-09-17 21:46:19,869 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-17 21:46:19,869 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 21:48:39,040 - INFO - 127.0.0.1 - - [17/Sep/2024 21:48:39] "[33mGET / HTTP/1.1[0m" 404 -
+2024-09-17 21:53:13,895 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-17 21:53:13,896 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 21:54:31,110 - INFO - 127.0.0.1 - - [17/Sep/2024 21:54:31] "[33mGET / HTTP/1.1[0m" 404 -
+2024-09-17 21:54:31,993 - INFO - 127.0.0.1 - - [17/Sep/2024 21:54:31] "[33mGET / HTTP/1.1[0m" 404 -
+2024-09-17 21:54:32,081 - INFO - 127.0.0.1 - - [17/Sep/2024 21:54:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-17 21:58:38,355 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-17 21:58:38,356 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 21:59:07,919 - INFO - 127.0.0.1 - - [17/Sep/2024 21:59:07] "GET / HTTP/1.1" 200 -
+2024-09-17 22:03:22,338 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-17 22:03:22,338 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 22:33:06,256 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-17 22:33:06,256 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-17 22:35:21,107 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-17 22:35:21,122 - INFO - 127.0.0.1 - - [17/Sep/2024 22:35:21] "POST /create-survey HTTP/1.1" 200 -
+2024-09-17 22:54:25,050 - INFO - 127.0.0.1 - - [17/Sep/2024 22:54:25] "OPTIONS /create-survey HTTP/1.1" 200 -
+2024-09-17 22:54:38,311 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-17 22:54:38,318 - INFO - 127.0.0.1 - - [17/Sep/2024 22:54:38] "POST /create-survey HTTP/1.1" 200 -
+2024-09-18 12:05:03,686 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-18 12:05:03,686 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-18 12:22:56,122 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-18 12:22:56,122 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-18 12:28:28,461 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-18 12:28:28,461 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-18 12:31:03,126 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-18 12:31:03,127 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-18 12:38:40,365 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-18 12:38:40,365 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-18 12:42:55,889 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-18 12:42:55,889 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-18 12:45:14,788 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-18 12:45:14,788 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-18 15:15:59,781 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-18 15:15:59,783 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-18 15:27:33,265 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-18 15:27:33,266 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-18 15:35:30,211 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-18 15:35:30,211 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-19 08:34:23,045 - INFO - Data loaded successfully
+2024-09-19 08:58:37,558 - INFO - Data loaded successfully

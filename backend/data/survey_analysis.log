@@ -1,0 +1,76 @@
+2024-09-17 21:02:33,259 - INFO - Loaded survey data: Topic: Are crabs or lobsters more important to the circle of life?, Questions: 21, Aggregate results: 20, Individual responses: 100
+2024-09-17 21:02:33,260 - INFO - Analysis prompt formatted successfully.
+2024-09-17 21:02:33,495 - INFO - HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-17 21:02:33,721 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_l0oaQfl7X1EAm4T3cUalFKMV/messages "HTTP/1.1 200 OK"
+2024-09-17 21:02:34,197 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_l0oaQfl7X1EAm4T3cUalFKMV/runs "HTTP/1.1 200 OK"
+2024-09-17 21:02:34,376 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_l0oaQfl7X1EAm4T3cUalFKMV/runs/run_qdCAbhmmXQdmsbaBN2p4Leo3 "HTTP/1.1 200 OK"
+2024-09-17 21:02:35,559 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_l0oaQfl7X1EAm4T3cUalFKMV/runs/run_qdCAbhmmXQdmsbaBN2p4Leo3 "HTTP/1.1 200 OK"
+2024-09-17 21:02:36,963 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_l0oaQfl7X1EAm4T3cUalFKMV/runs/run_qdCAbhmmXQdmsbaBN2p4Leo3 "HTTP/1.1 200 OK"
+2024-09-17 21:02:38,088 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_l0oaQfl7X1EAm4T3cUalFKMV/runs/run_qdCAbhmmXQdmsbaBN2p4Leo3 "HTTP/1.1 200 OK"
+2024-09-17 21:02:39,243 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_l0oaQfl7X1EAm4T3cUalFKMV/runs/run_qdCAbhmmXQdmsbaBN2p4Leo3 "HTTP/1.1 200 OK"
+2024-09-17 21:02:40,367 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_l0oaQfl7X1EAm4T3cUalFKMV/runs/run_qdCAbhmmXQdmsbaBN2p4Leo3 "HTTP/1.1 200 OK"
+2024-09-17 21:02:41,511 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_l0oaQfl7X1EAm4T3cUalFKMV/runs/run_qdCAbhmmXQdmsbaBN2p4Leo3 "HTTP/1.1 200 OK"
+2024-09-17 21:02:42,664 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_l0oaQfl7X1EAm4T3cUalFKMV/runs/run_qdCAbhmmXQdmsbaBN2p4Leo3 "HTTP/1.1 200 OK"
+2024-09-17 21:02:43,806 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_l0oaQfl7X1EAm4T3cUalFKMV/runs/run_qdCAbhmmXQdmsbaBN2p4Leo3 "HTTP/1.1 200 OK"
+2024-09-17 21:02:44,954 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_l0oaQfl7X1EAm4T3cUalFKMV/messages "HTTP/1.1 200 OK"
+2024-09-17 21:02:44,974 - INFO - Analysis received from assistant.
+2024-09-17 21:02:44,974 - INFO - Full response from assistant:
+2024-09-17 21:02:44,974 - INFO - **Narrative Analysis:**
+
+- **Title:** Understanding Public Perception of the Importance of Crabs and Lobsters in Marine Ecosystems
+- **Introduction:** This analysis delves into the perceptions and awareness of the public regarding the roles of crabs and lobsters in marine ecosystems, examining key findings, demographic insights, trends and patterns, consumer behavior, and market opportunities.
+- **Key Findings:** 
+  - Respondents show varying levels of familiarity with the roles of crabs and lobsters, with a significant portion being somewhat familiar.
+  - Views on the significance of crabs versus lobsters in maintaining marine ecosystem balance are divided, with more favoring lobsters.
+  - Lobsters are perceived to have a greater impact on the food chain compared to crabs.
+  - Crabs are considered important for controlling smaller marine organisms, while lobsters are valued for maintaining diversity of species.
+  - Perception on the importance of crabs and lobsters for coral reefs is evenly split.
+- **Demographic Insights:** 
+  - Most respondents are familiar with crabs and lobsters but don't prioritize conservation efforts equally between the two species.
+  - There are gender, age, and regional variations in perceptions of the importance and vulnerability of crabs and lobsters.
+- **Trends and Patterns:** 
+  - Consistent patterns show preferences towards lobsters in certain aspects but a significant split in opinions in others.
+  - Individuals with different demographics show varying degrees of concern for conservation and awareness of the roles of crabs and lobsters.
+- **Consumer Behavior and Preferences:** 
+  - The public tends to prioritize the economic impact of crabs over lobsters on local communities and the biodiversity contribution of both species.
+  - There is an inclination towards lobster resilience to environmental changes and crabs' importance in certain marine aspects.
+- **Perceptions and Awareness:** 
+  - Perceptions on vulnerability to overfishing, climate change, and pollution vary between crabs and lobsters.
+  - There is a notable trend towards lobster conservation and research funding.
+- **Market Opportunities:** 
+  - Opportunities exist for educational campaigns to enhance public awareness of the roles of crabs and lobsters.
+  - Fisheries and conservation efforts can benefit from focusing on the vulnerability of lobster populations.
+- **Challenges and Concerns:** 
+  - Challenges include balancing conservation priorities between crabs and lobsters and addressing differing perceptions of importance between the two species.
+- **Recommendations:** 
+  - Develop targeted conservation and research initiatives based on public perceptions and prioritize efforts towards protecting vulnerable lobster populations.
+- **Conclusion:** Understanding public perceptions and preferences regarding the roles of crabs and lobsters in marine ecosystems is crucial for informed conservation and management strategies.
+
+[END_NARRATIVE]
+
+**Visualization Recommendations:**
+```json
+{
+  "visualizations": [
+    {
+      "type": "Bar Chart",
+      "data": "Responses on the significance of crabs vs. lobsters in maintaining marine ecosystem balance",
+      "purpose": "Visualize the distribution of opinions on the significance of crabs and lobsters."
+    },
+    {
+      "type": "Pie Chart",
+      "data": "Distribution of perceptions on the economic impact of crabs vs. lobsters on local communities",
+      "purpose": "Highlight the proportion of respondents favoring the economic impact of crabs over lobsters."
+    },
+    {
+      "type": "Dual Axis Line Chart",
+      "data": "Comparison of vulnerability to environmental factors between crabs and lobsters",
+      "purpose": "Illustrate the differences in perceived vulnerability of crabs and lobsters to environmental changes."
+    }
+  ]
+}
+```
+2024-09-17 21:02:44,975 - INFO - Parsed 3 visualization recommendations
+2024-09-17 21:02:44,976 - INFO - Narrative analysis saved to data/survey_analysis.md
+2024-09-17 21:02:44,977 - INFO - Visualization recommendations saved to data/visualization_recommendations.json
+2024-09-17 21:02:44,977 - INFO - Analysis complete. Results saved to 'data/survey_analysis.md' and 'data/visualization_recommendations.json'

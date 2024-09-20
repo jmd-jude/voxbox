@@ -1,0 +1,74 @@
+DemographicVariable,Category,Proportion
+Gender,Male,0.495
+Gender,Female,0.505
+Race,White,0.6
+Race,Black,0.128
+Race,Asian,0.059
+Race,Hispanic,0.185
+Race,Native American,0.013
+Race,Pacific Islander,0.002
+Race,Mixed Race,0.1
+Race,Other,0.04
+Ethnicity,Other,0.04
+Ethnicity,Hispanic or Latino,0.1946
+Ethnicity,White,0.5739
+Ethnicity,Black,0.1186
+Ethnicity,Asian,0.0607
+Ethnicity,Native American,0.0102
+Ethnicity,Pacific Islander,0.0033
+Age,18-29,0.21
+Age,30-49,0.33
+Age,50-64,0.26
+Age,65+,0.2
+Income,"$0-$24,999",0.2
+Income,"$25,000-$49,999",0.25
+Income,"$50,000-$99,999",0.35
+Income,"$100,000+",0.2
+Education,HS or less,0.37
+Education,Some college,0.32
+Education,College grad,0.31
+HouseholdType,Single-parent,0.3
+HouseholdType,Married-couple,0.6
+HouseholdType,Other,0.1
+HousingStatus,Owner,0.65
+HousingStatus,Renter,0.35
+EmploymentStatus,Employed,0.6
+EmploymentStatus,Unemployed,0.07
+EmploymentStatus,Not in labor force,0.33
+HealthStatus,Excellent,0.2
+HealthStatus,Very Good,0.3
+HealthStatus,Good,0.3
+HealthStatus,Fair,0.15
+HealthStatus,Poor,0.05
+OccupationStatus,Full-time,0.48
+OccupationStatus,Part-time,0.15
+OccupationStatus,Self-employed,0.1
+OccupationStatus,Unemployed,0.05
+OccupationStatus,Retired,0.12
+OccupationStatus,Student,0.1
+FamilyComposition,Single,0.3
+FamilyComposition,Married without children,0.25
+FamilyComposition,Married with children,0.35
+FamilyComposition,Single-parent household,0.1
+GeographicRegion,Northeast,0.17
+GeographicRegion,Midwest,0.21
+GeographicRegion,South,0.38
+GeographicRegion,West,0.24
+Urbanicity,Urban,0.3
+Urbanicity,Suburban,0.5
+Urbanicity,Rural,0.2
+InternetUsage,Daily,0.7
+InternetUsage,Weekly,0.2
+InternetUsage,Rarely,0.07
+InternetUsage,Never,0.03
+PoliticalAffiliation,Democrat,0.3
+PoliticalAffiliation,Republican,0.28
+PoliticalAffiliation,Independent,0.33
+PoliticalAffiliation,Other,0.09
+ReligiousAffiliation,Christian,0.7
+ReligiousAffiliation,Muslim,0.02
+ReligiousAffiliation,Hindu,0.01
+ReligiousAffiliation,Non-religious,0.22
+ReligiousAffiliation,Other,0.05
+HealthInsurance,Insured,0.9
+HealthInsurance,Uninsured,0.1
