@@ -27,9 +27,11 @@ def load_data(profiles_path: str) -> pd.DataFrame:
         logging.error(f"Error loading data: {str(e)}")
         raise
 
-def load_approved_question():
+def load_approved_question(session_id):
     try:
-        with open('data/approved_question.json', 'r') as f:
+        filename = f"approved_question_{session_id}.json"
+        file_path = os.path.join('data', filename)
+        with open(file_path, 'r') as f:
             question_data = json.load(f)
             return question_data['transformed']
     except Exception as e:
@@ -40,10 +42,10 @@ def simulate_response(row: pd.Series, question: Dict[str, Any]) -> str:
     options = question.get('options', {})
     logging.info(f"Options: {options}")
     
-    if isinstance(options, list):
-        option_list = options
-    elif isinstance(options, dict):
+    if isinstance(options, dict):
         option_list = list(options.values())
+    elif isinstance(options, list):
+        option_list = options
     else:
         logging.error(f"Unexpected options type: {type(options)}")
         return "Error: Invalid options"
@@ -86,14 +88,14 @@ def calculate_weighted_results(responses: List[Dict[str, Any]], question: Dict[s
     }
     return result
 
-def conduct_single_question_survey(num_respondents=None):
+def conduct_single_question_survey(session_id, num_respondents=None):
     if num_respondents is None:
         num_respondents = Config.NUM_SURVEY_RESPONDENTS
 
     try:
         # Load necessary data
         profiles_df = load_data('data/american_profiles_2024.json')
-        latest_question = load_approved_question()
+        latest_question = load_approved_question(session_id)
 
         # Prepare survey data
         survey_data = profiles_df.sample(n=num_respondents, replace=True).reset_index(drop=True)
@@ -118,7 +120,8 @@ def conduct_single_question_survey(num_respondents=None):
         }
 
         # Write results to file
-        file_path = os.path.join(os.getcwd(), 'data', 'survey_results.json')
+        filename = f"survey_results_{session_id}.json"
+        file_path = os.path.join(os.getcwd(), 'data', filename)
         with open(file_path, 'w') as f:
             json.dump(full_results, f, indent=4)
         

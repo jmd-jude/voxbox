@@ -2123,3 +2123,825 @@ Fun Fact: Despite the common association of sunshine with positive weather condi
 2024-09-20 15:04:47,596 INFO: Analysis complete. Results saved and returned.
 2024-09-20 15:04:47,596 INFO: Approved question: {'question': 'Which type of weather do you prefer the most?', 'type': 'multiple choice', 'options': {'a': 'Rain', 'b': 'Sunshine', 'c': 'Fog', 'd': 'None of the above', 'e': 'All of the above'}}
 2024-09-20 15:04:47,599 INFO: 127.0.0.1 - - [20/Sep/2024 15:04:47] "POST /approve-question HTTP/1.1" 200 -
+2024-09-24 13:03:26,030 INFO: Flask app starting. Testing logging...
+2024-09-24 13:03:27,190 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.4.41:5001
+2024-09-24 13:03:27,190 INFO: [33mPress CTRL+C to quit[0m
+2024-09-24 13:03:27,191 INFO:  * Restarting with stat
+2024-09-24 13:03:27,213 INFO: Flask app starting. Testing logging...
+2024-09-24 13:03:27,819 WARNING:  * Debugger is active!
+2024-09-24 13:03:27,829 INFO:  * Debugger PIN: 873-171-222
+2024-09-24 13:03:39,224 INFO: 127.0.0.1 - - [24/Sep/2024 13:03:39] "GET / HTTP/1.1" 200 -
+2024-09-24 13:03:39,290 INFO: 127.0.0.1 - - [24/Sep/2024 13:03:39] "GET /styles.css HTTP/1.1" 200 -
+2024-09-24 13:03:39,290 INFO: 127.0.0.1 - - [24/Sep/2024 13:03:39] "GET /app.js HTTP/1.1" 200 -
+2024-09-24 13:03:39,303 INFO: 127.0.0.1 - - [24/Sep/2024 13:03:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-24 13:04:36,383 INFO: Entered transform_question_route
+2024-09-24 13:04:36,384 INFO: Received question: Mac or PC?
+2024-09-24 13:04:36,384 INFO: Calling transform_question function
+2024-09-24 13:04:36,384 INFO: Transforming question: Mac or PC?
+2024-09-24 13:04:37,116 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 13:04:37,263 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_RHCeu91qQdQgpjkd57eAnjGD/messages "HTTP/1.1 200 OK"
+2024-09-24 13:04:37,919 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_RHCeu91qQdQgpjkd57eAnjGD/runs "HTTP/1.1 200 OK"
+2024-09-24 13:04:38,360 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_RHCeu91qQdQgpjkd57eAnjGD/runs/run_TeuXhs52VM17tD8qgnqjwOtq "HTTP/1.1 200 OK"
+2024-09-24 13:04:38,502 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_RHCeu91qQdQgpjkd57eAnjGD/runs/run_TeuXhs52VM17tD8qgnqjwOtq "HTTP/1.1 200 OK"
+2024-09-24 13:04:38,648 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_RHCeu91qQdQgpjkd57eAnjGD/runs/run_TeuXhs52VM17tD8qgnqjwOtq "HTTP/1.1 200 OK"
+2024-09-24 13:04:38,863 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_RHCeu91qQdQgpjkd57eAnjGD/runs/run_TeuXhs52VM17tD8qgnqjwOtq "HTTP/1.1 200 OK"
+2024-09-24 13:04:39,035 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_RHCeu91qQdQgpjkd57eAnjGD/runs/run_TeuXhs52VM17tD8qgnqjwOtq "HTTP/1.1 200 OK"
+2024-09-24 13:04:39,207 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_RHCeu91qQdQgpjkd57eAnjGD/runs/run_TeuXhs52VM17tD8qgnqjwOtq "HTTP/1.1 200 OK"
+2024-09-24 13:04:39,398 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_RHCeu91qQdQgpjkd57eAnjGD/runs/run_TeuXhs52VM17tD8qgnqjwOtq "HTTP/1.1 200 OK"
+2024-09-24 13:04:39,809 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_RHCeu91qQdQgpjkd57eAnjGD/runs/run_TeuXhs52VM17tD8qgnqjwOtq "HTTP/1.1 200 OK"
+2024-09-24 13:04:40,439 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_RHCeu91qQdQgpjkd57eAnjGD/runs/run_TeuXhs52VM17tD8qgnqjwOtq "HTTP/1.1 200 OK"
+2024-09-24 13:04:42,092 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_RHCeu91qQdQgpjkd57eAnjGD/messages "HTTP/1.1 200 OK"
+2024-09-24 13:04:42,095 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_kJVBIPaSjHbdxr9uHdJ7D3l8', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "Which type of computer do you prefer to use?",\n    "type": "multiple choice",\n    "options": {\n        "a": "Mac",\n        "b": "PC",\n        "c": "No preference",\n        "d": "Other",\n        "e": "Prefer not to say"\n    }\n}'), type='text')], created_at=1727197479, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_TeuXhs52VM17tD8qgnqjwOtq', status=None, thread_id='thread_RHCeu91qQdQgpjkd57eAnjGD'), Message(id='msg_EWTqBqmj5AbW0ycA4vKu9ArN', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "Mac or PC?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727197477, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_RHCeu91qQdQgpjkd57eAnjGD')], object='list', first_id='msg_kJVBIPaSjHbdxr9uHdJ7D3l8', last_id='msg_EWTqBqmj5AbW0ycA4vKu9ArN', has_more=False)
+2024-09-24 13:04:42,095 INFO: Transformed question: {'question': 'Which type of computer do you prefer to use?', 'type': 'multiple choice', 'options': {'a': 'Mac', 'b': 'PC', 'c': 'No preference', 'd': 'Other', 'e': 'Prefer not to say'}}
+2024-09-24 13:04:42,095 INFO: Transformed question: {'question': 'Which type of computer do you prefer to use?', 'type': 'multiple choice', 'options': {'a': 'Mac', 'b': 'PC', 'c': 'No preference', 'd': 'Other', 'e': 'Prefer not to say'}}
+2024-09-24 13:04:42,095 INFO: Session after transform: <FileSystemSession {'survey_analysis': {'key_finding': 'Key Finding: The survey results show that an equal percentage of respondents prefer Rain and All of the above, each at 30%, followed by Sunshine at 20%, and None of the above at 20%.', 'quick_stats': ['Quick Stats:', '1. 30% of respondents prefer Rain, making it equally as popular as selecting All of the above.', "2. None of the above received a 20% preference, indicating a subset of respondents who didn't align with the provided weather options.", '3. Sunshine garnered a 20% preference, showing it to be the least favored option among the given choices.'], 'interpretation': 'Interpretation: The equal preference for Rain and All of the above suggests a significant split in weather preferences among respondents, with a notable portion either enjoying Rain specifically or a combination of different weather types. The 20% preference for None of the above highlights a segment of respondents who did not resonate with the weather options provided, indicating potential variability in weather preferences beyond the given choices. These results imply that weather preferences are diverse and subjective, influenced by personal experiences, activities, and individual perceptions of comfort. Fun Fact: Despite the common association of sunshine with positive weather conditions, only 20% of respondents preferred it, indicating a more nuanced range of weather preferences among the surveyed individuals.', 'fun_fact': 'No fun fact available.'}, 'last_question': 'Mac or PC?', 'last_transformed_question': {'question': 'Which type of computer do you prefer to use?', 'type': 'multiple choice', 'options': {'a': 'Mac', 'b': 'PC', 'c': 'No preference', 'd': 'Other', 'e': 'Prefer not to say'}}}>
+2024-09-24 13:04:42,097 INFO: 127.0.0.1 - - [24/Sep/2024 13:04:42] "POST /transform-question HTTP/1.1" 200 -
+2024-09-24 13:05:31,343 INFO: Entered transform_question_route
+2024-09-24 13:05:31,344 INFO: Received question: Mac or PC?
+2024-09-24 13:05:31,344 INFO: Calling transform_question function
+2024-09-24 13:05:31,344 INFO: Transforming question: Mac or PC?
+2024-09-24 13:05:32,151 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 13:05:32,363 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_tMhfTQ1G3vSP9SwccFiK6il1/messages "HTTP/1.1 200 OK"
+2024-09-24 13:05:32,806 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_tMhfTQ1G3vSP9SwccFiK6il1/runs "HTTP/1.1 200 OK"
+2024-09-24 13:05:32,988 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_tMhfTQ1G3vSP9SwccFiK6il1/runs/run_hsWoNhxvhf4WGXyHO58CHqmf "HTTP/1.1 200 OK"
+2024-09-24 13:05:33,399 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_tMhfTQ1G3vSP9SwccFiK6il1/runs/run_hsWoNhxvhf4WGXyHO58CHqmf "HTTP/1.1 200 OK"
+2024-09-24 13:05:33,536 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_tMhfTQ1G3vSP9SwccFiK6il1/runs/run_hsWoNhxvhf4WGXyHO58CHqmf "HTTP/1.1 200 OK"
+2024-09-24 13:05:33,753 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_tMhfTQ1G3vSP9SwccFiK6il1/runs/run_hsWoNhxvhf4WGXyHO58CHqmf "HTTP/1.1 200 OK"
+2024-09-24 13:05:33,948 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_tMhfTQ1G3vSP9SwccFiK6il1/runs/run_hsWoNhxvhf4WGXyHO58CHqmf "HTTP/1.1 200 OK"
+2024-09-24 13:05:34,135 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_tMhfTQ1G3vSP9SwccFiK6il1/runs/run_hsWoNhxvhf4WGXyHO58CHqmf "HTTP/1.1 200 OK"
+2024-09-24 13:05:34,270 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_tMhfTQ1G3vSP9SwccFiK6il1/runs/run_hsWoNhxvhf4WGXyHO58CHqmf "HTTP/1.1 200 OK"
+2024-09-24 13:05:34,413 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_tMhfTQ1G3vSP9SwccFiK6il1/runs/run_hsWoNhxvhf4WGXyHO58CHqmf "HTTP/1.1 200 OK"
+2024-09-24 13:05:34,672 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_tMhfTQ1G3vSP9SwccFiK6il1/runs/run_hsWoNhxvhf4WGXyHO58CHqmf "HTTP/1.1 200 OK"
+2024-09-24 13:05:34,886 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_tMhfTQ1G3vSP9SwccFiK6il1/runs/run_hsWoNhxvhf4WGXyHO58CHqmf "HTTP/1.1 200 OK"
+2024-09-24 13:05:35,037 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_tMhfTQ1G3vSP9SwccFiK6il1/runs/run_hsWoNhxvhf4WGXyHO58CHqmf "HTTP/1.1 200 OK"
+2024-09-24 13:05:35,186 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_tMhfTQ1G3vSP9SwccFiK6il1/messages "HTTP/1.1 200 OK"
+2024-09-24 13:05:35,189 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_rKTU9N5lyGdpkWL3cErlejHt', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "When it comes to computing devices, what is your preferred choice?",\n    "type": "Multiple Choice",\n    "options": {\n        "a": "Mac",\n        "b": "PC",\n        "c": "Both Mac and PC",\n        "d": "Other",\n        "e": "Not Applicable"\n    }\n}'), type='text')], created_at=1727197533, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_hsWoNhxvhf4WGXyHO58CHqmf', status=None, thread_id='thread_tMhfTQ1G3vSP9SwccFiK6il1'), Message(id='msg_dEpZVk71yX9LmJBxQLtASt4Z', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "Mac or PC?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727197532, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_tMhfTQ1G3vSP9SwccFiK6il1')], object='list', first_id='msg_rKTU9N5lyGdpkWL3cErlejHt', last_id='msg_dEpZVk71yX9LmJBxQLtASt4Z', has_more=False)
+2024-09-24 13:05:35,189 INFO: Transformed question: {'question': 'When it comes to computing devices, what is your preferred choice?', 'type': 'Multiple Choice', 'options': {'a': 'Mac', 'b': 'PC', 'c': 'Both Mac and PC', 'd': 'Other', 'e': 'Not Applicable'}}
+2024-09-24 13:05:35,189 INFO: Transformed question: {'question': 'When it comes to computing devices, what is your preferred choice?', 'type': 'Multiple Choice', 'options': {'a': 'Mac', 'b': 'PC', 'c': 'Both Mac and PC', 'd': 'Other', 'e': 'Not Applicable'}}
+2024-09-24 13:05:35,189 INFO: Session after transform: <FileSystemSession {'survey_analysis': {'key_finding': 'Key Finding: The survey results show that an equal percentage of respondents prefer Rain and All of the above, each at 30%, followed by Sunshine at 20%, and None of the above at 20%.', 'quick_stats': ['Quick Stats:', '1. 30% of respondents prefer Rain, making it equally as popular as selecting All of the above.', "2. None of the above received a 20% preference, indicating a subset of respondents who didn't align with the provided weather options.", '3. Sunshine garnered a 20% preference, showing it to be the least favored option among the given choices.'], 'interpretation': 'Interpretation: The equal preference for Rain and All of the above suggests a significant split in weather preferences among respondents, with a notable portion either enjoying Rain specifically or a combination of different weather types. The 20% preference for None of the above highlights a segment of respondents who did not resonate with the weather options provided, indicating potential variability in weather preferences beyond the given choices. These results imply that weather preferences are diverse and subjective, influenced by personal experiences, activities, and individual perceptions of comfort. Fun Fact: Despite the common association of sunshine with positive weather conditions, only 20% of respondents preferred it, indicating a more nuanced range of weather preferences among the surveyed individuals.', 'fun_fact': 'No fun fact available.'}, 'last_question': 'Mac or PC?', 'last_transformed_question': {'question': 'When it comes to computing devices, what is your preferred choice?', 'type': 'Multiple Choice', 'options': {'a': 'Mac', 'b': 'PC', 'c': 'Both Mac and PC', 'd': 'Other', 'e': 'Not Applicable'}}}>
+2024-09-24 13:05:35,192 INFO: 127.0.0.1 - - [24/Sep/2024 13:05:35] "POST /transform-question HTTP/1.1" 200 -
+2024-09-24 13:05:50,952 INFO: Entered approve_question_route
+2024-09-24 13:05:50,953 INFO: Session at start of approve_question_route: <FileSystemSession {'survey_analysis': {'key_finding': 'Key Finding: The survey results show that an equal percentage of respondents prefer Rain and All of the above, each at 30%, followed by Sunshine at 20%, and None of the above at 20%.', 'quick_stats': ['Quick Stats:', '1. 30% of respondents prefer Rain, making it equally as popular as selecting All of the above.', "2. None of the above received a 20% preference, indicating a subset of respondents who didn't align with the provided weather options.", '3. Sunshine garnered a 20% preference, showing it to be the least favored option among the given choices.'], 'interpretation': 'Interpretation: The equal preference for Rain and All of the above suggests a significant split in weather preferences among respondents, with a notable portion either enjoying Rain specifically or a combination of different weather types. The 20% preference for None of the above highlights a segment of respondents who did not resonate with the weather options provided, indicating potential variability in weather preferences beyond the given choices. These results imply that weather preferences are diverse and subjective, influenced by personal experiences, activities, and individual perceptions of comfort. Fun Fact: Despite the common association of sunshine with positive weather conditions, only 20% of respondents preferred it, indicating a more nuanced range of weather preferences among the surveyed individuals.', 'fun_fact': 'No fun fact available.'}, 'last_question': 'Mac or PC?', 'last_transformed_question': {'question': 'When it comes to computing devices, what is your preferred choice?', 'type': 'Multiple Choice', 'options': {'a': 'Mac', 'b': 'PC', 'c': 'Both Mac and PC', 'd': 'Other', 'e': 'Not Applicable'}}}>
+2024-09-24 13:05:50,953 INFO: Retrieved from session - transformed: {'question': 'When it comes to computing devices, what is your preferred choice?', 'type': 'Multiple Choice', 'options': {'a': 'Mac', 'b': 'PC', 'c': 'Both Mac and PC', 'd': 'Other', 'e': 'Not Applicable'}}, original: Mac or PC?
+2024-09-24 13:05:50,954 INFO: Saved approved question to data/approved_question.json
+2024-09-24 13:06:09,920 INFO: Data loaded successfully
+2024-09-24 13:06:09,925 INFO: Options: {'a': 'Mac', 'b': 'PC', 'c': 'Both Mac and PC', 'd': 'Other', 'e': 'Not Applicable'}
+2024-09-24 13:06:09,925 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 13:06:09,925 INFO: Options: {'a': 'Mac', 'b': 'PC', 'c': 'Both Mac and PC', 'd': 'Other', 'e': 'Not Applicable'}
+2024-09-24 13:06:09,925 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 13:06:09,925 INFO: Options: {'a': 'Mac', 'b': 'PC', 'c': 'Both Mac and PC', 'd': 'Other', 'e': 'Not Applicable'}
+2024-09-24 13:06:09,925 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 13:06:09,925 INFO: Options: {'a': 'Mac', 'b': 'PC', 'c': 'Both Mac and PC', 'd': 'Other', 'e': 'Not Applicable'}
+2024-09-24 13:06:09,925 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 13:06:09,925 INFO: Options: {'a': 'Mac', 'b': 'PC', 'c': 'Both Mac and PC', 'd': 'Other', 'e': 'Not Applicable'}
+2024-09-24 13:06:09,925 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 13:06:09,925 INFO: Options: {'a': 'Mac', 'b': 'PC', 'c': 'Both Mac and PC', 'd': 'Other', 'e': 'Not Applicable'}
+2024-09-24 13:06:09,926 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 13:06:09,926 INFO: Options: {'a': 'Mac', 'b': 'PC', 'c': 'Both Mac and PC', 'd': 'Other', 'e': 'Not Applicable'}
+2024-09-24 13:06:09,926 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 13:06:09,926 INFO: Options: {'a': 'Mac', 'b': 'PC', 'c': 'Both Mac and PC', 'd': 'Other', 'e': 'Not Applicable'}
+2024-09-24 13:06:09,926 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 13:06:09,926 INFO: Options: {'a': 'Mac', 'b': 'PC', 'c': 'Both Mac and PC', 'd': 'Other', 'e': 'Not Applicable'}
+2024-09-24 13:06:09,926 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 13:06:09,926 INFO: Options: {'a': 'Mac', 'b': 'PC', 'c': 'Both Mac and PC', 'd': 'Other', 'e': 'Not Applicable'}
+2024-09-24 13:06:09,926 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 13:06:09,927 INFO: Survey results written to /Users/JudeHoffner/Projects/voxbox-project/backend/data/survey_results.json
+2024-09-24 13:06:09,927 INFO: Loaded survey data: Question: When it comes to computing devices, what is your preferred choice?, Aggregate results: 5, Individual responses: 10
+2024-09-24 13:06:09,927 INFO: Analysis prompt formatted successfully.
+2024-09-24 13:06:10,196 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 13:06:10,536 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_da7iKWFeDt4uJiLHPgjzuf5C/messages "HTTP/1.1 200 OK"
+2024-09-24 13:06:11,404 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_da7iKWFeDt4uJiLHPgjzuf5C/runs "HTTP/1.1 200 OK"
+2024-09-24 13:06:11,609 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_da7iKWFeDt4uJiLHPgjzuf5C/runs/run_3NWnnSbNpI4GDsakMbNWIyYt "HTTP/1.1 200 OK"
+2024-09-24 13:06:12,928 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_da7iKWFeDt4uJiLHPgjzuf5C/runs/run_3NWnnSbNpI4GDsakMbNWIyYt "HTTP/1.1 200 OK"
+2024-09-24 13:06:14,162 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_da7iKWFeDt4uJiLHPgjzuf5C/runs/run_3NWnnSbNpI4GDsakMbNWIyYt "HTTP/1.1 200 OK"
+2024-09-24 13:06:15,423 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_da7iKWFeDt4uJiLHPgjzuf5C/runs/run_3NWnnSbNpI4GDsakMbNWIyYt "HTTP/1.1 200 OK"
+2024-09-24 13:06:16,602 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_da7iKWFeDt4uJiLHPgjzuf5C/runs/run_3NWnnSbNpI4GDsakMbNWIyYt "HTTP/1.1 200 OK"
+2024-09-24 13:06:17,930 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_da7iKWFeDt4uJiLHPgjzuf5C/runs/run_3NWnnSbNpI4GDsakMbNWIyYt "HTTP/1.1 200 OK"
+2024-09-24 13:06:19,363 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_da7iKWFeDt4uJiLHPgjzuf5C/messages "HTTP/1.1 200 OK"
+2024-09-24 13:06:19,366 INFO: Analysis received from assistant.
+2024-09-24 13:06:19,366 INFO: Full response from assistant:
+2024-09-24 13:06:19,367 INFO: 1. Key Finding: The survey reveals that there is a balanced preference between Mac and Other devices, with PCs slightly behind, and a notable percentage indicating no preference or choosing both Mac and PC.
+
+2. Quick Stats:
+   - Mac and Other devices each have 30% preference, making them the top choices.
+   - PCs are the preference for 20% of the respondents, indicating a slightly lower popularity.
+   - 10% of respondents either find the question not applicable or prefer both Mac and PC, showing some ambiguity in choices.
+
+3. Interpretation: The equal preference between Mac and Other devices suggests a diverse user base with preferences for different operating systems or brands. The popularity of PCs, although slightly lower, indicates a continued significant user base. The presence of respondents choosing both Mac and PC or indicating the question as not applicable could indicate a segment of users with mixed device usage or a lack of strong preference due to varied needs or experiences. Understanding these preferences can inform product development and marketing strategies tailored to different user segments.
+
+4. Fun Fact: The fact that an equal percentage of respondents prefer Mac and Other devices is intriguing, highlighting the competitive landscape in the computing device market and the strong appeal of both options to consumers.
+
+[END_ANALYSIS]
+
+{
+  "visualizations": [
+    {
+      "type": "Pie Chart",
+      "title": "Preferred Computing Device Distribution",
+      "description": "Visualize the percentage distribution of preferences among Mac, PC, Other, Both Mac and PC, and Not Applicable choices."
+    },
+    {
+      "type": "Bar Chart",
+      "title": "Comparison of Mac, PC, and Other Preferences",
+      "description": "Contrast the percentage preferences for Mac, PC, and Other devices to illustrate the varying popularity among the different choices."
+    }
+  ]
+}
+2024-09-24 13:06:19,367 INFO: Parsed analysis summary successfully
+2024-09-24 13:06:19,367 INFO: Narrative analysis saved to data/survey_analysis.md
+2024-09-24 13:06:19,367 INFO: Analysis complete. Results saved and returned.
+2024-09-24 13:06:19,367 INFO: Approved question: {'question': 'When it comes to computing devices, what is your preferred choice?', 'type': 'Multiple Choice', 'options': {'a': 'Mac', 'b': 'PC', 'c': 'Both Mac and PC', 'd': 'Other', 'e': 'Not Applicable'}}
+2024-09-24 13:06:19,369 INFO: 127.0.0.1 - - [24/Sep/2024 13:06:19] "POST /approve-question HTTP/1.1" 200 -
+2024-09-24 15:48:07,602 INFO: Flask app starting. Testing logging...
+2024-09-24 15:48:08,570 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.4.41:5001
+2024-09-24 15:48:08,570 INFO: [33mPress CTRL+C to quit[0m
+2024-09-24 15:48:08,571 INFO:  * Restarting with stat
+2024-09-24 15:48:08,594 INFO: Flask app starting. Testing logging...
+2024-09-24 15:48:09,100 WARNING:  * Debugger is active!
+2024-09-24 15:48:09,107 INFO:  * Debugger PIN: 873-171-222
+2024-09-24 15:48:14,216 INFO: 127.0.0.1 - - [24/Sep/2024 15:48:14] "GET / HTTP/1.1" 200 -
+2024-09-24 15:48:14,251 INFO: 127.0.0.1 - - [24/Sep/2024 15:48:14] "GET /app.js HTTP/1.1" 200 -
+2024-09-24 15:48:14,251 INFO: 127.0.0.1 - - [24/Sep/2024 15:48:14] "GET /styles.css HTTP/1.1" 200 -
+2024-09-24 15:48:14,261 INFO: 127.0.0.1 - - [24/Sep/2024 15:48:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-24 15:48:45,676 INFO: Entered transform_question_route
+2024-09-24 15:48:45,677 INFO: Received question: Should I build an app or an agency service?
+2024-09-24 15:48:45,677 INFO: Calling transform_question function
+2024-09-24 15:48:45,677 INFO: Transforming question: Should I build an app or an agency service?
+2024-09-24 15:48:46,147 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 15:48:46,556 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_rH3ovX3VFMqA9eBoG0HZiAPn/messages "HTTP/1.1 200 OK"
+2024-09-24 15:48:47,378 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_rH3ovX3VFMqA9eBoG0HZiAPn/runs "HTTP/1.1 200 OK"
+2024-09-24 15:48:47,790 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_rH3ovX3VFMqA9eBoG0HZiAPn/runs/run_sy97uBwSlNFSoHmTMEaBdZrD "HTTP/1.1 200 OK"
+2024-09-24 15:48:47,948 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_rH3ovX3VFMqA9eBoG0HZiAPn/runs/run_sy97uBwSlNFSoHmTMEaBdZrD "HTTP/1.1 200 OK"
+2024-09-24 15:48:48,125 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_rH3ovX3VFMqA9eBoG0HZiAPn/runs/run_sy97uBwSlNFSoHmTMEaBdZrD "HTTP/1.1 200 OK"
+2024-09-24 15:48:48,352 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_rH3ovX3VFMqA9eBoG0HZiAPn/runs/run_sy97uBwSlNFSoHmTMEaBdZrD "HTTP/1.1 200 OK"
+2024-09-24 15:48:48,491 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_rH3ovX3VFMqA9eBoG0HZiAPn/runs/run_sy97uBwSlNFSoHmTMEaBdZrD "HTTP/1.1 200 OK"
+2024-09-24 15:48:48,705 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_rH3ovX3VFMqA9eBoG0HZiAPn/runs/run_sy97uBwSlNFSoHmTMEaBdZrD "HTTP/1.1 200 OK"
+2024-09-24 15:48:48,850 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_rH3ovX3VFMqA9eBoG0HZiAPn/runs/run_sy97uBwSlNFSoHmTMEaBdZrD "HTTP/1.1 200 OK"
+2024-09-24 15:48:49,005 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_rH3ovX3VFMqA9eBoG0HZiAPn/runs/run_sy97uBwSlNFSoHmTMEaBdZrD "HTTP/1.1 200 OK"
+2024-09-24 15:48:49,163 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_rH3ovX3VFMqA9eBoG0HZiAPn/runs/run_sy97uBwSlNFSoHmTMEaBdZrD "HTTP/1.1 200 OK"
+2024-09-24 15:48:49,303 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_rH3ovX3VFMqA9eBoG0HZiAPn/messages "HTTP/1.1 200 OK"
+2024-09-24 15:48:49,306 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_933qLR8oFY881XLp2GYKF7kh', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "When considering building a business venture, what approach do you prefer?",\n    "type": "Multiple Choice",\n    "options": {\n        "a": "Developing a mobile application",\n        "b": "Establishing an agency service",\n        "c": "Exploring both options simultaneously",\n        "d": "Seeking more information before deciding",\n        "e": "Other (please specify)"\n    }\n}'), type='text')], created_at=1727207328, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_sy97uBwSlNFSoHmTMEaBdZrD', status=None, thread_id='thread_rH3ovX3VFMqA9eBoG0HZiAPn'), Message(id='msg_xAYm4m1fMDBCNvAbQM01H4XB', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "Should I build an app or an agency service?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727207326, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_rH3ovX3VFMqA9eBoG0HZiAPn')], object='list', first_id='msg_933qLR8oFY881XLp2GYKF7kh', last_id='msg_xAYm4m1fMDBCNvAbQM01H4XB', has_more=False)
+2024-09-24 15:48:49,307 INFO: Transformed question: {'question': 'When considering building a business venture, what approach do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Developing a mobile application', 'b': 'Establishing an agency service', 'c': 'Exploring both options simultaneously', 'd': 'Seeking more information before deciding', 'e': 'Other (please specify)'}}
+2024-09-24 15:48:49,307 INFO: Transformed question: {'question': 'When considering building a business venture, what approach do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Developing a mobile application', 'b': 'Establishing an agency service', 'c': 'Exploring both options simultaneously', 'd': 'Seeking more information before deciding', 'e': 'Other (please specify)'}}
+2024-09-24 15:48:49,307 INFO: Session after transform: <FileSystemSession {'survey_analysis': {'key_finding': '1. Key Finding: The survey reveals that there is a balanced preference between Mac and Other devices, with PCs slightly behind, and a notable percentage indicating no preference or choosing both Mac and PC.', 'quick_stats': ['2. Quick Stats:', '   - Mac and Other devices each have 30% preference, making them the top choices.', '   - PCs are the preference for 20% of the respondents, indicating a slightly lower popularity.', '   - 10% of respondents either find the question not applicable or prefer both Mac and PC, showing some ambiguity in choices.'], 'interpretation': '3. Interpretation: The equal preference between Mac and Other devices suggests a diverse user base with preferences for different operating systems or brands. The popularity of PCs, although slightly lower, indicates a continued significant user base. The presence of respondents choosing both Mac and PC or indicating the question as not applicable could indicate a segment of users with mixed device usage or a lack of strong preference due to varied needs or experiences. Understanding these preferences can inform product development and marketing strategies tailored to different user segments. 4. Fun Fact: The fact that an equal percentage of respondents prefer Mac and Other devices is intriguing, highlighting the competitive landscape in the computing device market and the strong appeal of both options to consumers.', 'fun_fact': 'No fun fact available.'}, 'last_question': 'Should I build an app or an agency service?', 'last_transformed_question': {'question': 'When considering building a business venture, what approach do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Developing a mobile application', 'b': 'Establishing an agency service', 'c': 'Exploring both options simultaneously', 'd': 'Seeking more information before deciding', 'e': 'Other (please specify)'}}}>
+2024-09-24 15:48:49,311 INFO: 127.0.0.1 - - [24/Sep/2024 15:48:49] "POST /transform-question HTTP/1.1" 200 -
+2024-09-24 15:49:24,351 INFO: Entered approve_question_route
+2024-09-24 15:49:24,352 INFO: Session at start of approve_question_route: <FileSystemSession {'survey_analysis': {'key_finding': '1. Key Finding: The survey reveals that there is a balanced preference between Mac and Other devices, with PCs slightly behind, and a notable percentage indicating no preference or choosing both Mac and PC.', 'quick_stats': ['2. Quick Stats:', '   - Mac and Other devices each have 30% preference, making them the top choices.', '   - PCs are the preference for 20% of the respondents, indicating a slightly lower popularity.', '   - 10% of respondents either find the question not applicable or prefer both Mac and PC, showing some ambiguity in choices.'], 'interpretation': '3. Interpretation: The equal preference between Mac and Other devices suggests a diverse user base with preferences for different operating systems or brands. The popularity of PCs, although slightly lower, indicates a continued significant user base. The presence of respondents choosing both Mac and PC or indicating the question as not applicable could indicate a segment of users with mixed device usage or a lack of strong preference due to varied needs or experiences. Understanding these preferences can inform product development and marketing strategies tailored to different user segments. 4. Fun Fact: The fact that an equal percentage of respondents prefer Mac and Other devices is intriguing, highlighting the competitive landscape in the computing device market and the strong appeal of both options to consumers.', 'fun_fact': 'No fun fact available.'}, 'last_question': 'Should I build an app or an agency service?', 'last_transformed_question': {'question': 'When considering building a business venture, what approach do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Developing a mobile application', 'b': 'Establishing an agency service', 'c': 'Exploring both options simultaneously', 'd': 'Seeking more information before deciding', 'e': 'Other (please specify)'}}}>
+2024-09-24 15:49:24,352 INFO: Retrieved from session - transformed: {'question': 'When considering building a business venture, what approach do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Developing a mobile application', 'b': 'Establishing an agency service', 'c': 'Exploring both options simultaneously', 'd': 'Seeking more information before deciding', 'e': 'Other (please specify)'}}, original: Should I build an app or an agency service?
+2024-09-24 15:49:24,354 INFO: Saved approved question to data/approved_question.json
+2024-09-24 15:49:31,118 INFO: Data loaded successfully
+2024-09-24 15:49:31,121 INFO: Options: {'a': 'Developing a mobile application', 'b': 'Establishing an agency service', 'c': 'Exploring both options simultaneously', 'd': 'Seeking more information before deciding', 'e': 'Other (please specify)'}
+2024-09-24 15:49:31,121 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 15:49:31,121 INFO: Options: {'a': 'Developing a mobile application', 'b': 'Establishing an agency service', 'c': 'Exploring both options simultaneously', 'd': 'Seeking more information before deciding', 'e': 'Other (please specify)'}
+2024-09-24 15:49:31,121 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 15:49:31,121 INFO: Options: {'a': 'Developing a mobile application', 'b': 'Establishing an agency service', 'c': 'Exploring both options simultaneously', 'd': 'Seeking more information before deciding', 'e': 'Other (please specify)'}
+2024-09-24 15:49:31,121 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 15:49:31,121 INFO: Options: {'a': 'Developing a mobile application', 'b': 'Establishing an agency service', 'c': 'Exploring both options simultaneously', 'd': 'Seeking more information before deciding', 'e': 'Other (please specify)'}
+2024-09-24 15:49:31,121 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 15:49:31,121 INFO: Options: {'a': 'Developing a mobile application', 'b': 'Establishing an agency service', 'c': 'Exploring both options simultaneously', 'd': 'Seeking more information before deciding', 'e': 'Other (please specify)'}
+2024-09-24 15:49:31,121 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 15:49:31,121 INFO: Options: {'a': 'Developing a mobile application', 'b': 'Establishing an agency service', 'c': 'Exploring both options simultaneously', 'd': 'Seeking more information before deciding', 'e': 'Other (please specify)'}
+2024-09-24 15:49:31,121 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 15:49:31,121 INFO: Options: {'a': 'Developing a mobile application', 'b': 'Establishing an agency service', 'c': 'Exploring both options simultaneously', 'd': 'Seeking more information before deciding', 'e': 'Other (please specify)'}
+2024-09-24 15:49:31,121 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 15:49:31,122 INFO: Options: {'a': 'Developing a mobile application', 'b': 'Establishing an agency service', 'c': 'Exploring both options simultaneously', 'd': 'Seeking more information before deciding', 'e': 'Other (please specify)'}
+2024-09-24 15:49:31,122 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 15:49:31,122 INFO: Options: {'a': 'Developing a mobile application', 'b': 'Establishing an agency service', 'c': 'Exploring both options simultaneously', 'd': 'Seeking more information before deciding', 'e': 'Other (please specify)'}
+2024-09-24 15:49:31,122 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 15:49:31,122 INFO: Options: {'a': 'Developing a mobile application', 'b': 'Establishing an agency service', 'c': 'Exploring both options simultaneously', 'd': 'Seeking more information before deciding', 'e': 'Other (please specify)'}
+2024-09-24 15:49:31,122 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 15:49:31,123 INFO: Survey results written to /Users/JudeHoffner/Projects/voxbox-project/backend/data/survey_results.json
+2024-09-24 15:49:31,123 INFO: Loaded survey data: Question: When considering building a business venture, what approach do you prefer?, Aggregate results: 5, Individual responses: 10
+2024-09-24 15:49:31,123 INFO: Analysis prompt formatted successfully.
+2024-09-24 15:49:31,361 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 15:49:31,542 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_UmtuBolVIkP5OQFtTwoYnru5/messages "HTTP/1.1 200 OK"
+2024-09-24 15:49:32,026 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_UmtuBolVIkP5OQFtTwoYnru5/runs "HTTP/1.1 200 OK"
+2024-09-24 15:49:32,185 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_UmtuBolVIkP5OQFtTwoYnru5/runs/run_gYmhXese2r29i3BpeaerWB03 "HTTP/1.1 200 OK"
+2024-09-24 15:49:33,337 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_UmtuBolVIkP5OQFtTwoYnru5/runs/run_gYmhXese2r29i3BpeaerWB03 "HTTP/1.1 200 OK"
+2024-09-24 15:49:34,486 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_UmtuBolVIkP5OQFtTwoYnru5/runs/run_gYmhXese2r29i3BpeaerWB03 "HTTP/1.1 200 OK"
+2024-09-24 15:49:35,671 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_UmtuBolVIkP5OQFtTwoYnru5/runs/run_gYmhXese2r29i3BpeaerWB03 "HTTP/1.1 200 OK"
+2024-09-24 15:49:37,041 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_UmtuBolVIkP5OQFtTwoYnru5/runs/run_gYmhXese2r29i3BpeaerWB03 "HTTP/1.1 200 OK"
+2024-09-24 15:49:38,203 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_UmtuBolVIkP5OQFtTwoYnru5/messages "HTTP/1.1 200 OK"
+2024-09-24 15:49:38,205 INFO: Analysis received from assistant.
+2024-09-24 15:49:38,205 INFO: Parsed analysis data successfully
+2024-09-24 15:49:38,206 INFO: Analysis saved to data/survey_analysis.json
+2024-09-24 15:49:38,206 INFO: Analysis complete. Results saved and returned.
+2024-09-24 15:49:38,206 INFO: Approved question: {'question': 'When considering building a business venture, what approach do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Developing a mobile application', 'b': 'Establishing an agency service', 'c': 'Exploring both options simultaneously', 'd': 'Seeking more information before deciding', 'e': 'Other (please specify)'}}
+2024-09-24 15:49:38,210 INFO: 127.0.0.1 - - [24/Sep/2024 15:49:38] "POST /approve-question HTTP/1.1" 200 -
+2024-09-24 16:16:53,033 INFO: Flask app starting. Testing logging...
+2024-09-24 16:16:54,000 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.4.41:5001
+2024-09-24 16:16:54,001 INFO: [33mPress CTRL+C to quit[0m
+2024-09-24 16:16:54,001 INFO:  * Restarting with stat
+2024-09-24 16:16:54,021 INFO: Flask app starting. Testing logging...
+2024-09-24 16:16:54,516 WARNING:  * Debugger is active!
+2024-09-24 16:16:54,523 INFO:  * Debugger PIN: 873-171-222
+2024-09-24 16:17:01,711 INFO: 127.0.0.1 - - [24/Sep/2024 16:17:01] "GET / HTTP/1.1" 200 -
+2024-09-24 16:17:01,758 INFO: 127.0.0.1 - - [24/Sep/2024 16:17:01] "[36mGET /app.js HTTP/1.1[0m" 304 -
+2024-09-24 16:17:01,758 INFO: 127.0.0.1 - - [24/Sep/2024 16:17:01] "GET /styles.css HTTP/1.1" 200 -
+2024-09-24 16:17:19,209 INFO: Entered transform_question_route
+2024-09-24 16:17:19,209 INFO: Received question: Is it better to walk in the rain or run in the snow?
+2024-09-24 16:17:19,209 INFO: Calling transform_question function
+2024-09-24 16:17:19,209 INFO: Transforming question: Is it better to walk in the rain or run in the snow?
+2024-09-24 16:17:19,734 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 16:17:20,140 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_r4K8DH8nv7SZ0u2r3UAkDZRA/messages "HTTP/1.1 200 OK"
+2024-09-24 16:17:20,601 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_r4K8DH8nv7SZ0u2r3UAkDZRA/runs "HTTP/1.1 200 OK"
+2024-09-24 16:17:20,802 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_r4K8DH8nv7SZ0u2r3UAkDZRA/runs/run_AUzGA8DIQJSCQ2My33eF8Xtn "HTTP/1.1 200 OK"
+2024-09-24 16:17:20,943 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_r4K8DH8nv7SZ0u2r3UAkDZRA/runs/run_AUzGA8DIQJSCQ2My33eF8Xtn "HTTP/1.1 200 OK"
+2024-09-24 16:17:21,071 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_r4K8DH8nv7SZ0u2r3UAkDZRA/runs/run_AUzGA8DIQJSCQ2My33eF8Xtn "HTTP/1.1 200 OK"
+2024-09-24 16:17:21,286 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_r4K8DH8nv7SZ0u2r3UAkDZRA/runs/run_AUzGA8DIQJSCQ2My33eF8Xtn "HTTP/1.1 200 OK"
+2024-09-24 16:17:21,442 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_r4K8DH8nv7SZ0u2r3UAkDZRA/runs/run_AUzGA8DIQJSCQ2My33eF8Xtn "HTTP/1.1 200 OK"
+2024-09-24 16:17:21,882 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_r4K8DH8nv7SZ0u2r3UAkDZRA/runs/run_AUzGA8DIQJSCQ2My33eF8Xtn "HTTP/1.1 200 OK"
+2024-09-24 16:17:22,051 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_r4K8DH8nv7SZ0u2r3UAkDZRA/runs/run_AUzGA8DIQJSCQ2My33eF8Xtn "HTTP/1.1 200 OK"
+2024-09-24 16:17:22,210 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_r4K8DH8nv7SZ0u2r3UAkDZRA/runs/run_AUzGA8DIQJSCQ2My33eF8Xtn "HTTP/1.1 200 OK"
+2024-09-24 16:17:22,599 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_r4K8DH8nv7SZ0u2r3UAkDZRA/messages "HTTP/1.1 200 OK"
+2024-09-24 16:17:22,604 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_MLa57WCsvQkvOsYj9QrzmsIX', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "When considering different weather conditions, which activity do you prefer?",\n    "type": "Multiple Choice",\n    "options": {\n        "a": "Walking in the rain",\n        "b": "Running in the snow",\n        "c": "Neither, I prefer indoor activities",\n        "d": "Both, depending on the circumstances",\n        "e": "I have no preference"\n    }\n}'), type='text')], created_at=1727209041, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_AUzGA8DIQJSCQ2My33eF8Xtn', status=None, thread_id='thread_r4K8DH8nv7SZ0u2r3UAkDZRA'), Message(id='msg_EkKzAUYIDSN2TunHzt8cmYVT', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "Is it better to walk in the rain or run in the snow?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727209040, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_r4K8DH8nv7SZ0u2r3UAkDZRA')], object='list', first_id='msg_MLa57WCsvQkvOsYj9QrzmsIX', last_id='msg_EkKzAUYIDSN2TunHzt8cmYVT', has_more=False)
+2024-09-24 16:17:22,604 INFO: Transformed question: {'question': 'When considering different weather conditions, which activity do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}}
+2024-09-24 16:17:22,604 INFO: Transformed question: {'question': 'When considering different weather conditions, which activity do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}}
+2024-09-24 16:17:22,604 INFO: Session after transform: <FileSystemSession {'survey_analysis': {'key_finding': '1. Key Finding: The survey reveals that there is a balanced preference between Mac and Other devices, with PCs slightly behind, and a notable percentage indicating no preference or choosing both Mac and PC.', 'quick_stats': ['2. Quick Stats:', '   - Mac and Other devices each have 30% preference, making them the top choices.', '   - PCs are the preference for 20% of the respondents, indicating a slightly lower popularity.', '   - 10% of respondents either find the question not applicable or prefer both Mac and PC, showing some ambiguity in choices.'], 'interpretation': '3. Interpretation: The equal preference between Mac and Other devices suggests a diverse user base with preferences for different operating systems or brands. The popularity of PCs, although slightly lower, indicates a continued significant user base. The presence of respondents choosing both Mac and PC or indicating the question as not applicable could indicate a segment of users with mixed device usage or a lack of strong preference due to varied needs or experiences. Understanding these preferences can inform product development and marketing strategies tailored to different user segments. 4. Fun Fact: The fact that an equal percentage of respondents prefer Mac and Other devices is intriguing, highlighting the competitive landscape in the computing device market and the strong appeal of both options to consumers.', 'fun_fact': 'No fun fact available.'}, 'last_question': 'Is it better to walk in the rain or run in the snow?', 'last_transformed_question': {'question': 'When considering different weather conditions, which activity do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}}}>
+2024-09-24 16:17:22,606 INFO: 127.0.0.1 - - [24/Sep/2024 16:17:22] "POST /transform-question HTTP/1.1" 200 -
+2024-09-24 16:17:26,799 INFO: Entered approve_question_route
+2024-09-24 16:17:26,800 INFO: Session at start of approve_question_route: <FileSystemSession {'survey_analysis': {'key_finding': '1. Key Finding: The survey reveals that there is a balanced preference between Mac and Other devices, with PCs slightly behind, and a notable percentage indicating no preference or choosing both Mac and PC.', 'quick_stats': ['2. Quick Stats:', '   - Mac and Other devices each have 30% preference, making them the top choices.', '   - PCs are the preference for 20% of the respondents, indicating a slightly lower popularity.', '   - 10% of respondents either find the question not applicable or prefer both Mac and PC, showing some ambiguity in choices.'], 'interpretation': '3. Interpretation: The equal preference between Mac and Other devices suggests a diverse user base with preferences for different operating systems or brands. The popularity of PCs, although slightly lower, indicates a continued significant user base. The presence of respondents choosing both Mac and PC or indicating the question as not applicable could indicate a segment of users with mixed device usage or a lack of strong preference due to varied needs or experiences. Understanding these preferences can inform product development and marketing strategies tailored to different user segments. 4. Fun Fact: The fact that an equal percentage of respondents prefer Mac and Other devices is intriguing, highlighting the competitive landscape in the computing device market and the strong appeal of both options to consumers.', 'fun_fact': 'No fun fact available.'}, 'last_question': 'Is it better to walk in the rain or run in the snow?', 'last_transformed_question': {'question': 'When considering different weather conditions, which activity do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}}}>
+2024-09-24 16:17:26,800 INFO: Retrieved from session - transformed: {'question': 'When considering different weather conditions, which activity do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}}, original: Is it better to walk in the rain or run in the snow?
+2024-09-24 16:17:26,802 INFO: Saved approved question to data/approved_question.json
+2024-09-24 16:17:34,109 INFO: Data loaded successfully
+2024-09-24 16:17:34,112 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 16:17:34,113 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 16:17:34,113 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 16:17:34,113 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 16:17:34,113 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 16:17:34,113 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 16:17:34,113 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 16:17:34,113 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 16:17:34,113 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 16:17:34,113 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 16:17:34,113 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 16:17:34,113 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 16:17:34,113 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 16:17:34,114 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 16:17:34,114 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 16:17:34,114 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 16:17:34,114 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 16:17:34,114 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 16:17:34,114 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 16:17:34,114 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 16:17:34,115 INFO: Survey results written to /Users/JudeHoffner/Projects/voxbox-project/backend/data/survey_results.json
+2024-09-24 16:17:34,115 INFO: Loaded survey data: Question: When considering different weather conditions, which activity do you prefer?, Aggregate results: 5, Individual responses: 10
+2024-09-24 16:17:34,115 INFO: Analysis prompt formatted successfully.
+2024-09-24 16:17:34,294 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 16:17:34,471 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_ZVJz4o7qlOZRibtqUWWx9tkJ/messages "HTTP/1.1 200 OK"
+2024-09-24 16:17:35,090 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_ZVJz4o7qlOZRibtqUWWx9tkJ/runs "HTTP/1.1 200 OK"
+2024-09-24 16:17:35,276 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ZVJz4o7qlOZRibtqUWWx9tkJ/runs/run_XerftXvPefhRziC5OVcU2lOM "HTTP/1.1 200 OK"
+2024-09-24 16:17:36,466 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ZVJz4o7qlOZRibtqUWWx9tkJ/runs/run_XerftXvPefhRziC5OVcU2lOM "HTTP/1.1 200 OK"
+2024-09-24 16:17:37,627 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ZVJz4o7qlOZRibtqUWWx9tkJ/runs/run_XerftXvPefhRziC5OVcU2lOM "HTTP/1.1 200 OK"
+2024-09-24 16:17:38,879 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ZVJz4o7qlOZRibtqUWWx9tkJ/runs/run_XerftXvPefhRziC5OVcU2lOM "HTTP/1.1 200 OK"
+2024-09-24 16:17:40,112 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ZVJz4o7qlOZRibtqUWWx9tkJ/messages "HTTP/1.1 200 OK"
+2024-09-24 16:17:40,116 INFO: Analysis received from assistant.
+2024-09-24 16:17:40,117 INFO: Parsed analysis data successfully
+2024-09-24 16:17:40,118 INFO: Analysis saved to data/survey_analysis.json
+2024-09-24 16:17:40,118 INFO: Analysis complete. Results saved and returned.
+2024-09-24 16:17:40,118 INFO: Approved question: {'question': 'When considering different weather conditions, which activity do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}}
+2024-09-24 16:17:40,122 INFO: 127.0.0.1 - - [24/Sep/2024 16:17:40] "POST /approve-question HTTP/1.1" 200 -
+2024-09-24 16:52:25,769 INFO: Flask app starting. Testing logging...
+2024-09-24 16:52:26,736 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.4.41:5001
+2024-09-24 16:52:26,736 INFO: [33mPress CTRL+C to quit[0m
+2024-09-24 16:52:26,737 INFO:  * Restarting with stat
+2024-09-24 16:52:26,759 INFO: Flask app starting. Testing logging...
+2024-09-24 16:52:27,273 WARNING:  * Debugger is active!
+2024-09-24 16:52:27,281 INFO:  * Debugger PIN: 873-171-222
+2024-09-24 16:52:33,203 INFO: 127.0.0.1 - - [24/Sep/2024 16:52:33] "GET / HTTP/1.1" 200 -
+2024-09-24 16:52:33,247 INFO: 127.0.0.1 - - [24/Sep/2024 16:52:33] "[36mGET /app.js HTTP/1.1[0m" 304 -
+2024-09-24 16:52:33,248 INFO: 127.0.0.1 - - [24/Sep/2024 16:52:33] "GET /styles.css HTTP/1.1" 200 -
+2024-09-24 16:52:59,139 INFO: Entered transform_question_route
+2024-09-24 16:52:59,140 INFO: Received question: Is it better to wear sunblock or a shirt?
+2024-09-24 16:52:59,140 INFO: Calling transform_question function
+2024-09-24 16:52:59,140 INFO: Transforming question: Is it better to wear sunblock or a shirt?
+2024-09-24 16:52:59,485 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 16:52:59,658 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_atPhY3nqkFNPkMckCJJcvZ1z/messages "HTTP/1.1 200 OK"
+2024-09-24 16:53:00,165 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_atPhY3nqkFNPkMckCJJcvZ1z/runs "HTTP/1.1 200 OK"
+2024-09-24 16:53:00,359 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_atPhY3nqkFNPkMckCJJcvZ1z/runs/run_2Z62FQJNihDOptMjeajU2wFy "HTTP/1.1 200 OK"
+2024-09-24 16:53:00,499 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_atPhY3nqkFNPkMckCJJcvZ1z/runs/run_2Z62FQJNihDOptMjeajU2wFy "HTTP/1.1 200 OK"
+2024-09-24 16:53:00,652 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_atPhY3nqkFNPkMckCJJcvZ1z/runs/run_2Z62FQJNihDOptMjeajU2wFy "HTTP/1.1 200 OK"
+2024-09-24 16:53:00,798 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_atPhY3nqkFNPkMckCJJcvZ1z/runs/run_2Z62FQJNihDOptMjeajU2wFy "HTTP/1.1 200 OK"
+2024-09-24 16:53:00,946 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_atPhY3nqkFNPkMckCJJcvZ1z/runs/run_2Z62FQJNihDOptMjeajU2wFy "HTTP/1.1 200 OK"
+2024-09-24 16:53:01,157 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_atPhY3nqkFNPkMckCJJcvZ1z/runs/run_2Z62FQJNihDOptMjeajU2wFy "HTTP/1.1 200 OK"
+2024-09-24 16:53:01,316 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_atPhY3nqkFNPkMckCJJcvZ1z/runs/run_2Z62FQJNihDOptMjeajU2wFy "HTTP/1.1 200 OK"
+2024-09-24 16:53:01,456 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_atPhY3nqkFNPkMckCJJcvZ1z/runs/run_2Z62FQJNihDOptMjeajU2wFy "HTTP/1.1 200 OK"
+2024-09-24 16:53:01,646 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_atPhY3nqkFNPkMckCJJcvZ1z/runs/run_2Z62FQJNihDOptMjeajU2wFy "HTTP/1.1 200 OK"
+2024-09-24 16:53:01,877 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_atPhY3nqkFNPkMckCJJcvZ1z/runs/run_2Z62FQJNihDOptMjeajU2wFy "HTTP/1.1 200 OK"
+2024-09-24 16:53:02,042 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_atPhY3nqkFNPkMckCJJcvZ1z/runs/run_2Z62FQJNihDOptMjeajU2wFy "HTTP/1.1 200 OK"
+2024-09-24 16:53:02,204 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_atPhY3nqkFNPkMckCJJcvZ1z/messages "HTTP/1.1 200 OK"
+2024-09-24 16:53:02,207 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_cWoBwLb7PX2BzYB5ibSCwmor', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "When considering sun protection, which method do you find more effective?",\n    "type": "Multiple choice",\n    "options": {\n        "a": "Wearing sunscreen (sunblock)",\n        "b": "Wearing protective clothing (e.g., a shirt)",\n        "c": "Combination of sunscreen and protective clothing",\n        "d": "Avoiding sun exposure altogether",\n        "e": "I do not use any sun protection methods"\n    }\n}'), type='text')], created_at=1727211180, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_2Z62FQJNihDOptMjeajU2wFy', status=None, thread_id='thread_atPhY3nqkFNPkMckCJJcvZ1z'), Message(id='msg_iUUEg3atnSHSzrC6d2kLkfSG', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "Is it better to wear sunblock or a shirt?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727211179, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_atPhY3nqkFNPkMckCJJcvZ1z')], object='list', first_id='msg_cWoBwLb7PX2BzYB5ibSCwmor', last_id='msg_iUUEg3atnSHSzrC6d2kLkfSG', has_more=False)
+2024-09-24 16:53:02,208 INFO: Transformed question: {'question': 'When considering sun protection, which method do you find more effective?', 'type': 'Multiple choice', 'options': {'a': 'Wearing sunscreen (sunblock)', 'b': 'Wearing protective clothing (e.g., a shirt)', 'c': 'Combination of sunscreen and protective clothing', 'd': 'Avoiding sun exposure altogether', 'e': 'I do not use any sun protection methods'}}
+2024-09-24 16:53:02,208 INFO: Transformed question: {'question': 'When considering sun protection, which method do you find more effective?', 'type': 'Multiple choice', 'options': {'a': 'Wearing sunscreen (sunblock)', 'b': 'Wearing protective clothing (e.g., a shirt)', 'c': 'Combination of sunscreen and protective clothing', 'd': 'Avoiding sun exposure altogether', 'e': 'I do not use any sun protection methods'}}
+2024-09-24 16:53:02,208 INFO: Session after transform: <FileSystemSession {'survey_analysis': {'key_finding': '1. Key Finding: The survey reveals that there is a balanced preference between Mac and Other devices, with PCs slightly behind, and a notable percentage indicating no preference or choosing both Mac and PC.', 'quick_stats': ['2. Quick Stats:', '   - Mac and Other devices each have 30% preference, making them the top choices.', '   - PCs are the preference for 20% of the respondents, indicating a slightly lower popularity.', '   - 10% of respondents either find the question not applicable or prefer both Mac and PC, showing some ambiguity in choices.'], 'interpretation': '3. Interpretation: The equal preference between Mac and Other devices suggests a diverse user base with preferences for different operating systems or brands. The popularity of PCs, although slightly lower, indicates a continued significant user base. The presence of respondents choosing both Mac and PC or indicating the question as not applicable could indicate a segment of users with mixed device usage or a lack of strong preference due to varied needs or experiences. Understanding these preferences can inform product development and marketing strategies tailored to different user segments. 4. Fun Fact: The fact that an equal percentage of respondents prefer Mac and Other devices is intriguing, highlighting the competitive landscape in the computing device market and the strong appeal of both options to consumers.', 'fun_fact': 'No fun fact available.'}, 'last_question': 'Is it better to wear sunblock or a shirt?', 'last_transformed_question': {'question': 'When considering sun protection, which method do you find more effective?', 'type': 'Multiple choice', 'options': {'a': 'Wearing sunscreen (sunblock)', 'b': 'Wearing protective clothing (e.g., a shirt)', 'c': 'Combination of sunscreen and protective clothing', 'd': 'Avoiding sun exposure altogether', 'e': 'I do not use any sun protection methods'}}}>
+2024-09-24 16:53:02,210 INFO: 127.0.0.1 - - [24/Sep/2024 16:53:02] "POST /transform-question HTTP/1.1" 200 -
+2024-09-24 16:53:06,092 INFO: Saved approved question to data/approved_question_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 16:53:12,477 INFO: Data loaded successfully
+2024-09-24 16:53:12,481 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 16:53:12,481 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 16:53:12,481 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 16:53:12,481 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 16:53:12,481 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 16:53:12,481 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 16:53:12,481 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 16:53:12,481 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 16:53:12,481 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 16:53:12,481 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 16:53:12,481 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 16:53:12,481 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 16:53:12,481 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 16:53:12,481 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 16:53:12,481 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 16:53:12,481 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 16:53:12,481 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 16:53:12,481 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 16:53:12,481 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 16:53:12,482 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 16:53:12,482 INFO: Survey results written to /Users/JudeHoffner/Projects/voxbox-project/backend/data/survey_results.json
+2024-09-24 16:53:12,482 ERROR: Error in approve_question_route: main() missing 3 required positional arguments: 'approved_question_path', 'survey_results_path', and 'analysis_output_path'
+Traceback (most recent call last):
+  File "/Users/JudeHoffner/Projects/voxbox-project/backend/api/routes.py", line 104, in approve_question_route
+    analysis_result = create_survey_analysis.main()
+TypeError: main() missing 3 required positional arguments: 'approved_question_path', 'survey_results_path', and 'analysis_output_path'
+2024-09-24 16:53:12,485 INFO: 127.0.0.1 - - [24/Sep/2024 16:53:12] "[35m[1mPOST /approve-question HTTP/1.1[0m" 500 -
+2024-09-24 17:03:30,019 INFO: Flask app starting. Testing logging...
+2024-09-24 17:03:30,909 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.4.41:5001
+2024-09-24 17:03:30,909 INFO: [33mPress CTRL+C to quit[0m
+2024-09-24 17:03:30,910 INFO:  * Restarting with stat
+2024-09-24 17:03:30,931 INFO: Flask app starting. Testing logging...
+2024-09-24 17:03:31,486 WARNING:  * Debugger is active!
+2024-09-24 17:03:31,495 INFO:  * Debugger PIN: 873-171-222
+2024-09-24 17:03:35,973 INFO: 127.0.0.1 - - [24/Sep/2024 17:03:35] "GET / HTTP/1.1" 200 -
+2024-09-24 17:03:36,008 INFO: 127.0.0.1 - - [24/Sep/2024 17:03:36] "GET /styles.css HTTP/1.1" 200 -
+2024-09-24 17:03:36,009 INFO: 127.0.0.1 - - [24/Sep/2024 17:03:36] "GET /app.js HTTP/1.1" 200 -
+2024-09-24 17:03:38,041 INFO: 127.0.0.1 - - [24/Sep/2024 17:03:38] "GET / HTTP/1.1" 200 -
+2024-09-24 17:03:38,063 INFO: 127.0.0.1 - - [24/Sep/2024 17:03:38] "[36mGET /app.js HTTP/1.1[0m" 304 -
+2024-09-24 17:03:38,063 INFO: 127.0.0.1 - - [24/Sep/2024 17:03:38] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2024-09-24 17:03:48,337 INFO: Entered transform_question_route
+2024-09-24 17:03:48,338 INFO: Received question: Is it better to wear sunblock or long pants?
+2024-09-24 17:03:48,338 INFO: Calling transform_question function
+2024-09-24 17:03:48,338 INFO: Transforming question: Is it better to wear sunblock or long pants?
+2024-09-24 17:03:48,652 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 17:03:48,813 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_ciexXYm3bUumgHNGMBgq4HiU/messages "HTTP/1.1 200 OK"
+2024-09-24 17:03:49,442 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_ciexXYm3bUumgHNGMBgq4HiU/runs "HTTP/1.1 200 OK"
+2024-09-24 17:03:49,607 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ciexXYm3bUumgHNGMBgq4HiU/runs/run_PFwpdil9CLkpBphj8TKOchK6 "HTTP/1.1 200 OK"
+2024-09-24 17:03:49,836 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ciexXYm3bUumgHNGMBgq4HiU/runs/run_PFwpdil9CLkpBphj8TKOchK6 "HTTP/1.1 200 OK"
+2024-09-24 17:03:49,980 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ciexXYm3bUumgHNGMBgq4HiU/runs/run_PFwpdil9CLkpBphj8TKOchK6 "HTTP/1.1 200 OK"
+2024-09-24 17:03:50,129 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ciexXYm3bUumgHNGMBgq4HiU/runs/run_PFwpdil9CLkpBphj8TKOchK6 "HTTP/1.1 200 OK"
+2024-09-24 17:03:50,262 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ciexXYm3bUumgHNGMBgq4HiU/runs/run_PFwpdil9CLkpBphj8TKOchK6 "HTTP/1.1 200 OK"
+2024-09-24 17:03:51,354 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ciexXYm3bUumgHNGMBgq4HiU/runs/run_PFwpdil9CLkpBphj8TKOchK6 "HTTP/1.1 200 OK"
+2024-09-24 17:03:51,490 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ciexXYm3bUumgHNGMBgq4HiU/runs/run_PFwpdil9CLkpBphj8TKOchK6 "HTTP/1.1 200 OK"
+2024-09-24 17:03:51,805 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ciexXYm3bUumgHNGMBgq4HiU/messages "HTTP/1.1 200 OK"
+2024-09-24 17:03:51,808 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_2auCliX0orbw3V1FjtRHdRbU', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "When it comes to protecting your skin from the sun, which method do you prefer?",\n    "type": "Multiple Choice",\n    "options": {\n        "a": "Wearing sunblock",\n        "b": "Wearing long pants",\n        "c": "Combining sunblock and long pants",\n        "d": "Seeking shade instead of sun exposure",\n        "e": "I do not take any specific measures to protect my skin from the sun"\n    }\n}  '), type='text')], created_at=1727211830, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_PFwpdil9CLkpBphj8TKOchK6', status=None, thread_id='thread_ciexXYm3bUumgHNGMBgq4HiU'), Message(id='msg_g2ZM2xto2nqrtQAvHPoW37Wz', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "Is it better to wear sunblock or long pants?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727211828, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_ciexXYm3bUumgHNGMBgq4HiU')], object='list', first_id='msg_2auCliX0orbw3V1FjtRHdRbU', last_id='msg_g2ZM2xto2nqrtQAvHPoW37Wz', has_more=False)
+2024-09-24 17:03:51,808 INFO: Transformed question: {'question': 'When it comes to protecting your skin from the sun, which method do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Wearing sunblock', 'b': 'Wearing long pants', 'c': 'Combining sunblock and long pants', 'd': 'Seeking shade instead of sun exposure', 'e': 'I do not take any specific measures to protect my skin from the sun'}}
+2024-09-24 17:03:51,808 INFO: Transformed question: {'question': 'When it comes to protecting your skin from the sun, which method do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Wearing sunblock', 'b': 'Wearing long pants', 'c': 'Combining sunblock and long pants', 'd': 'Seeking shade instead of sun exposure', 'e': 'I do not take any specific measures to protect my skin from the sun'}}
+2024-09-24 17:03:51,808 INFO: Session after transform: <FileSystemSession {'survey_analysis': {'key_finding': '1. Key Finding: The survey reveals that there is a balanced preference between Mac and Other devices, with PCs slightly behind, and a notable percentage indicating no preference or choosing both Mac and PC.', 'quick_stats': ['2. Quick Stats:', '   - Mac and Other devices each have 30% preference, making them the top choices.', '   - PCs are the preference for 20% of the respondents, indicating a slightly lower popularity.', '   - 10% of respondents either find the question not applicable or prefer both Mac and PC, showing some ambiguity in choices.'], 'interpretation': '3. Interpretation: The equal preference between Mac and Other devices suggests a diverse user base with preferences for different operating systems or brands. The popularity of PCs, although slightly lower, indicates a continued significant user base. The presence of respondents choosing both Mac and PC or indicating the question as not applicable could indicate a segment of users with mixed device usage or a lack of strong preference due to varied needs or experiences. Understanding these preferences can inform product development and marketing strategies tailored to different user segments. 4. Fun Fact: The fact that an equal percentage of respondents prefer Mac and Other devices is intriguing, highlighting the competitive landscape in the computing device market and the strong appeal of both options to consumers.', 'fun_fact': 'No fun fact available.'}, 'last_question': 'Is it better to wear sunblock or long pants?', 'last_transformed_question': {'question': 'When it comes to protecting your skin from the sun, which method do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Wearing sunblock', 'b': 'Wearing long pants', 'c': 'Combining sunblock and long pants', 'd': 'Seeking shade instead of sun exposure', 'e': 'I do not take any specific measures to protect my skin from the sun'}}}>
+2024-09-24 17:03:51,810 INFO: 127.0.0.1 - - [24/Sep/2024 17:03:51] "POST /transform-question HTTP/1.1" 200 -
+2024-09-24 17:03:55,512 INFO: Entered approve_question_route
+2024-09-24 17:03:55,513 INFO: Retrieved from session - transformed: {'question': 'When it comes to protecting your skin from the sun, which method do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Wearing sunblock', 'b': 'Wearing long pants', 'c': 'Combining sunblock and long pants', 'd': 'Seeking shade instead of sun exposure', 'e': 'I do not take any specific measures to protect my skin from the sun'}}, original: Is it better to wear sunblock or long pants?
+2024-09-24 17:03:55,514 INFO: Saved approved question to data/approved_question_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 17:03:55,518 INFO: Data loaded successfully
+2024-09-24 17:03:55,521 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:03:55,521 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:03:55,522 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:03:55,522 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:03:55,522 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:03:55,522 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:03:55,522 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:03:55,522 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:03:55,522 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:03:55,522 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:03:55,522 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:03:55,522 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:03:55,522 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:03:55,522 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:03:55,522 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:03:55,522 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:03:55,522 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:03:55,522 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:03:55,523 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:03:55,523 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:03:55,524 INFO: Survey results written to /Users/JudeHoffner/Projects/voxbox-project/backend/data/survey_results.json
+2024-09-24 17:03:55,524 INFO: Saved survey results to data/survey_results_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 17:03:55,525 INFO: Loaded survey data: Question: When it comes to protecting your skin from the sun, which method do you prefer?, Aggregate results: 5, Individual responses: 10
+2024-09-24 17:03:55,525 INFO: Analysis prompt formatted successfully.
+2024-09-24 17:03:55,700 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 17:03:55,869 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_Q7dvWhBZ76xxRhiX1W6TVTWP/messages "HTTP/1.1 200 OK"
+2024-09-24 17:03:56,474 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_Q7dvWhBZ76xxRhiX1W6TVTWP/runs "HTTP/1.1 200 OK"
+2024-09-24 17:03:56,610 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_Q7dvWhBZ76xxRhiX1W6TVTWP/runs/run_KCcV0jYN2YA9r1mpDJomR8Kr "HTTP/1.1 200 OK"
+2024-09-24 17:03:57,775 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_Q7dvWhBZ76xxRhiX1W6TVTWP/runs/run_KCcV0jYN2YA9r1mpDJomR8Kr "HTTP/1.1 200 OK"
+2024-09-24 17:03:58,943 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_Q7dvWhBZ76xxRhiX1W6TVTWP/runs/run_KCcV0jYN2YA9r1mpDJomR8Kr "HTTP/1.1 200 OK"
+2024-09-24 17:04:00,118 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_Q7dvWhBZ76xxRhiX1W6TVTWP/runs/run_KCcV0jYN2YA9r1mpDJomR8Kr "HTTP/1.1 200 OK"
+2024-09-24 17:04:01,268 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_Q7dvWhBZ76xxRhiX1W6TVTWP/messages "HTTP/1.1 200 OK"
+2024-09-24 17:04:01,271 INFO: Analysis received from assistant.
+2024-09-24 17:04:01,271 INFO: Parsed analysis data successfully
+2024-09-24 17:04:01,272 INFO: Analysis saved to data/survey_analysis_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 17:04:01,272 INFO: Analysis complete. Results saved and returned.
+2024-09-24 17:04:01,272 INFO: Approved question: {'question': 'When it comes to protecting your skin from the sun, which method do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Wearing sunblock', 'b': 'Wearing long pants', 'c': 'Combining sunblock and long pants', 'd': 'Seeking shade instead of sun exposure', 'e': 'I do not take any specific measures to protect my skin from the sun'}}
+2024-09-24 17:04:01,274 INFO: 127.0.0.1 - - [24/Sep/2024 17:04:01] "POST /approve-question HTTP/1.1" 200 -
+2024-09-24 17:04:38,573 INFO: Entered transform_question_route
+2024-09-24 17:04:38,574 INFO: Received question: Is it more fun to fly or walk?
+2024-09-24 17:04:38,574 INFO: Calling transform_question function
+2024-09-24 17:04:38,574 INFO: Transforming question: Is it more fun to fly or walk?
+2024-09-24 17:04:38,797 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 17:04:39,134 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_ZAqpPPCyc9KYgVRvsUyObeNP/messages "HTTP/1.1 200 OK"
+2024-09-24 17:04:39,747 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_ZAqpPPCyc9KYgVRvsUyObeNP/runs "HTTP/1.1 200 OK"
+2024-09-24 17:04:39,936 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ZAqpPPCyc9KYgVRvsUyObeNP/runs/run_QQr9BGFfrS1yZnpXqssJfqER "HTTP/1.1 200 OK"
+2024-09-24 17:04:40,121 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ZAqpPPCyc9KYgVRvsUyObeNP/runs/run_QQr9BGFfrS1yZnpXqssJfqER "HTTP/1.1 200 OK"
+2024-09-24 17:04:40,375 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ZAqpPPCyc9KYgVRvsUyObeNP/runs/run_QQr9BGFfrS1yZnpXqssJfqER "HTTP/1.1 200 OK"
+2024-09-24 17:04:40,543 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ZAqpPPCyc9KYgVRvsUyObeNP/runs/run_QQr9BGFfrS1yZnpXqssJfqER "HTTP/1.1 200 OK"
+2024-09-24 17:04:40,706 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ZAqpPPCyc9KYgVRvsUyObeNP/runs/run_QQr9BGFfrS1yZnpXqssJfqER "HTTP/1.1 200 OK"
+2024-09-24 17:04:40,836 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ZAqpPPCyc9KYgVRvsUyObeNP/runs/run_QQr9BGFfrS1yZnpXqssJfqER "HTTP/1.1 200 OK"
+2024-09-24 17:04:41,007 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ZAqpPPCyc9KYgVRvsUyObeNP/runs/run_QQr9BGFfrS1yZnpXqssJfqER "HTTP/1.1 200 OK"
+2024-09-24 17:04:41,181 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ZAqpPPCyc9KYgVRvsUyObeNP/runs/run_QQr9BGFfrS1yZnpXqssJfqER "HTTP/1.1 200 OK"
+2024-09-24 17:04:41,330 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ZAqpPPCyc9KYgVRvsUyObeNP/runs/run_QQr9BGFfrS1yZnpXqssJfqER "HTTP/1.1 200 OK"
+2024-09-24 17:04:41,482 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ZAqpPPCyc9KYgVRvsUyObeNP/runs/run_QQr9BGFfrS1yZnpXqssJfqER "HTTP/1.1 200 OK"
+2024-09-24 17:04:41,599 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ZAqpPPCyc9KYgVRvsUyObeNP/messages "HTTP/1.1 200 OK"
+2024-09-24 17:04:41,602 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_Lg9HS9HKqXWw4TQgdGE7mMUY', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "Which mode of transportation do you find more enjoyable?",\n    "type": "Multiple Choice",\n    "options": {\n        "a": "Flying",\n        "b": "Walking",\n        "c": "Depends on the situation",\n        "d": "I have no preference",\n        "e": "Other (please specify)"\n    }\n}'), type='text')], created_at=1727211880, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_QQr9BGFfrS1yZnpXqssJfqER', status=None, thread_id='thread_ZAqpPPCyc9KYgVRvsUyObeNP'), Message(id='msg_Kmozi3VK11VcooD8N5xHT3lD', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "Is it more fun to fly or walk?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727211879, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_ZAqpPPCyc9KYgVRvsUyObeNP')], object='list', first_id='msg_Lg9HS9HKqXWw4TQgdGE7mMUY', last_id='msg_Kmozi3VK11VcooD8N5xHT3lD', has_more=False)
+2024-09-24 17:04:41,603 INFO: Transformed question: {'question': 'Which mode of transportation do you find more enjoyable?', 'type': 'Multiple Choice', 'options': {'a': 'Flying', 'b': 'Walking', 'c': 'Depends on the situation', 'd': 'I have no preference', 'e': 'Other (please specify)'}}
+2024-09-24 17:04:41,603 INFO: Transformed question: {'question': 'Which mode of transportation do you find more enjoyable?', 'type': 'Multiple Choice', 'options': {'a': 'Flying', 'b': 'Walking', 'c': 'Depends on the situation', 'd': 'I have no preference', 'e': 'Other (please specify)'}}
+2024-09-24 17:04:41,603 INFO: Session after transform: <FileSystemSession {'survey_analysis': {'key_finding': '1. Key Finding: The survey reveals that there is a balanced preference between Mac and Other devices, with PCs slightly behind, and a notable percentage indicating no preference or choosing both Mac and PC.', 'quick_stats': ['2. Quick Stats:', '   - Mac and Other devices each have 30% preference, making them the top choices.', '   - PCs are the preference for 20% of the respondents, indicating a slightly lower popularity.', '   - 10% of respondents either find the question not applicable or prefer both Mac and PC, showing some ambiguity in choices.'], 'interpretation': '3. Interpretation: The equal preference between Mac and Other devices suggests a diverse user base with preferences for different operating systems or brands. The popularity of PCs, although slightly lower, indicates a continued significant user base. The presence of respondents choosing both Mac and PC or indicating the question as not applicable could indicate a segment of users with mixed device usage or a lack of strong preference due to varied needs or experiences. Understanding these preferences can inform product development and marketing strategies tailored to different user segments. 4. Fun Fact: The fact that an equal percentage of respondents prefer Mac and Other devices is intriguing, highlighting the competitive landscape in the computing device market and the strong appeal of both options to consumers.', 'fun_fact': 'No fun fact available.'}, 'last_question': 'Is it more fun to fly or walk?', 'last_transformed_question': {'question': 'Which mode of transportation do you find more enjoyable?', 'type': 'Multiple Choice', 'options': {'a': 'Flying', 'b': 'Walking', 'c': 'Depends on the situation', 'd': 'I have no preference', 'e': 'Other (please specify)'}}}>
+2024-09-24 17:04:41,607 INFO: 127.0.0.1 - - [24/Sep/2024 17:04:41] "POST /transform-question HTTP/1.1" 200 -
+2024-09-24 17:04:48,749 INFO: Entered transform_question_route
+2024-09-24 17:04:48,750 INFO: Received question: Is it more fun to fly or walk?
+2024-09-24 17:04:48,750 INFO: Calling transform_question function
+2024-09-24 17:04:48,750 INFO: Transforming question: Is it more fun to fly or walk?
+2024-09-24 17:04:48,932 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 17:04:49,080 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_U6J0PyWsZ6vybwr9v8rwj3ta/messages "HTTP/1.1 200 OK"
+2024-09-24 17:04:49,516 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_U6J0PyWsZ6vybwr9v8rwj3ta/runs "HTTP/1.1 200 OK"
+2024-09-24 17:04:49,653 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_U6J0PyWsZ6vybwr9v8rwj3ta/runs/run_5OSdhrv5JOdqs44L6cxeBAuZ "HTTP/1.1 200 OK"
+2024-09-24 17:04:49,889 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_U6J0PyWsZ6vybwr9v8rwj3ta/runs/run_5OSdhrv5JOdqs44L6cxeBAuZ "HTTP/1.1 200 OK"
+2024-09-24 17:04:50,040 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_U6J0PyWsZ6vybwr9v8rwj3ta/runs/run_5OSdhrv5JOdqs44L6cxeBAuZ "HTTP/1.1 200 OK"
+2024-09-24 17:04:50,179 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_U6J0PyWsZ6vybwr9v8rwj3ta/runs/run_5OSdhrv5JOdqs44L6cxeBAuZ "HTTP/1.1 200 OK"
+2024-09-24 17:04:50,313 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_U6J0PyWsZ6vybwr9v8rwj3ta/runs/run_5OSdhrv5JOdqs44L6cxeBAuZ "HTTP/1.1 200 OK"
+2024-09-24 17:04:50,481 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_U6J0PyWsZ6vybwr9v8rwj3ta/runs/run_5OSdhrv5JOdqs44L6cxeBAuZ "HTTP/1.1 200 OK"
+2024-09-24 17:04:50,619 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_U6J0PyWsZ6vybwr9v8rwj3ta/runs/run_5OSdhrv5JOdqs44L6cxeBAuZ "HTTP/1.1 200 OK"
+2024-09-24 17:04:50,779 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_U6J0PyWsZ6vybwr9v8rwj3ta/runs/run_5OSdhrv5JOdqs44L6cxeBAuZ "HTTP/1.1 200 OK"
+2024-09-24 17:04:50,925 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_U6J0PyWsZ6vybwr9v8rwj3ta/runs/run_5OSdhrv5JOdqs44L6cxeBAuZ "HTTP/1.1 200 OK"
+2024-09-24 17:04:51,348 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_U6J0PyWsZ6vybwr9v8rwj3ta/runs/run_5OSdhrv5JOdqs44L6cxeBAuZ "HTTP/1.1 200 OK"
+2024-09-24 17:04:51,501 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_U6J0PyWsZ6vybwr9v8rwj3ta/messages "HTTP/1.1 200 OK"
+2024-09-24 17:04:51,504 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_qccX7Z1E2EnBaqqulfk5OVFC', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "Which mode of transportation do you find more enjoyable for short distances?",\n    "type": "Likert scale",\n    "options": {\n        "a": "Flying",\n        "b": "Walking",\n        "c": "No preference",\n        "d": "Other (please specify)",\n        "e": "I enjoy both equally"\n    }\n}'), type='text')], created_at=1727211890, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_5OSdhrv5JOdqs44L6cxeBAuZ', status=None, thread_id='thread_U6J0PyWsZ6vybwr9v8rwj3ta'), Message(id='msg_2f9MGW47ayvj9XykhODe5jiC', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "Is it more fun to fly or walk?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727211889, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_U6J0PyWsZ6vybwr9v8rwj3ta')], object='list', first_id='msg_qccX7Z1E2EnBaqqulfk5OVFC', last_id='msg_2f9MGW47ayvj9XykhODe5jiC', has_more=False)
+2024-09-24 17:04:51,504 INFO: Transformed question: {'question': 'Which mode of transportation do you find more enjoyable for short distances?', 'type': 'Likert scale', 'options': {'a': 'Flying', 'b': 'Walking', 'c': 'No preference', 'd': 'Other (please specify)', 'e': 'I enjoy both equally'}}
+2024-09-24 17:04:51,504 INFO: Transformed question: {'question': 'Which mode of transportation do you find more enjoyable for short distances?', 'type': 'Likert scale', 'options': {'a': 'Flying', 'b': 'Walking', 'c': 'No preference', 'd': 'Other (please specify)', 'e': 'I enjoy both equally'}}
+2024-09-24 17:04:51,504 INFO: Session after transform: <FileSystemSession {'survey_analysis': {'key_finding': '1. Key Finding: The survey reveals that there is a balanced preference between Mac and Other devices, with PCs slightly behind, and a notable percentage indicating no preference or choosing both Mac and PC.', 'quick_stats': ['2. Quick Stats:', '   - Mac and Other devices each have 30% preference, making them the top choices.', '   - PCs are the preference for 20% of the respondents, indicating a slightly lower popularity.', '   - 10% of respondents either find the question not applicable or prefer both Mac and PC, showing some ambiguity in choices.'], 'interpretation': '3. Interpretation: The equal preference between Mac and Other devices suggests a diverse user base with preferences for different operating systems or brands. The popularity of PCs, although slightly lower, indicates a continued significant user base. The presence of respondents choosing both Mac and PC or indicating the question as not applicable could indicate a segment of users with mixed device usage or a lack of strong preference due to varied needs or experiences. Understanding these preferences can inform product development and marketing strategies tailored to different user segments. 4. Fun Fact: The fact that an equal percentage of respondents prefer Mac and Other devices is intriguing, highlighting the competitive landscape in the computing device market and the strong appeal of both options to consumers.', 'fun_fact': 'No fun fact available.'}, 'last_question': 'Is it more fun to fly or walk?', 'last_transformed_question': {'question': 'Which mode of transportation do you find more enjoyable for short distances?', 'type': 'Likert scale', 'options': {'a': 'Flying', 'b': 'Walking', 'c': 'No preference', 'd': 'Other (please specify)', 'e': 'I enjoy both equally'}}}>
+2024-09-24 17:04:51,507 INFO: 127.0.0.1 - - [24/Sep/2024 17:04:51] "POST /transform-question HTTP/1.1" 200 -
+2024-09-24 17:04:55,889 INFO: Entered approve_question_route
+2024-09-24 17:04:55,890 INFO: Retrieved from session - transformed: {'question': 'Which mode of transportation do you find more enjoyable for short distances?', 'type': 'Likert scale', 'options': {'a': 'Flying', 'b': 'Walking', 'c': 'No preference', 'd': 'Other (please specify)', 'e': 'I enjoy both equally'}}, original: Is it more fun to fly or walk?
+2024-09-24 17:04:55,891 INFO: Saved approved question to data/approved_question_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 17:04:55,896 INFO: Data loaded successfully
+2024-09-24 17:04:55,898 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:04:55,899 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:04:55,899 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:04:55,899 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:04:55,899 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:04:55,899 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:04:55,899 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:04:55,899 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:04:55,900 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:04:55,900 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:04:55,900 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:04:55,900 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:04:55,900 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:04:55,900 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:04:55,900 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:04:55,900 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:04:55,900 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:04:55,900 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:04:55,901 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:04:55,901 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:04:55,902 INFO: Survey results written to /Users/JudeHoffner/Projects/voxbox-project/backend/data/survey_results.json
+2024-09-24 17:04:55,903 INFO: Saved survey results to data/survey_results_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 17:04:55,903 INFO: Loaded survey data: Question: Which mode of transportation do you find more enjoyable for short distances?, Aggregate results: 5, Individual responses: 10
+2024-09-24 17:04:55,903 INFO: Analysis prompt formatted successfully.
+2024-09-24 17:04:56,126 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 17:04:56,310 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_U9hKa8FHrQTlgD0x1hY9yZAG/messages "HTTP/1.1 200 OK"
+2024-09-24 17:04:56,756 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_U9hKa8FHrQTlgD0x1hY9yZAG/runs "HTTP/1.1 200 OK"
+2024-09-24 17:04:56,942 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_U9hKa8FHrQTlgD0x1hY9yZAG/runs/run_bfGMEcTQMVcf6gcmNC5hQ8ad "HTTP/1.1 200 OK"
+2024-09-24 17:04:58,080 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_U9hKa8FHrQTlgD0x1hY9yZAG/runs/run_bfGMEcTQMVcf6gcmNC5hQ8ad "HTTP/1.1 200 OK"
+2024-09-24 17:04:59,248 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_U9hKa8FHrQTlgD0x1hY9yZAG/runs/run_bfGMEcTQMVcf6gcmNC5hQ8ad "HTTP/1.1 200 OK"
+2024-09-24 17:05:00,415 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_U9hKa8FHrQTlgD0x1hY9yZAG/runs/run_bfGMEcTQMVcf6gcmNC5hQ8ad "HTTP/1.1 200 OK"
+2024-09-24 17:05:01,574 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_U9hKa8FHrQTlgD0x1hY9yZAG/messages "HTTP/1.1 200 OK"
+2024-09-24 17:05:01,578 INFO: Analysis received from assistant.
+2024-09-24 17:05:01,578 INFO: Parsed analysis data successfully
+2024-09-24 17:05:01,579 INFO: Analysis saved to data/survey_analysis_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 17:05:01,579 INFO: Analysis complete. Results saved and returned.
+2024-09-24 17:05:01,579 INFO: Approved question: {'question': 'Which mode of transportation do you find more enjoyable for short distances?', 'type': 'Likert scale', 'options': {'a': 'Flying', 'b': 'Walking', 'c': 'No preference', 'd': 'Other (please specify)', 'e': 'I enjoy both equally'}}
+2024-09-24 17:05:01,582 INFO: 127.0.0.1 - - [24/Sep/2024 17:05:01] "POST /approve-question HTTP/1.1" 200 -
+2024-09-24 17:05:33,915 INFO: Entered transform_question_route
+2024-09-24 17:05:33,915 INFO: Received question: Hotdogs or hamburgers?
+2024-09-24 17:05:33,915 INFO: Calling transform_question function
+2024-09-24 17:05:33,915 INFO: Transforming question: Hotdogs or hamburgers?
+2024-09-24 17:05:34,197 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 17:05:34,374 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_Kcl4NFE6hYIYNW3VDycq37EP/messages "HTTP/1.1 200 OK"
+2024-09-24 17:05:34,854 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_Kcl4NFE6hYIYNW3VDycq37EP/runs "HTTP/1.1 200 OK"
+2024-09-24 17:05:35,036 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_Kcl4NFE6hYIYNW3VDycq37EP/runs/run_3k0ohSRbNNu1euKsRacgrM8a "HTTP/1.1 200 OK"
+2024-09-24 17:05:35,225 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_Kcl4NFE6hYIYNW3VDycq37EP/runs/run_3k0ohSRbNNu1euKsRacgrM8a "HTTP/1.1 200 OK"
+2024-09-24 17:05:35,381 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_Kcl4NFE6hYIYNW3VDycq37EP/runs/run_3k0ohSRbNNu1euKsRacgrM8a "HTTP/1.1 200 OK"
+2024-09-24 17:05:35,621 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_Kcl4NFE6hYIYNW3VDycq37EP/runs/run_3k0ohSRbNNu1euKsRacgrM8a "HTTP/1.1 200 OK"
+2024-09-24 17:05:35,771 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_Kcl4NFE6hYIYNW3VDycq37EP/runs/run_3k0ohSRbNNu1euKsRacgrM8a "HTTP/1.1 200 OK"
+2024-09-24 17:05:35,963 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_Kcl4NFE6hYIYNW3VDycq37EP/runs/run_3k0ohSRbNNu1euKsRacgrM8a "HTTP/1.1 200 OK"
+2024-09-24 17:05:36,271 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_Kcl4NFE6hYIYNW3VDycq37EP/runs/run_3k0ohSRbNNu1euKsRacgrM8a "HTTP/1.1 200 OK"
+2024-09-24 17:05:36,403 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_Kcl4NFE6hYIYNW3VDycq37EP/runs/run_3k0ohSRbNNu1euKsRacgrM8a "HTTP/1.1 200 OK"
+2024-09-24 17:05:36,538 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_Kcl4NFE6hYIYNW3VDycq37EP/runs/run_3k0ohSRbNNu1euKsRacgrM8a "HTTP/1.1 200 OK"
+2024-09-24 17:05:36,683 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_Kcl4NFE6hYIYNW3VDycq37EP/runs/run_3k0ohSRbNNu1euKsRacgrM8a "HTTP/1.1 200 OK"
+2024-09-24 17:05:36,838 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_Kcl4NFE6hYIYNW3VDycq37EP/runs/run_3k0ohSRbNNu1euKsRacgrM8a "HTTP/1.1 200 OK"
+2024-09-24 17:05:37,047 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_Kcl4NFE6hYIYNW3VDycq37EP/runs/run_3k0ohSRbNNu1euKsRacgrM8a "HTTP/1.1 200 OK"
+2024-09-24 17:05:37,203 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_Kcl4NFE6hYIYNW3VDycq37EP/runs/run_3k0ohSRbNNu1euKsRacgrM8a "HTTP/1.1 200 OK"
+2024-09-24 17:05:37,416 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_Kcl4NFE6hYIYNW3VDycq37EP/messages "HTTP/1.1 200 OK"
+2024-09-24 17:05:37,419 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_cG0qKqKJq7K9j3S2twwPmmGr', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "When it comes to food preferences at social gatherings, which of the following options do you typically prefer?",\n    "type": "multiple choice",\n    "options": {\n        "a": "Hotdogs",\n        "b": "Hamburgers",\n        "c": "Vegetarian/Vegan options",\n        "d": "I enjoy both equally",\n        "e": "I prefer other options"\n    }\n}'), type='text')], created_at=1727211935, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_3k0ohSRbNNu1euKsRacgrM8a', status=None, thread_id='thread_Kcl4NFE6hYIYNW3VDycq37EP'), Message(id='msg_YPNmgmYUFScId6weiy7UgMcc', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "Hotdogs or hamburgers?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727211934, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_Kcl4NFE6hYIYNW3VDycq37EP')], object='list', first_id='msg_cG0qKqKJq7K9j3S2twwPmmGr', last_id='msg_YPNmgmYUFScId6weiy7UgMcc', has_more=False)
+2024-09-24 17:05:37,420 INFO: Transformed question: {'question': 'When it comes to food preferences at social gatherings, which of the following options do you typically prefer?', 'type': 'multiple choice', 'options': {'a': 'Hotdogs', 'b': 'Hamburgers', 'c': 'Vegetarian/Vegan options', 'd': 'I enjoy both equally', 'e': 'I prefer other options'}}
+2024-09-24 17:05:37,420 INFO: Transformed question: {'question': 'When it comes to food preferences at social gatherings, which of the following options do you typically prefer?', 'type': 'multiple choice', 'options': {'a': 'Hotdogs', 'b': 'Hamburgers', 'c': 'Vegetarian/Vegan options', 'd': 'I enjoy both equally', 'e': 'I prefer other options'}}
+2024-09-24 17:05:37,420 INFO: Session after transform: <FileSystemSession {'survey_analysis': {'key_finding': '1. Key Finding: The survey reveals that there is a balanced preference between Mac and Other devices, with PCs slightly behind, and a notable percentage indicating no preference or choosing both Mac and PC.', 'quick_stats': ['2. Quick Stats:', '   - Mac and Other devices each have 30% preference, making them the top choices.', '   - PCs are the preference for 20% of the respondents, indicating a slightly lower popularity.', '   - 10% of respondents either find the question not applicable or prefer both Mac and PC, showing some ambiguity in choices.'], 'interpretation': '3. Interpretation: The equal preference between Mac and Other devices suggests a diverse user base with preferences for different operating systems or brands. The popularity of PCs, although slightly lower, indicates a continued significant user base. The presence of respondents choosing both Mac and PC or indicating the question as not applicable could indicate a segment of users with mixed device usage or a lack of strong preference due to varied needs or experiences. Understanding these preferences can inform product development and marketing strategies tailored to different user segments. 4. Fun Fact: The fact that an equal percentage of respondents prefer Mac and Other devices is intriguing, highlighting the competitive landscape in the computing device market and the strong appeal of both options to consumers.', 'fun_fact': 'No fun fact available.'}, 'last_question': 'Hotdogs or hamburgers?', 'last_transformed_question': {'question': 'When it comes to food preferences at social gatherings, which of the following options do you typically prefer?', 'type': 'multiple choice', 'options': {'a': 'Hotdogs', 'b': 'Hamburgers', 'c': 'Vegetarian/Vegan options', 'd': 'I enjoy both equally', 'e': 'I prefer other options'}}}>
+2024-09-24 17:05:37,423 INFO: 127.0.0.1 - - [24/Sep/2024 17:05:37] "POST /transform-question HTTP/1.1" 200 -
+2024-09-24 17:05:40,388 INFO: Entered approve_question_route
+2024-09-24 17:05:40,389 INFO: Retrieved from session - transformed: {'question': 'When it comes to food preferences at social gatherings, which of the following options do you typically prefer?', 'type': 'multiple choice', 'options': {'a': 'Hotdogs', 'b': 'Hamburgers', 'c': 'Vegetarian/Vegan options', 'd': 'I enjoy both equally', 'e': 'I prefer other options'}}, original: Hotdogs or hamburgers?
+2024-09-24 17:05:40,389 INFO: Saved approved question to data/approved_question_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 17:05:40,392 INFO: Data loaded successfully
+2024-09-24 17:05:40,394 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:05:40,394 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:05:40,394 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:05:40,394 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:05:40,394 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:05:40,394 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:05:40,395 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:05:40,395 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:05:40,395 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:05:40,395 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:05:40,395 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:05:40,395 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:05:40,395 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:05:40,395 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:05:40,395 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:05:40,395 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:05:40,395 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:05:40,395 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:05:40,395 INFO: Options: {'a': 'Walking in the rain', 'b': 'Running in the snow', 'c': 'Neither, I prefer indoor activities', 'd': 'Both, depending on the circumstances', 'e': 'I have no preference'}
+2024-09-24 17:05:40,395 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:05:40,396 INFO: Survey results written to /Users/JudeHoffner/Projects/voxbox-project/backend/data/survey_results.json
+2024-09-24 17:05:40,397 INFO: Saved survey results to data/survey_results_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 17:05:40,397 INFO: Loaded survey data: Question: When it comes to food preferences at social gatherings, which of the following options do you typically prefer?, Aggregate results: 4, Individual responses: 10
+2024-09-24 17:05:40,397 INFO: Analysis prompt formatted successfully.
+2024-09-24 17:05:40,635 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 17:05:40,798 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_y7PdByhDjVOGA7B4sC5WrTXi/messages "HTTP/1.1 200 OK"
+2024-09-24 17:05:41,474 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_y7PdByhDjVOGA7B4sC5WrTXi/runs "HTTP/1.1 200 OK"
+2024-09-24 17:05:41,611 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_y7PdByhDjVOGA7B4sC5WrTXi/runs/run_L9CG36JtkrlYvY0uwMBbmGJ7 "HTTP/1.1 200 OK"
+2024-09-24 17:05:42,773 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_y7PdByhDjVOGA7B4sC5WrTXi/runs/run_L9CG36JtkrlYvY0uwMBbmGJ7 "HTTP/1.1 200 OK"
+2024-09-24 17:05:43,931 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_y7PdByhDjVOGA7B4sC5WrTXi/runs/run_L9CG36JtkrlYvY0uwMBbmGJ7 "HTTP/1.1 200 OK"
+2024-09-24 17:05:45,097 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_y7PdByhDjVOGA7B4sC5WrTXi/runs/run_L9CG36JtkrlYvY0uwMBbmGJ7 "HTTP/1.1 200 OK"
+2024-09-24 17:05:46,283 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_y7PdByhDjVOGA7B4sC5WrTXi/runs/run_L9CG36JtkrlYvY0uwMBbmGJ7 "HTTP/1.1 200 OK"
+2024-09-24 17:05:47,421 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_y7PdByhDjVOGA7B4sC5WrTXi/messages "HTTP/1.1 200 OK"
+2024-09-24 17:05:47,424 INFO: Analysis received from assistant.
+2024-09-24 17:05:47,425 INFO: Parsed analysis data successfully
+2024-09-24 17:05:47,426 INFO: Analysis saved to data/survey_analysis_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 17:05:47,426 INFO: Analysis complete. Results saved and returned.
+2024-09-24 17:05:47,426 INFO: Approved question: {'question': 'When it comes to food preferences at social gatherings, which of the following options do you typically prefer?', 'type': 'multiple choice', 'options': {'a': 'Hotdogs', 'b': 'Hamburgers', 'c': 'Vegetarian/Vegan options', 'd': 'I enjoy both equally', 'e': 'I prefer other options'}}
+2024-09-24 17:05:47,430 INFO: 127.0.0.1 - - [24/Sep/2024 17:05:47] "POST /approve-question HTTP/1.1" 200 -
+2024-09-24 17:16:36,223 INFO: Flask app starting. Testing logging...
+2024-09-24 17:16:37,159 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.4.41:5001
+2024-09-24 17:16:37,160 INFO: [33mPress CTRL+C to quit[0m
+2024-09-24 17:16:37,160 INFO:  * Restarting with stat
+2024-09-24 17:16:37,180 INFO: Flask app starting. Testing logging...
+2024-09-24 17:16:37,752 WARNING:  * Debugger is active!
+2024-09-24 17:16:37,761 INFO:  * Debugger PIN: 873-171-222
+2024-09-24 17:16:43,669 INFO: 127.0.0.1 - - [24/Sep/2024 17:16:43] "GET / HTTP/1.1" 200 -
+2024-09-24 17:16:43,703 INFO: 127.0.0.1 - - [24/Sep/2024 17:16:43] "[36mGET /app.js HTTP/1.1[0m" 304 -
+2024-09-24 17:16:43,703 INFO: 127.0.0.1 - - [24/Sep/2024 17:16:43] "GET /styles.css HTTP/1.1" 200 -
+2024-09-24 17:17:12,155 INFO: Entered transform_question_route
+2024-09-24 17:17:12,156 INFO: Received question: Bicycle or car?
+2024-09-24 17:17:12,156 INFO: Calling transform_question function
+2024-09-24 17:17:12,157 INFO: Transforming question: Bicycle or car?
+2024-09-24 17:17:12,444 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 17:17:12,702 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_BVfBljZFC5ma8MpcHJKQemQZ/messages "HTTP/1.1 200 OK"
+2024-09-24 17:17:13,346 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_BVfBljZFC5ma8MpcHJKQemQZ/runs "HTTP/1.1 200 OK"
+2024-09-24 17:17:13,503 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_BVfBljZFC5ma8MpcHJKQemQZ/runs/run_f23g00PoOP7ljTHVsW7zbr7y "HTTP/1.1 200 OK"
+2024-09-24 17:17:13,655 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_BVfBljZFC5ma8MpcHJKQemQZ/runs/run_f23g00PoOP7ljTHVsW7zbr7y "HTTP/1.1 200 OK"
+2024-09-24 17:17:13,852 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_BVfBljZFC5ma8MpcHJKQemQZ/runs/run_f23g00PoOP7ljTHVsW7zbr7y "HTTP/1.1 200 OK"
+2024-09-24 17:17:14,106 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_BVfBljZFC5ma8MpcHJKQemQZ/runs/run_f23g00PoOP7ljTHVsW7zbr7y "HTTP/1.1 200 OK"
+2024-09-24 17:17:14,261 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_BVfBljZFC5ma8MpcHJKQemQZ/runs/run_f23g00PoOP7ljTHVsW7zbr7y "HTTP/1.1 200 OK"
+2024-09-24 17:17:14,397 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_BVfBljZFC5ma8MpcHJKQemQZ/runs/run_f23g00PoOP7ljTHVsW7zbr7y "HTTP/1.1 200 OK"
+2024-09-24 17:17:14,583 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_BVfBljZFC5ma8MpcHJKQemQZ/runs/run_f23g00PoOP7ljTHVsW7zbr7y "HTTP/1.1 200 OK"
+2024-09-24 17:17:14,731 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_BVfBljZFC5ma8MpcHJKQemQZ/runs/run_f23g00PoOP7ljTHVsW7zbr7y "HTTP/1.1 200 OK"
+2024-09-24 17:17:14,864 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_BVfBljZFC5ma8MpcHJKQemQZ/runs/run_f23g00PoOP7ljTHVsW7zbr7y "HTTP/1.1 200 OK"
+2024-09-24 17:17:15,008 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_BVfBljZFC5ma8MpcHJKQemQZ/messages "HTTP/1.1 200 OK"
+2024-09-24 17:17:15,012 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_7yZNUWCO0ji8ImTYkB7DNaoU', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "When considering transportation options, which do you prefer for your daily commute?",\n    "type": "Multiple choice",\n    "options": {\n        "a": "Bicycle",\n        "b": "Car",\n        "c": "Public transportation",\n        "d": "Walking",\n        "e": "Working from home"\n    }\n}'), type='text')], created_at=1727212634, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_f23g00PoOP7ljTHVsW7zbr7y', status=None, thread_id='thread_BVfBljZFC5ma8MpcHJKQemQZ'), Message(id='msg_n7s0c6kUnsS4rsa6AhkHaYwm', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "Bicycle or car?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727212632, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_BVfBljZFC5ma8MpcHJKQemQZ')], object='list', first_id='msg_7yZNUWCO0ji8ImTYkB7DNaoU', last_id='msg_n7s0c6kUnsS4rsa6AhkHaYwm', has_more=False)
+2024-09-24 17:17:15,013 INFO: Transformed question: {'question': 'When considering transportation options, which do you prefer for your daily commute?', 'type': 'Multiple choice', 'options': {'a': 'Bicycle', 'b': 'Car', 'c': 'Public transportation', 'd': 'Walking', 'e': 'Working from home'}}
+2024-09-24 17:17:15,013 INFO: Transformed question: {'question': 'When considering transportation options, which do you prefer for your daily commute?', 'type': 'Multiple choice', 'options': {'a': 'Bicycle', 'b': 'Car', 'c': 'Public transportation', 'd': 'Walking', 'e': 'Working from home'}}
+2024-09-24 17:17:15,013 INFO: Session after transform: <FileSystemSession {'survey_analysis': {'key_finding': '1. Key Finding: The survey reveals that there is a balanced preference between Mac and Other devices, with PCs slightly behind, and a notable percentage indicating no preference or choosing both Mac and PC.', 'quick_stats': ['2. Quick Stats:', '   - Mac and Other devices each have 30% preference, making them the top choices.', '   - PCs are the preference for 20% of the respondents, indicating a slightly lower popularity.', '   - 10% of respondents either find the question not applicable or prefer both Mac and PC, showing some ambiguity in choices.'], 'interpretation': '3. Interpretation: The equal preference between Mac and Other devices suggests a diverse user base with preferences for different operating systems or brands. The popularity of PCs, although slightly lower, indicates a continued significant user base. The presence of respondents choosing both Mac and PC or indicating the question as not applicable could indicate a segment of users with mixed device usage or a lack of strong preference due to varied needs or experiences. Understanding these preferences can inform product development and marketing strategies tailored to different user segments. 4. Fun Fact: The fact that an equal percentage of respondents prefer Mac and Other devices is intriguing, highlighting the competitive landscape in the computing device market and the strong appeal of both options to consumers.', 'fun_fact': 'No fun fact available.'}, 'last_question': 'Bicycle or car?', 'last_transformed_question': {'question': 'When considering transportation options, which do you prefer for your daily commute?', 'type': 'Multiple choice', 'options': {'a': 'Bicycle', 'b': 'Car', 'c': 'Public transportation', 'd': 'Walking', 'e': 'Working from home'}}}>
+2024-09-24 17:17:15,016 INFO: 127.0.0.1 - - [24/Sep/2024 17:17:15] "POST /transform-question HTTP/1.1" 200 -
+2024-09-24 17:17:17,114 INFO: Entered approve_question_route
+2024-09-24 17:17:17,115 INFO: Retrieved from session - transformed: {'question': 'When considering transportation options, which do you prefer for your daily commute?', 'type': 'Multiple choice', 'options': {'a': 'Bicycle', 'b': 'Car', 'c': 'Public transportation', 'd': 'Walking', 'e': 'Working from home'}}, original: Bicycle or car?
+2024-09-24 17:17:17,117 INFO: Saved approved question to data/approved_question_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 17:17:17,123 INFO: Data loaded successfully
+2024-09-24 17:17:17,128 INFO: Options: {'a': 'Bicycle', 'b': 'Car', 'c': 'Public transportation', 'd': 'Walking', 'e': 'Working from home'}
+2024-09-24 17:17:17,128 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:17:17,129 INFO: Options: {'a': 'Bicycle', 'b': 'Car', 'c': 'Public transportation', 'd': 'Walking', 'e': 'Working from home'}
+2024-09-24 17:17:17,129 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:17:17,129 INFO: Options: {'a': 'Bicycle', 'b': 'Car', 'c': 'Public transportation', 'd': 'Walking', 'e': 'Working from home'}
+2024-09-24 17:17:17,129 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:17:17,130 INFO: Options: {'a': 'Bicycle', 'b': 'Car', 'c': 'Public transportation', 'd': 'Walking', 'e': 'Working from home'}
+2024-09-24 17:17:17,130 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:17:17,130 INFO: Options: {'a': 'Bicycle', 'b': 'Car', 'c': 'Public transportation', 'd': 'Walking', 'e': 'Working from home'}
+2024-09-24 17:17:17,130 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:17:17,130 INFO: Options: {'a': 'Bicycle', 'b': 'Car', 'c': 'Public transportation', 'd': 'Walking', 'e': 'Working from home'}
+2024-09-24 17:17:17,130 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:17:17,130 INFO: Options: {'a': 'Bicycle', 'b': 'Car', 'c': 'Public transportation', 'd': 'Walking', 'e': 'Working from home'}
+2024-09-24 17:17:17,130 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:17:17,131 INFO: Options: {'a': 'Bicycle', 'b': 'Car', 'c': 'Public transportation', 'd': 'Walking', 'e': 'Working from home'}
+2024-09-24 17:17:17,131 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:17:17,131 INFO: Options: {'a': 'Bicycle', 'b': 'Car', 'c': 'Public transportation', 'd': 'Walking', 'e': 'Working from home'}
+2024-09-24 17:17:17,131 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:17:17,131 INFO: Options: {'a': 'Bicycle', 'b': 'Car', 'c': 'Public transportation', 'd': 'Walking', 'e': 'Working from home'}
+2024-09-24 17:17:17,131 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:17:17,132 INFO: Survey results written to /Users/JudeHoffner/Projects/voxbox-project/backend/data/survey_results_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 17:17:17,133 INFO: Saved survey results to data/survey_results_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 17:17:17,133 INFO: Loaded survey data: Question: When considering transportation options, which do you prefer for your daily commute?, Aggregate results: 5, Individual responses: 10
+2024-09-24 17:17:17,133 INFO: Analysis prompt formatted successfully.
+2024-09-24 17:17:17,324 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 17:17:17,521 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_yNukKJSmVvBH9CR0SiLXILe0/messages "HTTP/1.1 200 OK"
+2024-09-24 17:17:18,920 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_yNukKJSmVvBH9CR0SiLXILe0/runs "HTTP/1.1 200 OK"
+2024-09-24 17:17:19,055 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_yNukKJSmVvBH9CR0SiLXILe0/runs/run_w3WW3oax75Rs7c6ap3jeYLP4 "HTTP/1.1 200 OK"
+2024-09-24 17:17:20,251 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_yNukKJSmVvBH9CR0SiLXILe0/runs/run_w3WW3oax75Rs7c6ap3jeYLP4 "HTTP/1.1 200 OK"
+2024-09-24 17:17:21,401 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_yNukKJSmVvBH9CR0SiLXILe0/runs/run_w3WW3oax75Rs7c6ap3jeYLP4 "HTTP/1.1 200 OK"
+2024-09-24 17:17:22,555 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_yNukKJSmVvBH9CR0SiLXILe0/runs/run_w3WW3oax75Rs7c6ap3jeYLP4 "HTTP/1.1 200 OK"
+2024-09-24 17:17:23,723 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_yNukKJSmVvBH9CR0SiLXILe0/messages "HTTP/1.1 200 OK"
+2024-09-24 17:17:23,726 INFO: Analysis received from assistant.
+2024-09-24 17:17:23,726 INFO: Parsed analysis data successfully
+2024-09-24 17:17:23,727 INFO: Analysis saved to data/survey_analysis_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 17:17:23,727 INFO: Analysis complete. Results saved and returned.
+2024-09-24 17:17:23,727 INFO: Approved question: {'question': 'When considering transportation options, which do you prefer for your daily commute?', 'type': 'Multiple choice', 'options': {'a': 'Bicycle', 'b': 'Car', 'c': 'Public transportation', 'd': 'Walking', 'e': 'Working from home'}}
+2024-09-24 17:17:23,730 INFO: 127.0.0.1 - - [24/Sep/2024 17:17:23] "POST /approve-question HTTP/1.1" 200 -
+2024-09-24 17:17:38,841 INFO: Entered transform_question_route
+2024-09-24 17:17:38,842 INFO: Received question: Shirts or skins?
+2024-09-24 17:17:38,842 INFO: Calling transform_question function
+2024-09-24 17:17:38,842 INFO: Transforming question: Shirts or skins?
+2024-09-24 17:17:39,097 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 17:17:39,284 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_LL5sBcgrm85HIkbMmdcQt3le/messages "HTTP/1.1 200 OK"
+2024-09-24 17:17:39,709 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_LL5sBcgrm85HIkbMmdcQt3le/runs "HTTP/1.1 200 OK"
+2024-09-24 17:17:39,906 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_LL5sBcgrm85HIkbMmdcQt3le/runs/run_itC7g5XD57e9TUHV2UaqgCwo "HTTP/1.1 200 OK"
+2024-09-24 17:17:40,045 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_LL5sBcgrm85HIkbMmdcQt3le/runs/run_itC7g5XD57e9TUHV2UaqgCwo "HTTP/1.1 200 OK"
+2024-09-24 17:17:40,202 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_LL5sBcgrm85HIkbMmdcQt3le/runs/run_itC7g5XD57e9TUHV2UaqgCwo "HTTP/1.1 200 OK"
+2024-09-24 17:17:40,361 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_LL5sBcgrm85HIkbMmdcQt3le/runs/run_itC7g5XD57e9TUHV2UaqgCwo "HTTP/1.1 200 OK"
+2024-09-24 17:17:40,507 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_LL5sBcgrm85HIkbMmdcQt3le/runs/run_itC7g5XD57e9TUHV2UaqgCwo "HTTP/1.1 200 OK"
+2024-09-24 17:17:40,660 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_LL5sBcgrm85HIkbMmdcQt3le/runs/run_itC7g5XD57e9TUHV2UaqgCwo "HTTP/1.1 200 OK"
+2024-09-24 17:17:40,796 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_LL5sBcgrm85HIkbMmdcQt3le/runs/run_itC7g5XD57e9TUHV2UaqgCwo "HTTP/1.1 200 OK"
+2024-09-24 17:17:40,943 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_LL5sBcgrm85HIkbMmdcQt3le/runs/run_itC7g5XD57e9TUHV2UaqgCwo "HTTP/1.1 200 OK"
+2024-09-24 17:17:41,066 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_LL5sBcgrm85HIkbMmdcQt3le/runs/run_itC7g5XD57e9TUHV2UaqgCwo "HTTP/1.1 200 OK"
+2024-09-24 17:17:41,239 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_LL5sBcgrm85HIkbMmdcQt3le/runs/run_itC7g5XD57e9TUHV2UaqgCwo "HTTP/1.1 200 OK"
+2024-09-24 17:17:41,371 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_LL5sBcgrm85HIkbMmdcQt3le/runs/run_itC7g5XD57e9TUHV2UaqgCwo "HTTP/1.1 200 OK"
+2024-09-24 17:17:41,655 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_LL5sBcgrm85HIkbMmdcQt3le/runs/run_itC7g5XD57e9TUHV2UaqgCwo "HTTP/1.1 200 OK"
+2024-09-24 17:17:41,825 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_LL5sBcgrm85HIkbMmdcQt3le/runs/run_itC7g5XD57e9TUHV2UaqgCwo "HTTP/1.1 200 OK"
+2024-09-24 17:17:41,967 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_LL5sBcgrm85HIkbMmdcQt3le/messages "HTTP/1.1 200 OK"
+2024-09-24 17:17:41,971 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_f8UqxSOm30PaZntwaMLBhzQD', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "Which type of apparel do you prefer for sports activities?",\n    "type": "Multiple choice",\n    "options": {\n        "a": "Shirts",\n        "b": "Skins",\n        "c": "No preference",\n        "d": "Depends on the activity",\n        "e": "Other"\n    }\n}'), type='text')], created_at=1727212660, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_itC7g5XD57e9TUHV2UaqgCwo', status=None, thread_id='thread_LL5sBcgrm85HIkbMmdcQt3le'), Message(id='msg_3dfKsKq6F7xZyJCd7RTWi1Qt', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "Shirts or skins?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727212659, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_LL5sBcgrm85HIkbMmdcQt3le')], object='list', first_id='msg_f8UqxSOm30PaZntwaMLBhzQD', last_id='msg_3dfKsKq6F7xZyJCd7RTWi1Qt', has_more=False)
+2024-09-24 17:17:41,972 INFO: Transformed question: {'question': 'Which type of apparel do you prefer for sports activities?', 'type': 'Multiple choice', 'options': {'a': 'Shirts', 'b': 'Skins', 'c': 'No preference', 'd': 'Depends on the activity', 'e': 'Other'}}
+2024-09-24 17:17:41,972 INFO: Transformed question: {'question': 'Which type of apparel do you prefer for sports activities?', 'type': 'Multiple choice', 'options': {'a': 'Shirts', 'b': 'Skins', 'c': 'No preference', 'd': 'Depends on the activity', 'e': 'Other'}}
+2024-09-24 17:17:41,972 INFO: Session after transform: <FileSystemSession {'survey_analysis': {'key_finding': '1. Key Finding: The survey reveals that there is a balanced preference between Mac and Other devices, with PCs slightly behind, and a notable percentage indicating no preference or choosing both Mac and PC.', 'quick_stats': ['2. Quick Stats:', '   - Mac and Other devices each have 30% preference, making them the top choices.', '   - PCs are the preference for 20% of the respondents, indicating a slightly lower popularity.', '   - 10% of respondents either find the question not applicable or prefer both Mac and PC, showing some ambiguity in choices.'], 'interpretation': '3. Interpretation: The equal preference between Mac and Other devices suggests a diverse user base with preferences for different operating systems or brands. The popularity of PCs, although slightly lower, indicates a continued significant user base. The presence of respondents choosing both Mac and PC or indicating the question as not applicable could indicate a segment of users with mixed device usage or a lack of strong preference due to varied needs or experiences. Understanding these preferences can inform product development and marketing strategies tailored to different user segments. 4. Fun Fact: The fact that an equal percentage of respondents prefer Mac and Other devices is intriguing, highlighting the competitive landscape in the computing device market and the strong appeal of both options to consumers.', 'fun_fact': 'No fun fact available.'}, 'last_question': 'Shirts or skins?', 'last_transformed_question': {'question': 'Which type of apparel do you prefer for sports activities?', 'type': 'Multiple choice', 'options': {'a': 'Shirts', 'b': 'Skins', 'c': 'No preference', 'd': 'Depends on the activity', 'e': 'Other'}}}>
+2024-09-24 17:17:41,976 INFO: 127.0.0.1 - - [24/Sep/2024 17:17:41] "POST /transform-question HTTP/1.1" 200 -
+2024-09-24 17:17:47,369 INFO: Entered transform_question_route
+2024-09-24 17:17:47,370 INFO: Received question: Shirts or skins?
+2024-09-24 17:17:47,370 INFO: Calling transform_question function
+2024-09-24 17:17:47,370 INFO: Transforming question: Shirts or skins?
+2024-09-24 17:17:47,630 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 17:17:47,820 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_T2LHJjDTRZi4jiPZyFW1Bm0Q/messages "HTTP/1.1 200 OK"
+2024-09-24 17:17:48,217 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_T2LHJjDTRZi4jiPZyFW1Bm0Q/runs "HTTP/1.1 200 OK"
+2024-09-24 17:17:48,413 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_T2LHJjDTRZi4jiPZyFW1Bm0Q/runs/run_f06KJBhTzjaSlf9NlIAoPlGg "HTTP/1.1 200 OK"
+2024-09-24 17:17:48,565 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_T2LHJjDTRZi4jiPZyFW1Bm0Q/runs/run_f06KJBhTzjaSlf9NlIAoPlGg "HTTP/1.1 200 OK"
+2024-09-24 17:17:48,769 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_T2LHJjDTRZi4jiPZyFW1Bm0Q/runs/run_f06KJBhTzjaSlf9NlIAoPlGg "HTTP/1.1 200 OK"
+2024-09-24 17:17:48,904 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_T2LHJjDTRZi4jiPZyFW1Bm0Q/runs/run_f06KJBhTzjaSlf9NlIAoPlGg "HTTP/1.1 200 OK"
+2024-09-24 17:17:49,038 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_T2LHJjDTRZi4jiPZyFW1Bm0Q/runs/run_f06KJBhTzjaSlf9NlIAoPlGg "HTTP/1.1 200 OK"
+2024-09-24 17:17:49,179 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_T2LHJjDTRZi4jiPZyFW1Bm0Q/runs/run_f06KJBhTzjaSlf9NlIAoPlGg "HTTP/1.1 200 OK"
+2024-09-24 17:17:49,318 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_T2LHJjDTRZi4jiPZyFW1Bm0Q/runs/run_f06KJBhTzjaSlf9NlIAoPlGg "HTTP/1.1 200 OK"
+2024-09-24 17:17:49,551 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_T2LHJjDTRZi4jiPZyFW1Bm0Q/runs/run_f06KJBhTzjaSlf9NlIAoPlGg "HTTP/1.1 200 OK"
+2024-09-24 17:17:49,694 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_T2LHJjDTRZi4jiPZyFW1Bm0Q/runs/run_f06KJBhTzjaSlf9NlIAoPlGg "HTTP/1.1 200 OK"
+2024-09-24 17:17:49,857 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_T2LHJjDTRZi4jiPZyFW1Bm0Q/runs/run_f06KJBhTzjaSlf9NlIAoPlGg "HTTP/1.1 200 OK"
+2024-09-24 17:17:50,012 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_T2LHJjDTRZi4jiPZyFW1Bm0Q/messages "HTTP/1.1 200 OK"
+2024-09-24 17:17:50,016 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_a1DcjlB39UgiBYQ3uxmgRZsA', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "Which type of team uniform do you prefer for sports games?",\n    "type": "Multiple Choice",\n    "options": {\n        "a": "Shirts",\n        "b": "Skins",\n        "c": "Doesn\'t matter, as long as the team is easily distinguishable",\n        "d": "Not sure / No preference"\n    }\n}'), type='text')], created_at=1727212669, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_f06KJBhTzjaSlf9NlIAoPlGg', status=None, thread_id='thread_T2LHJjDTRZi4jiPZyFW1Bm0Q'), Message(id='msg_kDgjT4fcYUyWjEzyDzgvgFow', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "Shirts or skins?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727212667, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_T2LHJjDTRZi4jiPZyFW1Bm0Q')], object='list', first_id='msg_a1DcjlB39UgiBYQ3uxmgRZsA', last_id='msg_kDgjT4fcYUyWjEzyDzgvgFow', has_more=False)
+2024-09-24 17:17:50,016 INFO: Transformed question: {'question': 'Which type of team uniform do you prefer for sports games?', 'type': 'Multiple Choice', 'options': {'a': 'Shirts', 'b': 'Skins', 'c': "Doesn't matter, as long as the team is easily distinguishable", 'd': 'Not sure / No preference'}}
+2024-09-24 17:17:50,016 INFO: Transformed question: {'question': 'Which type of team uniform do you prefer for sports games?', 'type': 'Multiple Choice', 'options': {'a': 'Shirts', 'b': 'Skins', 'c': "Doesn't matter, as long as the team is easily distinguishable", 'd': 'Not sure / No preference'}}
+2024-09-24 17:17:50,017 INFO: Session after transform: <FileSystemSession {'survey_analysis': {'key_finding': '1. Key Finding: The survey reveals that there is a balanced preference between Mac and Other devices, with PCs slightly behind, and a notable percentage indicating no preference or choosing both Mac and PC.', 'quick_stats': ['2. Quick Stats:', '   - Mac and Other devices each have 30% preference, making them the top choices.', '   - PCs are the preference for 20% of the respondents, indicating a slightly lower popularity.', '   - 10% of respondents either find the question not applicable or prefer both Mac and PC, showing some ambiguity in choices.'], 'interpretation': '3. Interpretation: The equal preference between Mac and Other devices suggests a diverse user base with preferences for different operating systems or brands. The popularity of PCs, although slightly lower, indicates a continued significant user base. The presence of respondents choosing both Mac and PC or indicating the question as not applicable could indicate a segment of users with mixed device usage or a lack of strong preference due to varied needs or experiences. Understanding these preferences can inform product development and marketing strategies tailored to different user segments. 4. Fun Fact: The fact that an equal percentage of respondents prefer Mac and Other devices is intriguing, highlighting the competitive landscape in the computing device market and the strong appeal of both options to consumers.', 'fun_fact': 'No fun fact available.'}, 'last_question': 'Shirts or skins?', 'last_transformed_question': {'question': 'Which type of team uniform do you prefer for sports games?', 'type': 'Multiple Choice', 'options': {'a': 'Shirts', 'b': 'Skins', 'c': "Doesn't matter, as long as the team is easily distinguishable", 'd': 'Not sure / No preference'}}}>
+2024-09-24 17:17:50,019 INFO: 127.0.0.1 - - [24/Sep/2024 17:17:50] "POST /transform-question HTTP/1.1" 200 -
+2024-09-24 17:17:51,979 INFO: Entered approve_question_route
+2024-09-24 17:17:51,980 INFO: Retrieved from session - transformed: {'question': 'Which type of team uniform do you prefer for sports games?', 'type': 'Multiple Choice', 'options': {'a': 'Shirts', 'b': 'Skins', 'c': "Doesn't matter, as long as the team is easily distinguishable", 'd': 'Not sure / No preference'}}, original: Shirts or skins?
+2024-09-24 17:17:51,981 INFO: Saved approved question to data/approved_question_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 17:17:51,984 INFO: Data loaded successfully
+2024-09-24 17:17:51,985 INFO: Options: {'a': 'Shirts', 'b': 'Skins', 'c': "Doesn't matter, as long as the team is easily distinguishable", 'd': 'Not sure / No preference'}
+2024-09-24 17:17:51,985 INFO: Weights: [0.25, 0.25, 0.25, 0.25]
+2024-09-24 17:17:51,985 INFO: Options: {'a': 'Shirts', 'b': 'Skins', 'c': "Doesn't matter, as long as the team is easily distinguishable", 'd': 'Not sure / No preference'}
+2024-09-24 17:17:51,985 INFO: Weights: [0.25, 0.25, 0.25, 0.25]
+2024-09-24 17:17:51,985 INFO: Options: {'a': 'Shirts', 'b': 'Skins', 'c': "Doesn't matter, as long as the team is easily distinguishable", 'd': 'Not sure / No preference'}
+2024-09-24 17:17:51,985 INFO: Weights: [0.25, 0.25, 0.25, 0.25]
+2024-09-24 17:17:51,986 INFO: Options: {'a': 'Shirts', 'b': 'Skins', 'c': "Doesn't matter, as long as the team is easily distinguishable", 'd': 'Not sure / No preference'}
+2024-09-24 17:17:51,986 INFO: Weights: [0.25, 0.25, 0.25, 0.25]
+2024-09-24 17:17:51,986 INFO: Options: {'a': 'Shirts', 'b': 'Skins', 'c': "Doesn't matter, as long as the team is easily distinguishable", 'd': 'Not sure / No preference'}
+2024-09-24 17:17:51,986 INFO: Weights: [0.25, 0.25, 0.25, 0.25]
+2024-09-24 17:17:51,986 INFO: Options: {'a': 'Shirts', 'b': 'Skins', 'c': "Doesn't matter, as long as the team is easily distinguishable", 'd': 'Not sure / No preference'}
+2024-09-24 17:17:51,986 INFO: Weights: [0.25, 0.25, 0.25, 0.25]
+2024-09-24 17:17:51,986 INFO: Options: {'a': 'Shirts', 'b': 'Skins', 'c': "Doesn't matter, as long as the team is easily distinguishable", 'd': 'Not sure / No preference'}
+2024-09-24 17:17:51,986 INFO: Weights: [0.25, 0.25, 0.25, 0.25]
+2024-09-24 17:17:51,986 INFO: Options: {'a': 'Shirts', 'b': 'Skins', 'c': "Doesn't matter, as long as the team is easily distinguishable", 'd': 'Not sure / No preference'}
+2024-09-24 17:17:51,986 INFO: Weights: [0.25, 0.25, 0.25, 0.25]
+2024-09-24 17:17:51,987 INFO: Options: {'a': 'Shirts', 'b': 'Skins', 'c': "Doesn't matter, as long as the team is easily distinguishable", 'd': 'Not sure / No preference'}
+2024-09-24 17:17:51,987 INFO: Weights: [0.25, 0.25, 0.25, 0.25]
+2024-09-24 17:17:51,987 INFO: Options: {'a': 'Shirts', 'b': 'Skins', 'c': "Doesn't matter, as long as the team is easily distinguishable", 'd': 'Not sure / No preference'}
+2024-09-24 17:17:51,987 INFO: Weights: [0.25, 0.25, 0.25, 0.25]
+2024-09-24 17:17:51,988 INFO: Survey results written to /Users/JudeHoffner/Projects/voxbox-project/backend/data/survey_results_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 17:17:51,989 INFO: Saved survey results to data/survey_results_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 17:17:51,989 INFO: Loaded survey data: Question: Which type of team uniform do you prefer for sports games?, Aggregate results: 3, Individual responses: 10
+2024-09-24 17:17:51,989 INFO: Analysis prompt formatted successfully.
+2024-09-24 17:17:52,188 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 17:17:52,326 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_tZwMpeXIyi9372PTbSXvWGvS/messages "HTTP/1.1 200 OK"
+2024-09-24 17:17:52,907 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_tZwMpeXIyi9372PTbSXvWGvS/runs "HTTP/1.1 200 OK"
+2024-09-24 17:17:53,100 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_tZwMpeXIyi9372PTbSXvWGvS/runs/run_cE6TtWlkwlXIoptHjNdQrRpj "HTTP/1.1 200 OK"
+2024-09-24 17:17:54,229 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_tZwMpeXIyi9372PTbSXvWGvS/runs/run_cE6TtWlkwlXIoptHjNdQrRpj "HTTP/1.1 200 OK"
+2024-09-24 17:17:55,374 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_tZwMpeXIyi9372PTbSXvWGvS/runs/run_cE6TtWlkwlXIoptHjNdQrRpj "HTTP/1.1 200 OK"
+2024-09-24 17:17:56,573 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_tZwMpeXIyi9372PTbSXvWGvS/runs/run_cE6TtWlkwlXIoptHjNdQrRpj "HTTP/1.1 200 OK"
+2024-09-24 17:17:57,747 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_tZwMpeXIyi9372PTbSXvWGvS/messages "HTTP/1.1 200 OK"
+2024-09-24 17:17:57,751 INFO: Analysis received from assistant.
+2024-09-24 17:17:57,751 INFO: Parsed analysis data successfully
+2024-09-24 17:17:57,752 INFO: Analysis saved to data/survey_analysis_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 17:17:57,752 INFO: Analysis complete. Results saved and returned.
+2024-09-24 17:17:57,752 INFO: Approved question: {'question': 'Which type of team uniform do you prefer for sports games?', 'type': 'Multiple Choice', 'options': {'a': 'Shirts', 'b': 'Skins', 'c': "Doesn't matter, as long as the team is easily distinguishable", 'd': 'Not sure / No preference'}}
+2024-09-24 17:17:57,755 INFO: 127.0.0.1 - - [24/Sep/2024 17:17:57] "POST /approve-question HTTP/1.1" 200 -
+2024-09-24 17:18:19,614 INFO: 127.0.0.1 - - [24/Sep/2024 17:18:19] "GET / HTTP/1.1" 200 -
+2024-09-24 17:18:19,658 INFO: 127.0.0.1 - - [24/Sep/2024 17:18:19] "GET /styles.css HTTP/1.1" 200 -
+2024-09-24 17:18:19,664 INFO: 127.0.0.1 - - [24/Sep/2024 17:18:19] "GET /app.js HTTP/1.1" 200 -
+2024-09-24 17:18:34,826 INFO: Entered transform_question_route
+2024-09-24 17:18:34,827 INFO: Received question: Married or single?
+2024-09-24 17:18:34,827 INFO: Calling transform_question function
+2024-09-24 17:18:34,827 INFO: Transforming question: Married or single?
+2024-09-24 17:18:35,034 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 17:18:35,190 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_ssRiifQjaEsHoRXEzAJrgPph/messages "HTTP/1.1 200 OK"
+2024-09-24 17:18:35,722 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_ssRiifQjaEsHoRXEzAJrgPph/runs "HTTP/1.1 200 OK"
+2024-09-24 17:18:35,918 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ssRiifQjaEsHoRXEzAJrgPph/runs/run_v8JezusQgIhmamHV54M1Zi49 "HTTP/1.1 200 OK"
+2024-09-24 17:18:36,102 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ssRiifQjaEsHoRXEzAJrgPph/runs/run_v8JezusQgIhmamHV54M1Zi49 "HTTP/1.1 200 OK"
+2024-09-24 17:18:36,311 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ssRiifQjaEsHoRXEzAJrgPph/runs/run_v8JezusQgIhmamHV54M1Zi49 "HTTP/1.1 200 OK"
+2024-09-24 17:18:36,497 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ssRiifQjaEsHoRXEzAJrgPph/runs/run_v8JezusQgIhmamHV54M1Zi49 "HTTP/1.1 200 OK"
+2024-09-24 17:18:36,646 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ssRiifQjaEsHoRXEzAJrgPph/runs/run_v8JezusQgIhmamHV54M1Zi49 "HTTP/1.1 200 OK"
+2024-09-24 17:18:36,807 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ssRiifQjaEsHoRXEzAJrgPph/runs/run_v8JezusQgIhmamHV54M1Zi49 "HTTP/1.1 200 OK"
+2024-09-24 17:18:36,994 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ssRiifQjaEsHoRXEzAJrgPph/runs/run_v8JezusQgIhmamHV54M1Zi49 "HTTP/1.1 200 OK"
+2024-09-24 17:18:37,198 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ssRiifQjaEsHoRXEzAJrgPph/runs/run_v8JezusQgIhmamHV54M1Zi49 "HTTP/1.1 200 OK"
+2024-09-24 17:18:37,384 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ssRiifQjaEsHoRXEzAJrgPph/messages "HTTP/1.1 200 OK"
+2024-09-24 17:18:37,387 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_lMg7WNT8NLXegCvY1pU5kU2k', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "What is your current marital status?",\n    "type": "Multiple choice",\n    "options": {\n        "a": "Married",\n        "b": "Single",\n        "c": "Divorced",\n        "d": "Widowed",\n        "e": "Prefer not to say"\n    }\n}'), type='text')], created_at=1727212716, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_v8JezusQgIhmamHV54M1Zi49', status=None, thread_id='thread_ssRiifQjaEsHoRXEzAJrgPph'), Message(id='msg_tkkeT5WjkOIPrBVGQst20Sn1', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "Married or single?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727212715, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_ssRiifQjaEsHoRXEzAJrgPph')], object='list', first_id='msg_lMg7WNT8NLXegCvY1pU5kU2k', last_id='msg_tkkeT5WjkOIPrBVGQst20Sn1', has_more=False)
+2024-09-24 17:18:37,387 INFO: Transformed question: {'question': 'What is your current marital status?', 'type': 'Multiple choice', 'options': {'a': 'Married', 'b': 'Single', 'c': 'Divorced', 'd': 'Widowed', 'e': 'Prefer not to say'}}
+2024-09-24 17:18:37,388 INFO: Transformed question: {'question': 'What is your current marital status?', 'type': 'Multiple choice', 'options': {'a': 'Married', 'b': 'Single', 'c': 'Divorced', 'd': 'Widowed', 'e': 'Prefer not to say'}}
+2024-09-24 17:18:37,388 INFO: Session after transform: <FileSystemSession {'last_question': 'Married or single?', 'last_transformed_question': {'question': 'What is your current marital status?', 'type': 'Multiple choice', 'options': {'a': 'Married', 'b': 'Single', 'c': 'Divorced', 'd': 'Widowed', 'e': 'Prefer not to say'}}}>
+2024-09-24 17:18:37,392 INFO: 127.0.0.1 - - [24/Sep/2024 17:18:37] "POST /transform-question HTTP/1.1" 200 -
+2024-09-24 17:18:39,811 INFO: Entered approve_question_route
+2024-09-24 17:18:39,812 INFO: Retrieved from session - transformed: {'question': 'What is your current marital status?', 'type': 'Multiple choice', 'options': {'a': 'Married', 'b': 'Single', 'c': 'Divorced', 'd': 'Widowed', 'e': 'Prefer not to say'}}, original: Married or single?
+2024-09-24 17:18:39,814 INFO: Saved approved question to data/approved_question_3g2ZghhmBDEFi_OKCk_qmDKMzIwD4gfiWmN64ZpfpHw.json
+2024-09-24 17:18:39,819 INFO: Data loaded successfully
+2024-09-24 17:18:39,821 INFO: Options: {'a': 'Married', 'b': 'Single', 'c': 'Divorced', 'd': 'Widowed', 'e': 'Prefer not to say'}
+2024-09-24 17:18:39,821 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:18:39,821 INFO: Options: {'a': 'Married', 'b': 'Single', 'c': 'Divorced', 'd': 'Widowed', 'e': 'Prefer not to say'}
+2024-09-24 17:18:39,821 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:18:39,821 INFO: Options: {'a': 'Married', 'b': 'Single', 'c': 'Divorced', 'd': 'Widowed', 'e': 'Prefer not to say'}
+2024-09-24 17:18:39,821 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:18:39,822 INFO: Options: {'a': 'Married', 'b': 'Single', 'c': 'Divorced', 'd': 'Widowed', 'e': 'Prefer not to say'}
+2024-09-24 17:18:39,822 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:18:39,822 INFO: Options: {'a': 'Married', 'b': 'Single', 'c': 'Divorced', 'd': 'Widowed', 'e': 'Prefer not to say'}
+2024-09-24 17:18:39,822 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:18:39,822 INFO: Options: {'a': 'Married', 'b': 'Single', 'c': 'Divorced', 'd': 'Widowed', 'e': 'Prefer not to say'}
+2024-09-24 17:18:39,822 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:18:39,822 INFO: Options: {'a': 'Married', 'b': 'Single', 'c': 'Divorced', 'd': 'Widowed', 'e': 'Prefer not to say'}
+2024-09-24 17:18:39,822 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:18:39,822 INFO: Options: {'a': 'Married', 'b': 'Single', 'c': 'Divorced', 'd': 'Widowed', 'e': 'Prefer not to say'}
+2024-09-24 17:18:39,823 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:18:39,823 INFO: Options: {'a': 'Married', 'b': 'Single', 'c': 'Divorced', 'd': 'Widowed', 'e': 'Prefer not to say'}
+2024-09-24 17:18:39,823 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:18:39,823 INFO: Options: {'a': 'Married', 'b': 'Single', 'c': 'Divorced', 'd': 'Widowed', 'e': 'Prefer not to say'}
+2024-09-24 17:18:39,824 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 17:18:39,825 INFO: Survey results written to /Users/JudeHoffner/Projects/voxbox-project/backend/data/survey_results_3g2ZghhmBDEFi_OKCk_qmDKMzIwD4gfiWmN64ZpfpHw.json
+2024-09-24 17:18:39,826 INFO: Saved survey results to data/survey_results_3g2ZghhmBDEFi_OKCk_qmDKMzIwD4gfiWmN64ZpfpHw.json
+2024-09-24 17:18:39,827 INFO: Loaded survey data: Question: What is your current marital status?, Aggregate results: 4, Individual responses: 10
+2024-09-24 17:18:39,827 INFO: Analysis prompt formatted successfully.
+2024-09-24 17:18:40,033 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 17:18:40,258 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_V90MpZx0DNbteKzFX3ifqPVH/messages "HTTP/1.1 200 OK"
+2024-09-24 17:18:40,756 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_V90MpZx0DNbteKzFX3ifqPVH/runs "HTTP/1.1 200 OK"
+2024-09-24 17:18:40,976 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_V90MpZx0DNbteKzFX3ifqPVH/runs/run_2J3xejj7ImObihPQRR50g1zI "HTTP/1.1 200 OK"
+2024-09-24 17:18:42,207 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_V90MpZx0DNbteKzFX3ifqPVH/runs/run_2J3xejj7ImObihPQRR50g1zI "HTTP/1.1 200 OK"
+2024-09-24 17:18:43,382 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_V90MpZx0DNbteKzFX3ifqPVH/runs/run_2J3xejj7ImObihPQRR50g1zI "HTTP/1.1 200 OK"
+2024-09-24 17:18:44,594 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_V90MpZx0DNbteKzFX3ifqPVH/runs/run_2J3xejj7ImObihPQRR50g1zI "HTTP/1.1 200 OK"
+2024-09-24 17:18:45,760 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_V90MpZx0DNbteKzFX3ifqPVH/messages "HTTP/1.1 200 OK"
+2024-09-24 17:18:45,762 INFO: Analysis received from assistant.
+2024-09-24 17:18:45,762 INFO: Parsed analysis data successfully
+2024-09-24 17:18:45,763 INFO: Analysis saved to data/survey_analysis_3g2ZghhmBDEFi_OKCk_qmDKMzIwD4gfiWmN64ZpfpHw.json
+2024-09-24 17:18:45,763 INFO: Analysis complete. Results saved and returned.
+2024-09-24 17:18:45,763 INFO: Approved question: {'question': 'What is your current marital status?', 'type': 'Multiple choice', 'options': {'a': 'Married', 'b': 'Single', 'c': 'Divorced', 'd': 'Widowed', 'e': 'Prefer not to say'}}
+2024-09-24 17:18:45,765 INFO: 127.0.0.1 - - [24/Sep/2024 17:18:45] "POST /approve-question HTTP/1.1" 200 -

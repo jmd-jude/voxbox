@@ -1,14 +1,14 @@
 {
-  "original": "Rain or shine or fog?",
+  "original": "Is it better to walk in the rain or run in the snow?",
   "transformed": {
-    "question": "Which type of weather do you prefer the most?",
-    "type": "multiple choice",
+    "question": "When considering different weather conditions, which activity do you prefer?",
+    "type": "Multiple Choice",
     "options": {
-      "a": "Rain",
-      "b": "Sunshine",
-      "c": "Fog",
-      "d": "None of the above",
-      "e": "All of the above"
+      "a": "Walking in the rain",
+      "b": "Running in the snow",
+      "c": "Neither, I prefer indoor activities",
+      "d": "Both, depending on the circumstances",
+      "e": "I have no preference"
     }
   }
 }

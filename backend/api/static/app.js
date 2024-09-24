@@ -102,35 +102,26 @@ document.addEventListener('DOMContentLoaded', () => {
     function displayResults(data) {
         const resultsContent = document.getElementById('results-content');
         resultsContent.innerHTML = ''; // Clear previous results
-    
+
         // Display key finding
         const keyFinding = document.createElement('div');
-        keyFinding.innerHTML = `<h3>Key Finding</h3><p>${data.analysis.key_finding.replace(/^\d+\.\s*Key Finding:\s*/, '')}</p>`;
+        keyFinding.innerHTML = `<h3>Key Finding</h3><p>${data.analysis.key_finding}</p>`;
         resultsContent.appendChild(keyFinding);
-    
+
         // Display quick stats
         const quickStats = document.createElement('div');
-        quickStats.innerHTML = `<h3>Quick Stats</h3><ul>${data.analysis.quick_stats.map(stat => `<li>${stat.replace(/^\d+\.\s*Quick Stats:\s*-?\s*/, '')}</li>`).join('')}</ul>`;
+        quickStats.innerHTML = `<h3>Quick Stats</h3><ul>${data.analysis.quick_stats.map(stat => `<li>${stat}</li>`).join('')}</ul>`;
         resultsContent.appendChild(quickStats);
+
+        // Display interpretation
+        const interpretation = document.createElement('div');
+        interpretation.innerHTML = `<h3>Deep Thoughts</h3><p>${data.analysis.interpretation}</p>`;
+        resultsContent.appendChild(interpretation);
+
+        // Display fun fact
+        const funFact = document.createElement('div');
+        funFact.innerHTML = `<h3>Fun Fact</h3><p>${data.analysis.fun_fact}</p>`;
+        resultsContent.appendChild(funFact);
     
-        // Extract Fun Fact from Deep Thoughts and display Deep Thoughts
-        let deepThoughtsText = data.analysis.interpretation;
-        let funFactText = '';
-        const funFactMatch = deepThoughtsText.match(/(\d+\.\s*Fun Fact:.*$)/s);
-        if (funFactMatch) {
-            funFactText = funFactMatch[1];
-            deepThoughtsText = deepThoughtsText.replace(funFactMatch[0], '').trim();
-        }
-    
-        const deepThoughts = document.createElement('div');
-        deepThoughts.innerHTML = `<h3>Deep Thoughts</h3><p>${deepThoughtsText.replace(/^\d+\.\s*Interpretation:\s*/, '')}</p>`;
-        resultsContent.appendChild(deepThoughts);
-    
-        // Display Fun Fact if available
-        if (funFactText) {
-            const funFact = document.createElement('div');
-            funFact.innerHTML = `<h3>Fun Fact</h3><p>${funFactText.replace(/^\d+\.\s*Fun Fact:\s*/, '')}</p>`;
-            resultsContent.appendChild(funFact);
-        }
     }
 });

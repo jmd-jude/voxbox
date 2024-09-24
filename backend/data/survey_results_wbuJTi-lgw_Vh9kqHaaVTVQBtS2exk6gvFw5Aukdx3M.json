@@ -1,0 +1,275 @@
+{
+  "aggregate_results": {
+    "question": "Which type of team uniform do you prefer for sports games?",
+    "type": "Multiple Choice",
+    "answers": [
+      {
+        "text": "Shirts",
+        "label": "a",
+        "percentage": 50.0
+      },
+      {
+        "text": "Doesn't matter, as long as the team is easily distinguishable",
+        "label": "c",
+        "percentage": 40.0
+      },
+      {
+        "text": "Not sure / No preference",
+        "label": "d",
+        "percentage": 10.0
+      }
+    ]
+  },
+  "individual_responses": [
+    {
+      "demographics": {
+        "ProfileID": 88,
+        "Age": 24,
+        "Gender": "Female",
+        "Race": "White",
+        "Ethnicity": "White",
+        "Income": "$50,000-$99,999",
+        "EmploymentStatus": "Employed",
+        "Education": "HS or less",
+        "HouseholdType": "Married-couple",
+        "HousingStatus": "Owner' OR HousingStatus = 'Renter",
+        "FamilyComposition": "Married without children",
+        "Urbanicity": "Suburban",
+        "HealthStatus": "Very Good",
+        "InternetUsage": "Daily",
+        "GeographicRegion": "Midwest",
+        "PoliticalAffiliation": "Republican",
+        "ReligiousAffiliation": "Non-religious",
+        "HealthInsurance": "Insured",
+        "DateOfBirth": "2000-09-19"
+      },
+      "response": "Shirts",
+      "weight": 1
+    },
+    {
+      "demographics": {
+        "ProfileID": 100,
+        "Age": 44,
+        "Gender": "Female",
+        "Race": "White",
+        "Ethnicity": "White",
+        "Income": "$50,000-$99,999",
+        "EmploymentStatus": "Employed",
+        "Education": "Some college",
+        "HouseholdType": "Married-couple",
+        "HousingStatus": "Owner' OR HousingStatus = 'Renter",
+        "FamilyComposition": "Married without children",
+        "Urbanicity": "Urban",
+        "HealthStatus": "Poor",
+        "InternetUsage": "Weekly",
+        "GeographicRegion": "Northeast",
+        "PoliticalAffiliation": "Independent",
+        "ReligiousAffiliation": "Other",
+        "HealthInsurance": "Insured",
+        "DateOfBirth": "1980-09-24"
+      },
+      "response": "Doesn't matter, as long as the team is easily distinguishable",
+      "weight": 1
+    },
+    {
+      "demographics": {
+        "ProfileID": 24,
+        "Age": 86,
+        "Gender": "Female",
+        "Race": "Mixed Race",
+        "Ethnicity": "White",
+        "Income": "$25,000-$49,999",
+        "EmploymentStatus": "Retired",
+        "Education": "College grad",
+        "HouseholdType": "Single-parent",
+        "HousingStatus": "Owner",
+        "FamilyComposition": "Single-parent household",
+        "Urbanicity": "Suburban",
+        "HealthStatus": "Poor",
+        "InternetUsage": "Weekly",
+        "GeographicRegion": "South",
+        "PoliticalAffiliation": "Republican",
+        "ReligiousAffiliation": "Christian",
+        "HealthInsurance": "Uninsured",
+        "DateOfBirth": "1938-10-05"
+      },
+      "response": "Shirts",
+      "weight": 1
+    },
+    {
+      "demographics": {
+        "ProfileID": 3,
+        "Age": 28,
+        "Gender": "Female",
+        "Race": "Hispanic",
+        "Ethnicity": "Other",
+        "Income": "$50,000-$99,999",
+        "EmploymentStatus": "Not in labor force",
+        "Education": "College grad",
+        "HouseholdType": "Other",
+        "HousingStatus": "Owner",
+        "FamilyComposition": "Single' OR FamilyComposition = 'Single-parent household",
+        "Urbanicity": "Urban",
+        "HealthStatus": "Very Good",
+        "InternetUsage": "Daily",
+        "GeographicRegion": "Northeast",
+        "PoliticalAffiliation": "Democrat",
+        "ReligiousAffiliation": "Non-religious",
+        "HealthInsurance": "Insured",
+        "DateOfBirth": "1996-09-20"
+      },
+      "response": "Shirts",
+      "weight": 1
+    },
+    {
+      "demographics": {
+        "ProfileID": 22,
+        "Age": 34,
+        "Gender": "Male",
+        "Race": "White",
+        "Ethnicity": "White",
+        "Income": "$50,000-$99,999",
+        "EmploymentStatus": "Not in labor force",
+        "Education": "HS or less",
+        "HouseholdType": "Married-couple",
+        "HousingStatus": "Owner",
+        "FamilyComposition": "Married without children",
+        "Urbanicity": "Suburban",
+        "HealthStatus": "Very Good",
+        "InternetUsage": "Daily",
+        "GeographicRegion": "South",
+        "PoliticalAffiliation": "Republican",
+        "ReligiousAffiliation": "Christian",
+        "HealthInsurance": "Insured",
+        "DateOfBirth": "1990-09-22"
+      },
+      "response": "Doesn't matter, as long as the team is easily distinguishable",
+      "weight": 1
+    },
+    {
+      "demographics": {
+        "ProfileID": 53,
+        "Age": 29,
+        "Gender": "Male",
+        "Race": "Mixed Race",
+        "Ethnicity": "White",
+        "Income": "$25,000-$49,999",
+        "EmploymentStatus": "Not in labor force",
+        "Education": "College grad",
+        "HouseholdType": "Single-parent",
+        "HousingStatus": "Renter",
+        "FamilyComposition": "Single-parent household",
+        "Urbanicity": "Urban",
+        "HealthStatus": "Excellent",
+        "InternetUsage": "Daily",
+        "GeographicRegion": "Midwest",
+        "PoliticalAffiliation": "Independent",
+        "ReligiousAffiliation": "Christian",
+        "HealthInsurance": "Insured",
+        "DateOfBirth": "1995-09-21"
+      },
+      "response": "Doesn't matter, as long as the team is easily distinguishable",
+      "weight": 1
+    },
+    {
+      "demographics": {
+        "ProfileID": 2,
+        "Age": 80,
+        "Gender": "Male",
+        "Race": "Hispanic",
+        "Ethnicity": "White",
+        "Income": "$50,000-$99,999",
+        "EmploymentStatus": "Retired",
+        "Education": "HS or less",
+        "HouseholdType": "Other",
+        "HousingStatus": "Owner",
+        "FamilyComposition": "Single' OR FamilyComposition = 'Single-parent household",
+        "Urbanicity": "Suburban",
+        "HealthStatus": "Poor",
+        "InternetUsage": "Weekly",
+        "GeographicRegion": "West",
+        "PoliticalAffiliation": "Republican",
+        "ReligiousAffiliation": "Christian",
+        "HealthInsurance": "Insured",
+        "DateOfBirth": "1944-10-03"
+      },
+      "response": "Shirts",
+      "weight": 1
+    },
+    {
+      "demographics": {
+        "ProfileID": 88,
+        "Age": 24,
+        "Gender": "Female",
+        "Race": "White",
+        "Ethnicity": "White",
+        "Income": "$50,000-$99,999",
+        "EmploymentStatus": "Employed",
+        "Education": "HS or less",
+        "HouseholdType": "Married-couple",
+        "HousingStatus": "Owner' OR HousingStatus = 'Renter",
+        "FamilyComposition": "Married without children",
+        "Urbanicity": "Suburban",
+        "HealthStatus": "Very Good",
+        "InternetUsage": "Daily",
+        "GeographicRegion": "Midwest",
+        "PoliticalAffiliation": "Republican",
+        "ReligiousAffiliation": "Non-religious",
+        "HealthInsurance": "Insured",
+        "DateOfBirth": "2000-09-19"
+      },
+      "response": "Doesn't matter, as long as the team is easily distinguishable",
+      "weight": 1
+    },
+    {
+      "demographics": {
+        "ProfileID": 30,
+        "Age": 80,
+        "Gender": "Male",
+        "Race": "White",
+        "Ethnicity": "White",
+        "Income": "$0-$24,999",
+        "EmploymentStatus": "Retired",
+        "Education": "College grad",
+        "HouseholdType": "Married-couple",
+        "HousingStatus": "Owner",
+        "FamilyComposition": "Married without children",
+        "Urbanicity": "Urban",
+        "HealthStatus": "Fair",
+        "InternetUsage": "Weekly",
+        "GeographicRegion": "West",
+        "PoliticalAffiliation": "Republican",
+        "ReligiousAffiliation": "Christian",
+        "HealthInsurance": "Insured",
+        "DateOfBirth": "1944-10-03"
+      },
+      "response": "Not sure / No preference",
+      "weight": 1
+    },
+    {
+      "demographics": {
+        "ProfileID": 38,
+        "Age": 88,
+        "Gender": "Female",
+        "Race": "White",
+        "Ethnicity": "Black",
+        "Income": "$0-$24,999",
+        "EmploymentStatus": "Retired",
+        "Education": "College grad",
+        "HouseholdType": "Other",
+        "HousingStatus": "Owner",
+        "FamilyComposition": "Single' OR FamilyComposition = 'Single-parent household",
+        "Urbanicity": "Urban",
+        "HealthStatus": "Poor",
+        "InternetUsage": "Weekly",
+        "GeographicRegion": "West",
+        "PoliticalAffiliation": "Independent",
+        "ReligiousAffiliation": "Christian",
+        "HealthInsurance": "Uninsured",
+        "DateOfBirth": "1936-10-05"
+      },
+      "response": "Shirts",
+      "weight": 1
+    }
+  ]
+}

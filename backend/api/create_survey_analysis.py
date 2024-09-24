@@ -2,7 +2,6 @@ import os
 import json
 import time
 import logging
-import re
 import openai
 from dotenv import load_dotenv
 
@@ -22,11 +21,11 @@ client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 ASSISTANT_ID = "asst_GEqxbSSDWkKNAcxWdWJqMhYd"
 
-def load_survey_data():
+def load_survey_data(approved_question_path, survey_results_path):
     try:
-        with open('data/approved_question.json', 'r') as f:
+        with open(approved_question_path, 'r') as f:
             question_data = json.load(f)
-        with open('data/survey_results.json', 'r') as f:
+        with open(survey_results_path, 'r') as f:
             results = json.load(f)
         
         logging.info("Loaded survey data: "
@@ -60,36 +59,20 @@ def format_analysis_prompt(survey_data):
     Aggregate Results:
     {json.dumps(survey_data['aggregate_results'], indent=2)}
 
-    Please provide a concise analysis in the following format:
-
-    1. Key Finding: A one-sentence summary of the most important insight.
-
-    2. Quick Stats: Three interesting statistics from the results.
-
-    3. Interpretation: Two short paragraphs explaining what these results mean and their potential implications.
-
-    4. Fun Fact: An interesting or surprising fact from the data.
-
-    After your analysis, include the following delimiter: [END_ANALYSIS]
-
-    Then, provide exactly 2 visualization recommendations in this JSON format:
+    Please provide a concise analysis in the following JSON format:
 
     {{
-      "visualizations": [
-        {{
-          "type": "[chart type]",
-          "title": "[brief title for the chart]",
-          "description": "[what this visualization will show]"
-        }},
-        {{
-          "type": "[chart type]",
-          "title": "[brief title for the chart]",
-          "description": "[what this visualization will show]"
-        }}
-      ]
+        "key_finding": "A one-sentence summary of the most important insight.",
+        "quick_stats": [
+            "First interesting statistic from the results.",
+            "Second interesting statistic from the results.",
+            "Third interesting statistic from the results."
+        ],
+        "interpretation": "Two short paragraphs explaining what these results mean and their potential implications.",
+        "fun_fact": "An interesting or surprising fact from the data."
     }}
 
-    Ensure your response includes both the analysis (ending with [END_ANALYSIS]) and the visualization recommendations in the specified JSON format.
+    Ensure your response is a valid JSON object containing all the specified fields.
     """
     logging.info("Analysis prompt formatted successfully.")
     return prompt
@@ -116,10 +99,6 @@ def get_analysis_from_assistant(prompt):
         response = last_message.content[0].text.value
         logging.info("Analysis received from assistant.")
         
-        # Log the full response
-        logging.info("Full response from assistant:")
-        logging.info(response)
-        
         return response
     except Exception as e:
         logging.error(f"Error getting analysis from assistant: {str(e)}")
@@ -127,77 +106,54 @@ def get_analysis_from_assistant(prompt):
 
 def parse_ai_response(response):
     try:
-        # If the response is already a dictionary, return it
-        if isinstance(response, dict):
-            return response['summary'], response['full_analysis']
-
-        # Otherwise, proceed with string parsing
-        parts = response.split("[END_ANALYSIS]")
-        if len(parts) != 2:
-            raise ValueError("Response format is incorrect. Missing [END_ANALYSIS] delimiter.")
-
-        analysis = parts[0].strip()
-        viz_part = parts[1].strip()
-
-        # Parse the analysis into sections more flexibly
-        sections = analysis.split('\n\n')
-
-        # Ensure all sections have fallback values if missing
-        summary = {
-            'key_finding': sections[0] if len(sections) > 0 else "No key finding available.",
-            'quick_stats': sections[1].strip().split('\n') if len(sections) > 1 else ["No quick stats available."],
-            'interpretation': ' '.join(sections[2:4]) if len(sections) > 3 else (sections[2] if len(sections) > 2 else "No interpretation available."),
-            'fun_fact': sections[4] if len(sections) > 4 else "No fun fact available."
-        }
-
-        logging.info(f"Parsed analysis summary successfully")
-        return summary, analysis  # Return summary and analysis
-
+        analysis_data = json.loads(response)
+        
+        # Validate that all required fields are present
+        required_fields = ['key_finding', 'quick_stats', 'interpretation', 'fun_fact']
+        for field in required_fields:
+            if field not in analysis_data:
+                raise ValueError(f"Missing required field: {field}")
+        
+        logging.info("Parsed analysis data successfully")
+        return analysis_data
     except json.JSONDecodeError as e:
-        logging.error(f"Error parsing visualization JSON: {str(e)}")
+        logging.error(f"Error parsing AI response JSON: {str(e)}")
         raise
     except Exception as e:
-        logging.error(f"Error parsing AI response: {str(e)}")
+        logging.error(f"Error processing AI response: {str(e)}")
         raise
 
-def save_narrative_analysis(narrative, file_path):
+def save_analysis(analysis_data, file_path):
     try:
         with open(file_path, 'w') as f:
-            f.write(narrative)
-        logging.info(f"Narrative analysis saved to {file_path}")
+            json.dump(analysis_data, f, indent=2)
+        logging.info(f"Analysis saved to {file_path}")
     except Exception as e:
-        logging.error(f"Error saving narrative analysis: {str(e)}")
+        logging.error(f"Error saving analysis: {str(e)}")
         raise
 
-def save_visualization_recommendations(recommendations, file_path):
+def main(approved_question_path, survey_results_path, analysis_output_path):
     try:
-        with open(file_path, 'w') as f:
-            f.write(recommendations)
-        logging.info(f"Visualization recommendations saved to {file_path}")
-    except Exception as e:
-        logging.error(f"Error saving visualization recommendations: {str(e)}")
-        raise
-
-def main():
-    try:
-        survey_data = load_survey_data()
+        survey_data = load_survey_data(approved_question_path, survey_results_path)
         analysis_prompt = format_analysis_prompt(survey_data)
         ai_response = get_analysis_from_assistant(analysis_prompt)
-        summary, full_analysis, = parse_ai_response(ai_response)
+        analysis_data = parse_ai_response(ai_response)
 
-        # Save full analysis to Markdown file
-        save_narrative_analysis(full_analysis, 'data/survey_analysis.md')
-        
+        # Save analysis to JSON file
+        save_analysis(analysis_data, analysis_output_path)
         
         logging.info("Analysis complete. Results saved and returned.")
-        return {
-            'summary': summary,
-            'full_analysis': full_analysis,
-        }
+        return analysis_data
     except Exception as e:
         logging.error(f"An error occurred in the main function: {str(e)}")
         raise
 
 if __name__ == "__main__":
+    # This block is for testing purposes and won't be used when called from routes.py
+    session_id = "test_session"
+    approved_question_path = os.path.join('data', f'approved_question_{session_id}.json')
+    survey_results_path = os.path.join('data', f'survey_results_{session_id}.json')
+    analysis_output_path = os.path.join('data', f'survey_analysis_{session_id}.json')
+    
     result = main()
     print(json.dumps(result, indent=2))

@@ -1,0 +1,13 @@
+{
+  "original": "Shirts or skins?",
+  "transformed": {
+    "question": "Which type of team uniform do you prefer for sports games?",
+    "type": "Multiple Choice",
+    "options": {
+      "a": "Shirts",
+      "b": "Skins",
+      "c": "Doesn't matter, as long as the team is easily distinguishable",
+      "d": "Not sure / No preference"
+    }
+  }
+}
