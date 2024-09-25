@@ -1,0 +1,14 @@
+{
+  "original": "Would Americans buy a product that turns lemons into lemonade?",
+  "transformed": {
+    "question": "Would you consider purchasing a product that efficiently transforms lemons into lemonade?",
+    "type": "Multiple Choice",
+    "options": {
+      "a": "Definitely yes",
+      "b": "Probably yes",
+      "c": "Not sure",
+      "d": "Probably not",
+      "e": "Definitely not"
+    }
+  }
+}

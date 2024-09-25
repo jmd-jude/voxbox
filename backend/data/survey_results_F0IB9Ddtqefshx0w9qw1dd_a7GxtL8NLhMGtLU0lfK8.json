@@ -1,0 +1,285 @@
+{
+  "aggregate_results": {
+    "question": "Would you consider purchasing a product that efficiently transforms lemons into lemonade?",
+    "type": "Multiple Choice",
+    "answers": [
+      {
+        "text": "Probably not",
+        "label": "d",
+        "percentage": 30.0
+      },
+      {
+        "text": "Definitely yes",
+        "label": "a",
+        "percentage": 30.0
+      },
+      {
+        "text": "Probably yes",
+        "label": "b",
+        "percentage": 20.0
+      },
+      {
+        "text": "Definitely not",
+        "label": "e",
+        "percentage": 10.0
+      },
+      {
+        "text": "Not sure",
+        "label": "c",
+        "percentage": 10.0
+      }
+    ]
+  },
+  "individual_responses": [
+    {
+      "demographics": {
+        "ProfileID": 52,
+        "Age": 32,
+        "Gender": "Female",
+        "Race": "White",
+        "Ethnicity": "White",
+        "Income": "$50,000-$99,999",
+        "EmploymentStatus": "Employed",
+        "Education": "College grad",
+        "HouseholdType": "Other",
+        "HousingStatus": "Owner' OR HousingStatus = 'Renter",
+        "FamilyComposition": "Single' OR FamilyComposition = 'Single-parent household",
+        "Urbanicity": "Urban",
+        "HealthStatus": "Good",
+        "InternetUsage": "Daily",
+        "GeographicRegion": "Northeast",
+        "PoliticalAffiliation": "Democrat",
+        "ReligiousAffiliation": "Christian",
+        "HealthInsurance": "Insured",
+        "DateOfBirth": "1992-09-21"
+      },
+      "response": "Probably not",
+      "weight": 1
+    },
+    {
+      "demographics": {
+        "ProfileID": 93,
+        "Age": 40,
+        "Gender": "Female",
+        "Race": "White",
+        "Ethnicity": "White",
+        "Income": "$25,000-$49,999",
+        "EmploymentStatus": "Employed",
+        "Education": "College grad",
+        "HouseholdType": "Single-parent",
+        "HousingStatus": "Owner' OR HousingStatus = 'Renter",
+        "FamilyComposition": "Single-parent household",
+        "Urbanicity": "Suburban",
+        "HealthStatus": "Good",
+        "InternetUsage": "Daily",
+        "GeographicRegion": "Midwest",
+        "PoliticalAffiliation": "Democrat",
+        "ReligiousAffiliation": "Other",
+        "HealthInsurance": "Insured",
+        "DateOfBirth": "1984-09-23"
+      },
+      "response": "Definitely yes",
+      "weight": 1
+    },
+    {
+      "demographics": {
+        "ProfileID": 15,
+        "Age": 35,
+        "Gender": "Male",
+        "Race": "Hispanic",
+        "Ethnicity": "Hispanic or Latino",
+        "Income": "$0-$24,999",
+        "EmploymentStatus": "Employed",
+        "Education": "Some college",
+        "HouseholdType": "Married-couple",
+        "HousingStatus": "Owner' OR HousingStatus = 'Renter",
+        "FamilyComposition": "Married with children",
+        "Urbanicity": "Suburban",
+        "HealthStatus": "Excellent",
+        "InternetUsage": "Daily",
+        "GeographicRegion": "West",
+        "PoliticalAffiliation": "Democrat",
+        "ReligiousAffiliation": "Christian",
+        "HealthInsurance": "Insured",
+        "DateOfBirth": "1989-09-22"
+      },
+      "response": "Probably yes",
+      "weight": 1
+    },
+    {
+      "demographics": {
+        "ProfileID": 72,
+        "Age": 90,
+        "Gender": "Male",
+        "Race": "White",
+        "Ethnicity": "Other",
+        "Income": "$25,000-$49,999",
+        "EmploymentStatus": "Not in labor force",
+        "Education": "HS or less",
+        "HouseholdType": "Single-parent",
+        "HousingStatus": "Renter",
+        "FamilyComposition": "Single-parent household",
+        "Urbanicity": "Urban",
+        "HealthStatus": "Fair",
+        "InternetUsage": "Weekly",
+        "GeographicRegion": "South",
+        "PoliticalAffiliation": "Republican",
+        "ReligiousAffiliation": "Christian",
+        "HealthInsurance": "Insured",
+        "DateOfBirth": "1934-10-06"
+      },
+      "response": "Probably yes",
+      "weight": 1
+    },
+    {
+      "demographics": {
+        "ProfileID": 61,
+        "Age": 87,
+        "Gender": "Male",
+        "Race": "Mixed Race",
+        "Ethnicity": "Hispanic or Latino",
+        "Income": "$50,000-$99,999",
+        "EmploymentStatus": "Retired",
+        "Education": "College grad",
+        "HouseholdType": "Married-couple",
+        "HousingStatus": "Renter",
+        "FamilyComposition": "Married without children",
+        "Urbanicity": "Urban",
+        "HealthStatus": "Fair",
+        "InternetUsage": "Weekly",
+        "GeographicRegion": "South",
+        "PoliticalAffiliation": "Independent",
+        "ReligiousAffiliation": "Other",
+        "HealthInsurance": "Insured",
+        "DateOfBirth": "1937-10-05"
+      },
+      "response": "Probably not",
+      "weight": 1
+    },
+    {
+      "demographics": {
+        "ProfileID": 21,
+        "Age": 39,
+        "Gender": "Female",
+        "Race": "Mixed Race",
+        "Ethnicity": "White",
+        "Income": "$100,000+",
+        "EmploymentStatus": "Employed",
+        "Education": "HS or less",
+        "HouseholdType": "Married-couple",
+        "HousingStatus": "Owner",
+        "FamilyComposition": "Married without children",
+        "Urbanicity": "Urban",
+        "HealthStatus": "Fair",
+        "InternetUsage": "Weekly",
+        "GeographicRegion": "Midwest",
+        "PoliticalAffiliation": "Independent",
+        "ReligiousAffiliation": "Other",
+        "HealthInsurance": "Insured",
+        "DateOfBirth": "1985-09-23"
+      },
+      "response": "Probably not",
+      "weight": 1
+    },
+    {
+      "demographics": {
+        "ProfileID": 83,
+        "Age": 19,
+        "Gender": "Female",
+        "Race": "White",
+        "Ethnicity": "White",
+        "Income": "$0-$24,999",
+        "EmploymentStatus": "Part-time",
+        "Education": "Some college",
+        "HouseholdType": "Married-couple",
+        "HousingStatus": "Renter' OR HousingStatus = 'Owner",
+        "FamilyComposition": "Married without children",
+        "Urbanicity": "Suburban",
+        "HealthStatus": "Excellent",
+        "InternetUsage": "Daily",
+        "GeographicRegion": "West",
+        "PoliticalAffiliation": "Democrat",
+        "ReligiousAffiliation": "Christian",
+        "HealthInsurance": "Insured",
+        "DateOfBirth": "2005-09-18"
+      },
+      "response": "Definitely not",
+      "weight": 1
+    },
+    {
+      "demographics": {
+        "ProfileID": 87,
+        "Age": 80,
+        "Gender": "Female",
+        "Race": "Mixed Race",
+        "Ethnicity": "White",
+        "Income": "$0-$24,999",
+        "EmploymentStatus": "Retired",
+        "Education": "Some college",
+        "HouseholdType": "Single-parent",
+        "HousingStatus": "Owner",
+        "FamilyComposition": "Single-parent household",
+        "Urbanicity": "Urban",
+        "HealthStatus": "Fair",
+        "InternetUsage": "Weekly",
+        "GeographicRegion": "West",
+        "PoliticalAffiliation": "Republican",
+        "ReligiousAffiliation": "Christian",
+        "HealthInsurance": "Insured",
+        "DateOfBirth": "1944-10-03"
+      },
+      "response": "Definitely yes",
+      "weight": 1
+    },
+    {
+      "demographics": {
+        "ProfileID": 75,
+        "Age": 44,
+        "Gender": "Female",
+        "Race": "White",
+        "Ethnicity": "Black",
+        "Income": "$0-$24,999",
+        "EmploymentStatus": "Employed",
+        "Education": "College grad",
+        "HouseholdType": "Married-couple",
+        "HousingStatus": "Owner' OR HousingStatus = 'Renter",
+        "FamilyComposition": "Married with children",
+        "Urbanicity": "Rural",
+        "HealthStatus": "Good",
+        "InternetUsage": "Daily",
+        "GeographicRegion": "South",
+        "PoliticalAffiliation": "Republican",
+        "ReligiousAffiliation": "Non-religious",
+        "HealthInsurance": "Insured",
+        "DateOfBirth": "1980-09-24"
+      },
+      "response": "Not sure",
+      "weight": 1
+    },
+    {
+      "demographics": {
+        "ProfileID": 75,
+        "Age": 44,
+        "Gender": "Female",
+        "Race": "White",
+        "Ethnicity": "Black",
+        "Income": "$0-$24,999",
+        "EmploymentStatus": "Employed",
+        "Education": "College grad",
+        "HouseholdType": "Married-couple",
+        "HousingStatus": "Owner' OR HousingStatus = 'Renter",
+        "FamilyComposition": "Married with children",
+        "Urbanicity": "Rural",
+        "HealthStatus": "Good",
+        "InternetUsage": "Daily",
+        "GeographicRegion": "South",
+        "PoliticalAffiliation": "Republican",
+        "ReligiousAffiliation": "Non-religious",
+        "HealthInsurance": "Insured",
+        "DateOfBirth": "1980-09-24"
+      },
+      "response": "Definitely yes",
+      "weight": 1
+    }
+  ]
+}

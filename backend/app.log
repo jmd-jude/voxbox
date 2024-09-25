@@ -3237,3 +3237,290 @@ TypeError: main() missing 3 required positional arguments: 'approved_question_pa
 2024-09-24 21:39:45,899 INFO: Analysis complete. Results saved and returned.
 2024-09-24 21:39:45,899 INFO: Approved question: {'question': 'When making a decision about my current situation, which option do you believe is most appropriate?', 'type': 'Multiple Choice', 'options': {'a': 'Stay in the current situation', 'b': 'Leave the current situation', 'c': 'Unsure / Undecided', 'd': 'Seek further information', 'e': 'Other (please specify)'}}
 2024-09-24 21:39:45,903 INFO: 127.0.0.1 - - [24/Sep/2024 21:39:45] "POST /approve-question HTTP/1.1" 200 -
+2024-09-25 14:00:57,121 INFO: Flask app starting. Testing logging...
+2024-09-25 14:02:19,684 INFO: Flask app starting. Testing logging...
+2024-09-25 14:03:28,296 INFO: Flask app starting. Testing logging...
+2024-09-25 14:03:29,339 ERROR: An error occurred: run_simple() got an unexpected keyword argument 'Port'
+Traceback (most recent call last):
+  File "/Users/davidmulei/Dropbox/Market Research Disrupter/voxbox-project/run.py", line 44, in <module>
+    app.run(debug=True, host="0.0.0.0", Port=5001)
+  File "/Users/davidmulei/venv/lib/python3.12/site-packages/flask/app.py", line 625, in run
+    run_simple(t.cast(str, host), port, self, **options)
+TypeError: run_simple() got an unexpected keyword argument 'Port'
+2024-09-25 14:03:37,199 INFO: Flask app starting. Testing logging...
+2024-09-25 14:03:37,975 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.68.51:5001
+2024-09-25 14:03:37,975 INFO: [33mPress CTRL+C to quit[0m
+2024-09-25 14:03:37,976 INFO:  * Restarting with stat
+2024-09-25 14:03:37,998 INFO: Flask app starting. Testing logging...
+2024-09-25 14:03:38,589 WARNING:  * Debugger is active!
+2024-09-25 14:03:38,597 INFO:  * Debugger PIN: 204-293-515
+2024-09-25 14:04:00,969 INFO: 127.0.0.1 - - [25/Sep/2024 14:04:00] "GET / HTTP/1.1" 200 -
+2024-09-25 14:04:01,053 INFO: 127.0.0.1 - - [25/Sep/2024 14:04:01] "GET /styles.css HTTP/1.1" 200 -
+2024-09-25 14:04:01,054 INFO: 127.0.0.1 - - [25/Sep/2024 14:04:01] "GET /app.js HTTP/1.1" 200 -
+2024-09-25 14:04:01,075 INFO: 127.0.0.1 - - [25/Sep/2024 14:04:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-25 14:04:29,257 INFO: Entered transform_question_route
+2024-09-25 14:04:29,258 INFO: Received question: What do you think about a product that makes rainbows?
+2024-09-25 14:04:29,258 INFO: Calling transform_question function
+2024-09-25 14:04:29,258 INFO: Transforming question: What do you think about a product that makes rainbows?
+2024-09-25 14:04:29,613 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-25 14:04:30,413 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_54DqS2fZSw3gWAyPkLM4Qajx/messages "HTTP/1.1 200 OK"
+2024-09-25 14:04:30,952 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_54DqS2fZSw3gWAyPkLM4Qajx/runs "HTTP/1.1 200 OK"
+2024-09-25 14:04:31,192 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_54DqS2fZSw3gWAyPkLM4Qajx/runs/run_9AjAV7O3hfiHp8m2Q2Uza1oy "HTTP/1.1 200 OK"
+2024-09-25 14:04:31,463 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_54DqS2fZSw3gWAyPkLM4Qajx/runs/run_9AjAV7O3hfiHp8m2Q2Uza1oy "HTTP/1.1 200 OK"
+2024-09-25 14:04:31,714 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_54DqS2fZSw3gWAyPkLM4Qajx/runs/run_9AjAV7O3hfiHp8m2Q2Uza1oy "HTTP/1.1 200 OK"
+2024-09-25 14:04:31,995 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_54DqS2fZSw3gWAyPkLM4Qajx/runs/run_9AjAV7O3hfiHp8m2Q2Uza1oy "HTTP/1.1 200 OK"
+2024-09-25 14:04:32,180 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_54DqS2fZSw3gWAyPkLM4Qajx/runs/run_9AjAV7O3hfiHp8m2Q2Uza1oy "HTTP/1.1 200 OK"
+2024-09-25 14:04:32,519 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_54DqS2fZSw3gWAyPkLM4Qajx/runs/run_9AjAV7O3hfiHp8m2Q2Uza1oy "HTTP/1.1 200 OK"
+2024-09-25 14:04:32,690 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_54DqS2fZSw3gWAyPkLM4Qajx/runs/run_9AjAV7O3hfiHp8m2Q2Uza1oy "HTTP/1.1 200 OK"
+2024-09-25 14:04:32,852 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_54DqS2fZSw3gWAyPkLM4Qajx/messages "HTTP/1.1 200 OK"
+2024-09-25 14:04:32,857 INFO: Raw messages response: SyncCursorPage[ThreadMessage](data=[ThreadMessage(id='msg_A51iL6B2b7WVxGnSsutpmNgj', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', content=[MessageContentText(text=Text(annotations=[], value='{\n    "question": "How would you perceive a product that has the capability to create rainbows?",\n    "type": "Likert scale",\n    "options": {\n        "a": "Very positively",\n        "b": "Somewhat positively",\n        "c": "Neutral",\n        "d": "Somewhat negatively",\n        "e": "Very negatively"\n    }\n}'), type='text')], created_at=1727287471, file_ids=[], metadata={}, object='thread.message', role='assistant', run_id='run_9AjAV7O3hfiHp8m2Q2Uza1oy', thread_id='thread_54DqS2fZSw3gWAyPkLM4Qajx'), ThreadMessage(id='msg_HA2JQ4mZLW4EKm4KudyoRBkT', assistant_id=None, content=[MessageContentText(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "What do you think about a product that makes rainbows?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727287470, file_ids=[], metadata={}, object='thread.message', role='user', run_id=None, thread_id='thread_54DqS2fZSw3gWAyPkLM4Qajx')], object='list', first_id='msg_A51iL6B2b7WVxGnSsutpmNgj', last_id='msg_HA2JQ4mZLW4EKm4KudyoRBkT', has_more=False)
+2024-09-25 14:04:32,858 INFO: Transformed question: {'question': 'How would you perceive a product that has the capability to create rainbows?', 'type': 'Likert scale', 'options': {'a': 'Very positively', 'b': 'Somewhat positively', 'c': 'Neutral', 'd': 'Somewhat negatively', 'e': 'Very negatively'}}
+2024-09-25 14:04:32,858 INFO: Transformed question: {'question': 'How would you perceive a product that has the capability to create rainbows?', 'type': 'Likert scale', 'options': {'a': 'Very positively', 'b': 'Somewhat positively', 'c': 'Neutral', 'd': 'Somewhat negatively', 'e': 'Very negatively'}}
+2024-09-25 14:04:32,859 INFO: Session after transform: <FileSystemSession {'last_question': 'What do you think about a product that makes rainbows?', 'last_transformed_question': {'question': 'How would you perceive a product that has the capability to create rainbows?', 'type': 'Likert scale', 'options': {'a': 'Very positively', 'b': 'Somewhat positively', 'c': 'Neutral', 'd': 'Somewhat negatively', 'e': 'Very negatively'}}}>
+2024-09-25 14:04:32,865 INFO: 127.0.0.1 - - [25/Sep/2024 14:04:32] "POST /transform-question HTTP/1.1" 200 -
+2024-09-25 14:04:37,528 INFO: Entered approve_question_route
+2024-09-25 14:04:37,529 INFO: Retrieved from session - transformed: {'question': 'How would you perceive a product that has the capability to create rainbows?', 'type': 'Likert scale', 'options': {'a': 'Very positively', 'b': 'Somewhat positively', 'c': 'Neutral', 'd': 'Somewhat negatively', 'e': 'Very negatively'}}, original: What do you think about a product that makes rainbows?
+2024-09-25 14:04:37,530 INFO: Saved approved question to /Users/davidmulei/Dropbox/Market Research Disrupter/voxbox-project/backend/data/approved_question_F0IB9Ddtqefshx0w9qw1dd_a7GxtL8NLhMGtLU0lfK8.json
+2024-09-25 14:04:37,542 INFO: Data loaded successfully
+2024-09-25 14:04:37,552 INFO: Options: {'a': 'Very positively', 'b': 'Somewhat positively', 'c': 'Neutral', 'd': 'Somewhat negatively', 'e': 'Very negatively'}
+2024-09-25 14:04:37,552 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:04:37,553 INFO: Options: {'a': 'Very positively', 'b': 'Somewhat positively', 'c': 'Neutral', 'd': 'Somewhat negatively', 'e': 'Very negatively'}
+2024-09-25 14:04:37,553 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:04:37,553 INFO: Options: {'a': 'Very positively', 'b': 'Somewhat positively', 'c': 'Neutral', 'd': 'Somewhat negatively', 'e': 'Very negatively'}
+2024-09-25 14:04:37,553 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:04:37,553 INFO: Options: {'a': 'Very positively', 'b': 'Somewhat positively', 'c': 'Neutral', 'd': 'Somewhat negatively', 'e': 'Very negatively'}
+2024-09-25 14:04:37,553 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:04:37,553 INFO: Options: {'a': 'Very positively', 'b': 'Somewhat positively', 'c': 'Neutral', 'd': 'Somewhat negatively', 'e': 'Very negatively'}
+2024-09-25 14:04:37,553 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:04:37,553 INFO: Options: {'a': 'Very positively', 'b': 'Somewhat positively', 'c': 'Neutral', 'd': 'Somewhat negatively', 'e': 'Very negatively'}
+2024-09-25 14:04:37,553 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:04:37,553 INFO: Options: {'a': 'Very positively', 'b': 'Somewhat positively', 'c': 'Neutral', 'd': 'Somewhat negatively', 'e': 'Very negatively'}
+2024-09-25 14:04:37,553 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:04:37,553 INFO: Options: {'a': 'Very positively', 'b': 'Somewhat positively', 'c': 'Neutral', 'd': 'Somewhat negatively', 'e': 'Very negatively'}
+2024-09-25 14:04:37,553 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:04:37,554 INFO: Options: {'a': 'Very positively', 'b': 'Somewhat positively', 'c': 'Neutral', 'd': 'Somewhat negatively', 'e': 'Very negatively'}
+2024-09-25 14:04:37,554 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:04:37,554 INFO: Options: {'a': 'Very positively', 'b': 'Somewhat positively', 'c': 'Neutral', 'd': 'Somewhat negatively', 'e': 'Very negatively'}
+2024-09-25 14:04:37,554 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:04:37,555 INFO: Survey results written to /Users/davidmulei/Dropbox/Market Research Disrupter/voxbox-project/backend/data/survey_results_F0IB9Ddtqefshx0w9qw1dd_a7GxtL8NLhMGtLU0lfK8.json
+2024-09-25 14:04:37,556 INFO: Saved survey results to /Users/davidmulei/Dropbox/Market Research Disrupter/voxbox-project/backend/data/survey_results_F0IB9Ddtqefshx0w9qw1dd_a7GxtL8NLhMGtLU0lfK8.json
+2024-09-25 14:04:37,556 INFO: Loaded survey data: Question: How would you perceive a product that has the capability to create rainbows?, Aggregate results: 5, Individual responses: 10
+2024-09-25 14:04:37,556 INFO: Analysis prompt formatted successfully.
+2024-09-25 14:04:37,867 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-25 14:04:38,040 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_9lL1R513h5uv5tNpnvmc0ixS/messages "HTTP/1.1 200 OK"
+2024-09-25 14:04:39,328 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_9lL1R513h5uv5tNpnvmc0ixS/runs "HTTP/1.1 200 OK"
+2024-09-25 14:04:39,467 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_9lL1R513h5uv5tNpnvmc0ixS/runs/run_VjEbdG1uXJk65BDoJBoVYYPq "HTTP/1.1 200 OK"
+2024-09-25 14:04:40,782 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_9lL1R513h5uv5tNpnvmc0ixS/runs/run_VjEbdG1uXJk65BDoJBoVYYPq "HTTP/1.1 200 OK"
+2024-09-25 14:04:41,947 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_9lL1R513h5uv5tNpnvmc0ixS/runs/run_VjEbdG1uXJk65BDoJBoVYYPq "HTTP/1.1 200 OK"
+2024-09-25 14:04:43,157 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_9lL1R513h5uv5tNpnvmc0ixS/runs/run_VjEbdG1uXJk65BDoJBoVYYPq "HTTP/1.1 200 OK"
+2024-09-25 14:04:44,315 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_9lL1R513h5uv5tNpnvmc0ixS/runs/run_VjEbdG1uXJk65BDoJBoVYYPq "HTTP/1.1 200 OK"
+2024-09-25 14:04:45,486 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_9lL1R513h5uv5tNpnvmc0ixS/runs/run_VjEbdG1uXJk65BDoJBoVYYPq "HTTP/1.1 200 OK"
+2024-09-25 14:04:46,664 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_9lL1R513h5uv5tNpnvmc0ixS/runs/run_VjEbdG1uXJk65BDoJBoVYYPq "HTTP/1.1 200 OK"
+2024-09-25 14:04:47,877 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_9lL1R513h5uv5tNpnvmc0ixS/runs/run_VjEbdG1uXJk65BDoJBoVYYPq "HTTP/1.1 200 OK"
+2024-09-25 14:04:49,057 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_9lL1R513h5uv5tNpnvmc0ixS/runs/run_VjEbdG1uXJk65BDoJBoVYYPq "HTTP/1.1 200 OK"
+2024-09-25 14:04:50,208 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_9lL1R513h5uv5tNpnvmc0ixS/messages "HTTP/1.1 200 OK"
+2024-09-25 14:04:50,211 INFO: Analysis received from assistant.
+2024-09-25 14:04:50,211 ERROR: Error parsing AI response JSON: Expecting value: line 1 column 1 (char 0)
+2024-09-25 14:04:50,211 ERROR: An error occurred in the main function: Expecting value: line 1 column 1 (char 0)
+2024-09-25 14:04:50,211 ERROR: Error in approve_question_route: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/Users/davidmulei/Dropbox/Market Research Disrupter/voxbox-project/backend/api/routes.py", line 112, in approve_question_route
+    analysis_result = create_survey_analysis.main(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/davidmulei/Dropbox/Market Research Disrupter/voxbox-project/backend/api/create_survey_analysis.py", line 129, in main
+    analysis_data = parse_ai_response(ai_response)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/davidmulei/Dropbox/Market Research Disrupter/voxbox-project/backend/api/create_survey_analysis.py", line 100, in parse_ai_response
+    analysis_data = json.loads(response)
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.5/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.5/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.5/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-09-25 14:04:50,214 INFO: 127.0.0.1 - - [25/Sep/2024 14:04:50] "[35m[1mPOST /approve-question HTTP/1.1[0m" 500 -
+2024-09-25 14:05:03,910 INFO: Entered transform_question_route
+2024-09-25 14:05:03,911 INFO: Received question: What do you think about a product that makes rainbows?
+2024-09-25 14:05:03,911 INFO: Calling transform_question function
+2024-09-25 14:05:03,911 INFO: Transforming question: What do you think about a product that makes rainbows?
+2024-09-25 14:05:10,123 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-25 14:05:10,446 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_hT7ts6pzwLwGtB5Xz6fC54EG/messages "HTTP/1.1 200 OK"
+2024-09-25 14:05:11,014 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_hT7ts6pzwLwGtB5Xz6fC54EG/runs "HTTP/1.1 200 OK"
+2024-09-25 14:05:11,307 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_hT7ts6pzwLwGtB5Xz6fC54EG/runs/run_U2oi7t8RQC8ameTwyPHBJ9tW "HTTP/1.1 200 OK"
+2024-09-25 14:05:11,450 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_hT7ts6pzwLwGtB5Xz6fC54EG/runs/run_U2oi7t8RQC8ameTwyPHBJ9tW "HTTP/1.1 200 OK"
+2024-09-25 14:05:11,599 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_hT7ts6pzwLwGtB5Xz6fC54EG/runs/run_U2oi7t8RQC8ameTwyPHBJ9tW "HTTP/1.1 200 OK"
+2024-09-25 14:05:11,842 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_hT7ts6pzwLwGtB5Xz6fC54EG/runs/run_U2oi7t8RQC8ameTwyPHBJ9tW "HTTP/1.1 200 OK"
+2024-09-25 14:05:11,999 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_hT7ts6pzwLwGtB5Xz6fC54EG/runs/run_U2oi7t8RQC8ameTwyPHBJ9tW "HTTP/1.1 200 OK"
+2024-09-25 14:05:12,367 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_hT7ts6pzwLwGtB5Xz6fC54EG/runs/run_U2oi7t8RQC8ameTwyPHBJ9tW "HTTP/1.1 200 OK"
+2024-09-25 14:05:12,574 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_hT7ts6pzwLwGtB5Xz6fC54EG/runs/run_U2oi7t8RQC8ameTwyPHBJ9tW "HTTP/1.1 200 OK"
+2024-09-25 14:05:12,885 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_hT7ts6pzwLwGtB5Xz6fC54EG/runs/run_U2oi7t8RQC8ameTwyPHBJ9tW "HTTP/1.1 200 OK"
+2024-09-25 14:05:13,067 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_hT7ts6pzwLwGtB5Xz6fC54EG/runs/run_U2oi7t8RQC8ameTwyPHBJ9tW "HTTP/1.1 200 OK"
+2024-09-25 14:05:13,219 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_hT7ts6pzwLwGtB5Xz6fC54EG/messages "HTTP/1.1 200 OK"
+2024-09-25 14:05:13,224 INFO: Raw messages response: SyncCursorPage[ThreadMessage](data=[ThreadMessage(id='msg_TSqwZkx3BtijTk7X0zjLcwaH', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', content=[MessageContentText(text=Text(annotations=[], value='{\n    "question": "How interested are you in a product that creates rainbows as a visual effect?",\n    "type": "Likert scale",\n    "options": {\n        "a": "Very interested",\n        "b": "Interested",\n        "c": "Neutral",\n        "d": "Not interested",\n        "e": "Not at all interested"\n    }\n}'), type='text')], created_at=1727287511, file_ids=[], metadata={}, object='thread.message', role='assistant', run_id='run_U2oi7t8RQC8ameTwyPHBJ9tW', thread_id='thread_hT7ts6pzwLwGtB5Xz6fC54EG'), ThreadMessage(id='msg_4JfOFOAMpofuZVZD1S7VtLiP', assistant_id=None, content=[MessageContentText(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "What do you think about a product that makes rainbows?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727287510, file_ids=[], metadata={}, object='thread.message', role='user', run_id=None, thread_id='thread_hT7ts6pzwLwGtB5Xz6fC54EG')], object='list', first_id='msg_TSqwZkx3BtijTk7X0zjLcwaH', last_id='msg_4JfOFOAMpofuZVZD1S7VtLiP', has_more=False)
+2024-09-25 14:05:13,224 INFO: Transformed question: {'question': 'How interested are you in a product that creates rainbows as a visual effect?', 'type': 'Likert scale', 'options': {'a': 'Very interested', 'b': 'Interested', 'c': 'Neutral', 'd': 'Not interested', 'e': 'Not at all interested'}}
+2024-09-25 14:05:13,225 INFO: Transformed question: {'question': 'How interested are you in a product that creates rainbows as a visual effect?', 'type': 'Likert scale', 'options': {'a': 'Very interested', 'b': 'Interested', 'c': 'Neutral', 'd': 'Not interested', 'e': 'Not at all interested'}}
+2024-09-25 14:05:13,225 INFO: Session after transform: <FileSystemSession {'last_question': 'What do you think about a product that makes rainbows?', 'last_transformed_question': {'question': 'How interested are you in a product that creates rainbows as a visual effect?', 'type': 'Likert scale', 'options': {'a': 'Very interested', 'b': 'Interested', 'c': 'Neutral', 'd': 'Not interested', 'e': 'Not at all interested'}}}>
+2024-09-25 14:05:13,228 INFO: 127.0.0.1 - - [25/Sep/2024 14:05:13] "POST /transform-question HTTP/1.1" 200 -
+2024-09-25 14:05:16,282 INFO: Entered approve_question_route
+2024-09-25 14:05:16,282 INFO: Retrieved from session - transformed: {'question': 'How interested are you in a product that creates rainbows as a visual effect?', 'type': 'Likert scale', 'options': {'a': 'Very interested', 'b': 'Interested', 'c': 'Neutral', 'd': 'Not interested', 'e': 'Not at all interested'}}, original: What do you think about a product that makes rainbows?
+2024-09-25 14:05:16,284 INFO: Saved approved question to /Users/davidmulei/Dropbox/Market Research Disrupter/voxbox-project/backend/data/approved_question_F0IB9Ddtqefshx0w9qw1dd_a7GxtL8NLhMGtLU0lfK8.json
+2024-09-25 14:05:16,288 INFO: Data loaded successfully
+2024-09-25 14:05:16,290 INFO: Options: {'a': 'Very interested', 'b': 'Interested', 'c': 'Neutral', 'd': 'Not interested', 'e': 'Not at all interested'}
+2024-09-25 14:05:16,290 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:05:16,290 INFO: Options: {'a': 'Very interested', 'b': 'Interested', 'c': 'Neutral', 'd': 'Not interested', 'e': 'Not at all interested'}
+2024-09-25 14:05:16,290 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:05:16,290 INFO: Options: {'a': 'Very interested', 'b': 'Interested', 'c': 'Neutral', 'd': 'Not interested', 'e': 'Not at all interested'}
+2024-09-25 14:05:16,290 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:05:16,290 INFO: Options: {'a': 'Very interested', 'b': 'Interested', 'c': 'Neutral', 'd': 'Not interested', 'e': 'Not at all interested'}
+2024-09-25 14:05:16,291 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:05:16,291 INFO: Options: {'a': 'Very interested', 'b': 'Interested', 'c': 'Neutral', 'd': 'Not interested', 'e': 'Not at all interested'}
+2024-09-25 14:05:16,291 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:05:16,291 INFO: Options: {'a': 'Very interested', 'b': 'Interested', 'c': 'Neutral', 'd': 'Not interested', 'e': 'Not at all interested'}
+2024-09-25 14:05:16,291 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:05:16,291 INFO: Options: {'a': 'Very interested', 'b': 'Interested', 'c': 'Neutral', 'd': 'Not interested', 'e': 'Not at all interested'}
+2024-09-25 14:05:16,291 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:05:16,291 INFO: Options: {'a': 'Very interested', 'b': 'Interested', 'c': 'Neutral', 'd': 'Not interested', 'e': 'Not at all interested'}
+2024-09-25 14:05:16,291 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:05:16,291 INFO: Options: {'a': 'Very interested', 'b': 'Interested', 'c': 'Neutral', 'd': 'Not interested', 'e': 'Not at all interested'}
+2024-09-25 14:05:16,291 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:05:16,291 INFO: Options: {'a': 'Very interested', 'b': 'Interested', 'c': 'Neutral', 'd': 'Not interested', 'e': 'Not at all interested'}
+2024-09-25 14:05:16,291 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:05:16,293 INFO: Survey results written to /Users/davidmulei/Dropbox/Market Research Disrupter/voxbox-project/backend/data/survey_results_F0IB9Ddtqefshx0w9qw1dd_a7GxtL8NLhMGtLU0lfK8.json
+2024-09-25 14:05:16,294 INFO: Saved survey results to /Users/davidmulei/Dropbox/Market Research Disrupter/voxbox-project/backend/data/survey_results_F0IB9Ddtqefshx0w9qw1dd_a7GxtL8NLhMGtLU0lfK8.json
+2024-09-25 14:05:16,294 INFO: Loaded survey data: Question: How interested are you in a product that creates rainbows as a visual effect?, Aggregate results: 5, Individual responses: 10
+2024-09-25 14:05:16,294 INFO: Analysis prompt formatted successfully.
+2024-09-25 14:05:16,556 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-25 14:05:16,746 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_UNUiYV5kMw7bsKsMWzOnDf7E/messages "HTTP/1.1 200 OK"
+2024-09-25 14:05:17,400 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_UNUiYV5kMw7bsKsMWzOnDf7E/runs "HTTP/1.1 200 OK"
+2024-09-25 14:05:17,599 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_UNUiYV5kMw7bsKsMWzOnDf7E/runs/run_kkiPtTZxmjsweva2Cq3B63UX "HTTP/1.1 200 OK"
+2024-09-25 14:05:18,804 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_UNUiYV5kMw7bsKsMWzOnDf7E/runs/run_kkiPtTZxmjsweva2Cq3B63UX "HTTP/1.1 200 OK"
+2024-09-25 14:05:19,938 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_UNUiYV5kMw7bsKsMWzOnDf7E/runs/run_kkiPtTZxmjsweva2Cq3B63UX "HTTP/1.1 200 OK"
+2024-09-25 14:05:21,269 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_UNUiYV5kMw7bsKsMWzOnDf7E/runs/run_kkiPtTZxmjsweva2Cq3B63UX "HTTP/1.1 200 OK"
+2024-09-25 14:05:22,495 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_UNUiYV5kMw7bsKsMWzOnDf7E/runs/run_kkiPtTZxmjsweva2Cq3B63UX "HTTP/1.1 200 OK"
+2024-09-25 14:05:23,660 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_UNUiYV5kMw7bsKsMWzOnDf7E/runs/run_kkiPtTZxmjsweva2Cq3B63UX "HTTP/1.1 200 OK"
+2024-09-25 14:05:24,792 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_UNUiYV5kMw7bsKsMWzOnDf7E/runs/run_kkiPtTZxmjsweva2Cq3B63UX "HTTP/1.1 200 OK"
+2024-09-25 14:05:25,991 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_UNUiYV5kMw7bsKsMWzOnDf7E/runs/run_kkiPtTZxmjsweva2Cq3B63UX "HTTP/1.1 200 OK"
+2024-09-25 14:05:27,218 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_UNUiYV5kMw7bsKsMWzOnDf7E/runs/run_kkiPtTZxmjsweva2Cq3B63UX "HTTP/1.1 200 OK"
+2024-09-25 14:05:28,447 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_UNUiYV5kMw7bsKsMWzOnDf7E/messages "HTTP/1.1 200 OK"
+2024-09-25 14:05:28,453 INFO: Analysis received from assistant.
+2024-09-25 14:05:28,453 ERROR: Error parsing AI response JSON: Expecting value: line 1 column 1 (char 0)
+2024-09-25 14:05:28,453 ERROR: An error occurred in the main function: Expecting value: line 1 column 1 (char 0)
+2024-09-25 14:05:28,454 ERROR: Error in approve_question_route: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/Users/davidmulei/Dropbox/Market Research Disrupter/voxbox-project/backend/api/routes.py", line 112, in approve_question_route
+    analysis_result = create_survey_analysis.main(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/davidmulei/Dropbox/Market Research Disrupter/voxbox-project/backend/api/create_survey_analysis.py", line 129, in main
+    analysis_data = parse_ai_response(ai_response)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/davidmulei/Dropbox/Market Research Disrupter/voxbox-project/backend/api/create_survey_analysis.py", line 100, in parse_ai_response
+    analysis_data = json.loads(response)
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.5/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.5/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.5/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-09-25 14:05:28,456 INFO: 127.0.0.1 - - [25/Sep/2024 14:05:28] "[35m[1mPOST /approve-question HTTP/1.1[0m" 500 -
+2024-09-25 14:06:05,730 INFO: 127.0.0.1 - - [25/Sep/2024 14:06:05] "GET / HTTP/1.1" 200 -
+2024-09-25 14:06:05,764 INFO: 127.0.0.1 - - [25/Sep/2024 14:06:05] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2024-09-25 14:06:05,767 INFO: 127.0.0.1 - - [25/Sep/2024 14:06:05] "[36mGET /app.js HTTP/1.1[0m" 304 -
+2024-09-25 14:06:08,301 INFO: 127.0.0.1 - - [25/Sep/2024 14:06:08] "GET / HTTP/1.1" 200 -
+2024-09-25 14:06:08,319 INFO: 127.0.0.1 - - [25/Sep/2024 14:06:08] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2024-09-25 14:06:08,320 INFO: 127.0.0.1 - - [25/Sep/2024 14:06:08] "[36mGET /app.js HTTP/1.1[0m" 304 -
+2024-09-25 14:06:16,500 INFO: Flask app starting. Testing logging...
+2024-09-25 14:06:17,364 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.68.51:5001
+2024-09-25 14:06:17,364 INFO: [33mPress CTRL+C to quit[0m
+2024-09-25 14:06:17,365 INFO:  * Restarting with stat
+2024-09-25 14:06:17,386 INFO: Flask app starting. Testing logging...
+2024-09-25 14:06:17,980 WARNING:  * Debugger is active!
+2024-09-25 14:06:17,987 INFO:  * Debugger PIN: 204-293-515
+2024-09-25 14:06:22,978 INFO: 127.0.0.1 - - [25/Sep/2024 14:06:22] "GET / HTTP/1.1" 200 -
+2024-09-25 14:06:23,000 INFO: 127.0.0.1 - - [25/Sep/2024 14:06:23] "[36mGET /app.js HTTP/1.1[0m" 304 -
+2024-09-25 14:06:23,000 INFO: 127.0.0.1 - - [25/Sep/2024 14:06:23] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2024-09-25 14:06:46,009 INFO: Entered transform_question_route
+2024-09-25 14:06:46,009 INFO: Received question: Would Americans buy a product that turns lemons into lemonade?
+2024-09-25 14:06:46,009 INFO: Calling transform_question function
+2024-09-25 14:06:46,009 INFO: Transforming question: Would Americans buy a product that turns lemons into lemonade?
+2024-09-25 14:06:46,396 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-25 14:06:46,604 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_ypkWqvu1cc0uyfbLrYKySTAl/messages "HTTP/1.1 200 OK"
+2024-09-25 14:06:47,163 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_ypkWqvu1cc0uyfbLrYKySTAl/runs "HTTP/1.1 200 OK"
+2024-09-25 14:06:47,526 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ypkWqvu1cc0uyfbLrYKySTAl/runs/run_XFf8wQ3V6JmucPgNGAx1vcyh "HTTP/1.1 200 OK"
+2024-09-25 14:06:47,787 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ypkWqvu1cc0uyfbLrYKySTAl/runs/run_XFf8wQ3V6JmucPgNGAx1vcyh "HTTP/1.1 200 OK"
+2024-09-25 14:06:47,930 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ypkWqvu1cc0uyfbLrYKySTAl/runs/run_XFf8wQ3V6JmucPgNGAx1vcyh "HTTP/1.1 200 OK"
+2024-09-25 14:06:48,084 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ypkWqvu1cc0uyfbLrYKySTAl/runs/run_XFf8wQ3V6JmucPgNGAx1vcyh "HTTP/1.1 200 OK"
+2024-09-25 14:06:48,307 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ypkWqvu1cc0uyfbLrYKySTAl/runs/run_XFf8wQ3V6JmucPgNGAx1vcyh "HTTP/1.1 200 OK"
+2024-09-25 14:06:48,465 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ypkWqvu1cc0uyfbLrYKySTAl/runs/run_XFf8wQ3V6JmucPgNGAx1vcyh "HTTP/1.1 200 OK"
+2024-09-25 14:06:48,622 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ypkWqvu1cc0uyfbLrYKySTAl/runs/run_XFf8wQ3V6JmucPgNGAx1vcyh "HTTP/1.1 200 OK"
+2024-09-25 14:06:48,833 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ypkWqvu1cc0uyfbLrYKySTAl/runs/run_XFf8wQ3V6JmucPgNGAx1vcyh "HTTP/1.1 200 OK"
+2024-09-25 14:06:48,977 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ypkWqvu1cc0uyfbLrYKySTAl/runs/run_XFf8wQ3V6JmucPgNGAx1vcyh "HTTP/1.1 200 OK"
+2024-09-25 14:06:49,132 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ypkWqvu1cc0uyfbLrYKySTAl/messages "HTTP/1.1 200 OK"
+2024-09-25 14:06:49,136 INFO: Raw messages response: SyncCursorPage[ThreadMessage](data=[ThreadMessage(id='msg_wlXCIBkfQtkbLE6ECFEDuy15', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', content=[MessageContentText(text=Text(annotations=[], value='{\n    "question": "Would you consider purchasing a product that efficiently transforms lemons into lemonade?",\n    "type": "Multiple Choice",\n    "options": {\n        "a": "Definitely yes",\n        "b": "Probably yes",\n        "c": "Not sure",\n        "d": "Probably not",\n        "e": "Definitely not"\n    }\n}'), type='text')], created_at=1727287607, file_ids=[], metadata={}, object='thread.message', role='assistant', run_id='run_XFf8wQ3V6JmucPgNGAx1vcyh', thread_id='thread_ypkWqvu1cc0uyfbLrYKySTAl'), ThreadMessage(id='msg_qmL62ANevbWhO4QLuABLEIfJ', assistant_id=None, content=[MessageContentText(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "Would Americans buy a product that turns lemons into lemonade?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727287606, file_ids=[], metadata={}, object='thread.message', role='user', run_id=None, thread_id='thread_ypkWqvu1cc0uyfbLrYKySTAl')], object='list', first_id='msg_wlXCIBkfQtkbLE6ECFEDuy15', last_id='msg_qmL62ANevbWhO4QLuABLEIfJ', has_more=False)
+2024-09-25 14:06:49,136 INFO: Transformed question: {'question': 'Would you consider purchasing a product that efficiently transforms lemons into lemonade?', 'type': 'Multiple Choice', 'options': {'a': 'Definitely yes', 'b': 'Probably yes', 'c': 'Not sure', 'd': 'Probably not', 'e': 'Definitely not'}}
+2024-09-25 14:06:49,136 INFO: Transformed question: {'question': 'Would you consider purchasing a product that efficiently transforms lemons into lemonade?', 'type': 'Multiple Choice', 'options': {'a': 'Definitely yes', 'b': 'Probably yes', 'c': 'Not sure', 'd': 'Probably not', 'e': 'Definitely not'}}
+2024-09-25 14:06:49,136 INFO: Session after transform: <FileSystemSession {'last_question': 'Would Americans buy a product that turns lemons into lemonade?', 'last_transformed_question': {'question': 'Would you consider purchasing a product that efficiently transforms lemons into lemonade?', 'type': 'Multiple Choice', 'options': {'a': 'Definitely yes', 'b': 'Probably yes', 'c': 'Not sure', 'd': 'Probably not', 'e': 'Definitely not'}}}>
+2024-09-25 14:06:49,139 INFO: 127.0.0.1 - - [25/Sep/2024 14:06:49] "POST /transform-question HTTP/1.1" 200 -
+2024-09-25 14:06:54,259 INFO: Entered approve_question_route
+2024-09-25 14:06:54,259 INFO: Retrieved from session - transformed: {'question': 'Would you consider purchasing a product that efficiently transforms lemons into lemonade?', 'type': 'Multiple Choice', 'options': {'a': 'Definitely yes', 'b': 'Probably yes', 'c': 'Not sure', 'd': 'Probably not', 'e': 'Definitely not'}}, original: Would Americans buy a product that turns lemons into lemonade?
+2024-09-25 14:06:54,260 INFO: Saved approved question to /Users/davidmulei/Dropbox/Market Research Disrupter/voxbox-project/backend/data/approved_question_F0IB9Ddtqefshx0w9qw1dd_a7GxtL8NLhMGtLU0lfK8.json
+2024-09-25 14:06:54,262 INFO: Data loaded successfully
+2024-09-25 14:06:54,263 INFO: Options: {'a': 'Definitely yes', 'b': 'Probably yes', 'c': 'Not sure', 'd': 'Probably not', 'e': 'Definitely not'}
+2024-09-25 14:06:54,263 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:06:54,263 INFO: Options: {'a': 'Definitely yes', 'b': 'Probably yes', 'c': 'Not sure', 'd': 'Probably not', 'e': 'Definitely not'}
+2024-09-25 14:06:54,263 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:06:54,263 INFO: Options: {'a': 'Definitely yes', 'b': 'Probably yes', 'c': 'Not sure', 'd': 'Probably not', 'e': 'Definitely not'}
+2024-09-25 14:06:54,263 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:06:54,263 INFO: Options: {'a': 'Definitely yes', 'b': 'Probably yes', 'c': 'Not sure', 'd': 'Probably not', 'e': 'Definitely not'}
+2024-09-25 14:06:54,264 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:06:54,264 INFO: Options: {'a': 'Definitely yes', 'b': 'Probably yes', 'c': 'Not sure', 'd': 'Probably not', 'e': 'Definitely not'}
+2024-09-25 14:06:54,264 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:06:54,264 INFO: Options: {'a': 'Definitely yes', 'b': 'Probably yes', 'c': 'Not sure', 'd': 'Probably not', 'e': 'Definitely not'}
+2024-09-25 14:06:54,264 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:06:54,264 INFO: Options: {'a': 'Definitely yes', 'b': 'Probably yes', 'c': 'Not sure', 'd': 'Probably not', 'e': 'Definitely not'}
+2024-09-25 14:06:54,264 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:06:54,264 INFO: Options: {'a': 'Definitely yes', 'b': 'Probably yes', 'c': 'Not sure', 'd': 'Probably not', 'e': 'Definitely not'}
+2024-09-25 14:06:54,264 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:06:54,264 INFO: Options: {'a': 'Definitely yes', 'b': 'Probably yes', 'c': 'Not sure', 'd': 'Probably not', 'e': 'Definitely not'}
+2024-09-25 14:06:54,264 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:06:54,264 INFO: Options: {'a': 'Definitely yes', 'b': 'Probably yes', 'c': 'Not sure', 'd': 'Probably not', 'e': 'Definitely not'}
+2024-09-25 14:06:54,264 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 14:06:54,265 INFO: Survey results written to /Users/davidmulei/Dropbox/Market Research Disrupter/voxbox-project/backend/data/survey_results_F0IB9Ddtqefshx0w9qw1dd_a7GxtL8NLhMGtLU0lfK8.json
+2024-09-25 14:06:54,265 INFO: Saved survey results to /Users/davidmulei/Dropbox/Market Research Disrupter/voxbox-project/backend/data/survey_results_F0IB9Ddtqefshx0w9qw1dd_a7GxtL8NLhMGtLU0lfK8.json
+2024-09-25 14:06:54,265 INFO: Loaded survey data: Question: Would you consider purchasing a product that efficiently transforms lemons into lemonade?, Aggregate results: 5, Individual responses: 10
+2024-09-25 14:06:54,265 INFO: Analysis prompt formatted successfully.
+2024-09-25 14:06:54,441 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-25 14:06:54,689 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_pFGuEt5Oiw6YURcPB7TX19uN/messages "HTTP/1.1 200 OK"
+2024-09-25 14:06:55,124 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_pFGuEt5Oiw6YURcPB7TX19uN/runs "HTTP/1.1 200 OK"
+2024-09-25 14:06:55,289 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_pFGuEt5Oiw6YURcPB7TX19uN/runs/run_GysGyn2JmWHiSPCUjPOignar "HTTP/1.1 200 OK"
+2024-09-25 14:06:56,450 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_pFGuEt5Oiw6YURcPB7TX19uN/runs/run_GysGyn2JmWHiSPCUjPOignar "HTTP/1.1 200 OK"
+2024-09-25 14:06:57,796 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_pFGuEt5Oiw6YURcPB7TX19uN/runs/run_GysGyn2JmWHiSPCUjPOignar "HTTP/1.1 200 OK"
+2024-09-25 14:06:59,036 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_pFGuEt5Oiw6YURcPB7TX19uN/runs/run_GysGyn2JmWHiSPCUjPOignar "HTTP/1.1 200 OK"
+2024-09-25 14:07:00,197 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_pFGuEt5Oiw6YURcPB7TX19uN/runs/run_GysGyn2JmWHiSPCUjPOignar "HTTP/1.1 200 OK"
+2024-09-25 14:07:01,416 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_pFGuEt5Oiw6YURcPB7TX19uN/runs/run_GysGyn2JmWHiSPCUjPOignar "HTTP/1.1 200 OK"
+2024-09-25 14:07:02,629 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_pFGuEt5Oiw6YURcPB7TX19uN/runs/run_GysGyn2JmWHiSPCUjPOignar "HTTP/1.1 200 OK"
+2024-09-25 14:07:03,811 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_pFGuEt5Oiw6YURcPB7TX19uN/messages "HTTP/1.1 200 OK"
+2024-09-25 14:07:03,818 INFO: Analysis received from assistant.
+2024-09-25 14:07:03,818 INFO: Parsed analysis data successfully
+2024-09-25 14:07:03,819 INFO: Analysis saved to /Users/davidmulei/Dropbox/Market Research Disrupter/voxbox-project/backend/data/survey_analysis_F0IB9Ddtqefshx0w9qw1dd_a7GxtL8NLhMGtLU0lfK8.json
+2024-09-25 14:07:03,819 INFO: Analysis complete. Results saved and returned.
+2024-09-25 14:07:03,820 INFO: Approved question: {'question': 'Would you consider purchasing a product that efficiently transforms lemons into lemonade?', 'type': 'Multiple Choice', 'options': {'a': 'Definitely yes', 'b': 'Probably yes', 'c': 'Not sure', 'd': 'Probably not', 'e': 'Definitely not'}}
+2024-09-25 14:07:03,822 INFO: 127.0.0.1 - - [25/Sep/2024 14:07:03] "POST /approve-question HTTP/1.1" 200 -
+2024-09-25 14:28:46,902 INFO:  * Detected change in '/Users/davidmulei/Dropbox/Market Research Disrupter/voxbox-project/run.py', reloading
+2024-09-25 14:28:47,059 INFO:  * Restarting with stat
+2024-09-25 14:28:47,160 INFO: Flask app starting. Testing logging...
+2024-09-25 14:28:48,089 WARNING:  * Debugger is active!
+2024-09-25 14:28:48,096 INFO:  * Debugger PIN: 204-293-515
