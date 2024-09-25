@@ -4,6 +4,7 @@ import time
 import logging
 import openai
 from dotenv import load_dotenv
+from .config import Config
 
 # Set up logging
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data')
@@ -19,7 +20,7 @@ load_dotenv()
 
 # Set up OpenAI client
 client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-ASSISTANT_ID = "asst_GEqxbSSDWkKNAcxWdWJqMhYd"
+ASSISTANT_ID = Config.ASSISTANTS["survey_analyst"]
 
 def load_survey_data(approved_question_path, survey_results_path):
     try:

@@ -1,11 +1,12 @@
 # config.py
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class Config:
     SECRET_KEY = 'your_secret_key_here'
-    OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')  # Add this line
-
-    # ...rest of your config...
+    OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
     
     # Define the path to the data directory
     DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data')
@@ -20,13 +21,15 @@ class Config:
     OPENAI_MODEL = 'gpt-3.5-turbo'
     
     # OpenAI Assistant IDs
+    # Add more assistants here as needed
     ASSISTANTS = {
-        "question_transformer": "asst_GEqxbSSDWkKNAcxWdWJqMhYd",
-        # Add more assistants here as needed
+        "question_transformer": os.getenv("QUESTION_TRANSFORMER_ID"),
+        "question_config_generator": os.getenv("QUESTION_CONFIG_GENERATOR_ID"),
+        "survey_analyst": os.getenv("SURVEY_ANALYST_ID")
     }
     
     # Survey configuration
-    NUM_SURVEY_RESPONDENTS = 10
+    NUM_SURVEY_RESPONDENTS = 100
     
     # Other configuration parameters
     MAX_RETRIES = 3

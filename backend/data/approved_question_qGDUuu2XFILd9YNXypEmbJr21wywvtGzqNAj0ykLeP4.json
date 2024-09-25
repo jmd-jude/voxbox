@@ -1,0 +1,14 @@
+{
+  "original": "Is it time to become a professional unicorn trainer?",
+  "transformed": {
+    "question": "Do you believe there is a demand for professional unicorn trainers?",
+    "type": "Multiple Choice",
+    "options": {
+      "a": "Yes, I believe there is a growing demand for professional unicorn trainers.",
+      "b": "No, I do not think there is a sufficient demand for professional unicorn trainers.",
+      "c": "I am unsure about the demand for professional unicorn trainers.",
+      "d": "I have not considered the demand for professional unicorn trainers.",
+      "e": "Other (please specify)"
+    }
+  }
+}

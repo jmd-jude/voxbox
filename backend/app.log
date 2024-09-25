@@ -3524,3 +3524,506 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 2024-09-25 14:28:47,160 INFO: Flask app starting. Testing logging...
 2024-09-25 14:28:48,089 WARNING:  * Debugger is active!
 2024-09-25 14:28:48,096 INFO:  * Debugger PIN: 204-293-515
+2024-09-25 16:11:56,002 INFO: Flask app starting. Testing logging...
+2024-09-25 16:11:57,366 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.4.41:5001
+2024-09-25 16:11:57,366 INFO: [33mPress CTRL+C to quit[0m
+2024-09-25 16:11:57,367 INFO:  * Restarting with stat
+2024-09-25 16:11:57,399 INFO: Flask app starting. Testing logging...
+2024-09-25 16:11:57,877 WARNING:  * Debugger is active!
+2024-09-25 16:11:57,885 INFO:  * Debugger PIN: 960-184-702
+2024-09-25 16:12:06,243 INFO: 127.0.0.1 - - [25/Sep/2024 16:12:06] "GET / HTTP/1.1" 200 -
+2024-09-25 16:12:06,281 INFO: 127.0.0.1 - - [25/Sep/2024 16:12:06] "GET /styles.css HTTP/1.1" 200 -
+2024-09-25 16:12:06,281 INFO: 127.0.0.1 - - [25/Sep/2024 16:12:06] "GET /app.js HTTP/1.1" 200 -
+2024-09-25 16:12:42,614 INFO: Entered transform_question_route
+2024-09-25 16:12:42,615 INFO: Received question: What do you think about a new product idea that take pictures of birds?
+2024-09-25 16:12:42,615 INFO: Calling transform_question function
+2024-09-25 16:12:42,615 INFO: Transforming question: What do you think about a new product idea that take pictures of birds?
+2024-09-25 16:12:42,853 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-25 16:12:43,040 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_u2Vj34U8qIxJxoMuq3n3ISfn/messages "HTTP/1.1 200 OK"
+2024-09-25 16:12:43,637 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_u2Vj34U8qIxJxoMuq3n3ISfn/runs "HTTP/1.1 200 OK"
+2024-09-25 16:12:43,877 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_u2Vj34U8qIxJxoMuq3n3ISfn/runs/run_0ppGmLBxeDmjXBrpl8jvihOP "HTTP/1.1 200 OK"
+2024-09-25 16:12:44,066 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_u2Vj34U8qIxJxoMuq3n3ISfn/runs/run_0ppGmLBxeDmjXBrpl8jvihOP "HTTP/1.1 200 OK"
+2024-09-25 16:12:44,274 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_u2Vj34U8qIxJxoMuq3n3ISfn/runs/run_0ppGmLBxeDmjXBrpl8jvihOP "HTTP/1.1 200 OK"
+2024-09-25 16:12:44,471 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_u2Vj34U8qIxJxoMuq3n3ISfn/runs/run_0ppGmLBxeDmjXBrpl8jvihOP "HTTP/1.1 200 OK"
+2024-09-25 16:12:44,607 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_u2Vj34U8qIxJxoMuq3n3ISfn/runs/run_0ppGmLBxeDmjXBrpl8jvihOP "HTTP/1.1 200 OK"
+2024-09-25 16:12:44,772 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_u2Vj34U8qIxJxoMuq3n3ISfn/runs/run_0ppGmLBxeDmjXBrpl8jvihOP "HTTP/1.1 200 OK"
+2024-09-25 16:12:44,894 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_u2Vj34U8qIxJxoMuq3n3ISfn/runs/run_0ppGmLBxeDmjXBrpl8jvihOP "HTTP/1.1 200 OK"
+2024-09-25 16:12:45,312 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_u2Vj34U8qIxJxoMuq3n3ISfn/runs/run_0ppGmLBxeDmjXBrpl8jvihOP "HTTP/1.1 200 OK"
+2024-09-25 16:12:45,451 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_u2Vj34U8qIxJxoMuq3n3ISfn/runs/run_0ppGmLBxeDmjXBrpl8jvihOP "HTTP/1.1 200 OK"
+2024-09-25 16:12:45,637 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_u2Vj34U8qIxJxoMuq3n3ISfn/runs/run_0ppGmLBxeDmjXBrpl8jvihOP "HTTP/1.1 200 OK"
+2024-09-25 16:12:46,044 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_u2Vj34U8qIxJxoMuq3n3ISfn/runs/run_0ppGmLBxeDmjXBrpl8jvihOP "HTTP/1.1 200 OK"
+2024-09-25 16:12:46,198 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_u2Vj34U8qIxJxoMuq3n3ISfn/messages "HTTP/1.1 200 OK"
+2024-09-25 16:12:46,201 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_ZG6XZHB8wPKpjLKdkfzhYdM2', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "How interested would you be in a new product that captures images of birds in your backyard to help with birdwatching and nature photography?",\n    "type": "Likert scale",\n    "options": {\n        "a": "Very interested",\n        "b": "Somewhat interested",\n        "c": "Neutral",\n        "d": "Not very interested",\n        "e": "Not at all interested"\n    }\n}'), type='text')], created_at=1727295164, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_0ppGmLBxeDmjXBrpl8jvihOP', status=None, thread_id='thread_u2Vj34U8qIxJxoMuq3n3ISfn'), Message(id='msg_SEka0fa7S8UC1N8DZDHLNYye', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "What do you think about a new product idea that take pictures of birds?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727295162, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_u2Vj34U8qIxJxoMuq3n3ISfn')], object='list', first_id='msg_ZG6XZHB8wPKpjLKdkfzhYdM2', last_id='msg_SEka0fa7S8UC1N8DZDHLNYye', has_more=False)
+2024-09-25 16:12:46,201 INFO: Transformed question: {'question': 'How interested would you be in a new product that captures images of birds in your backyard to help with birdwatching and nature photography?', 'type': 'Likert scale', 'options': {'a': 'Very interested', 'b': 'Somewhat interested', 'c': 'Neutral', 'd': 'Not very interested', 'e': 'Not at all interested'}}
+2024-09-25 16:12:46,202 INFO: Transformed question: {'question': 'How interested would you be in a new product that captures images of birds in your backyard to help with birdwatching and nature photography?', 'type': 'Likert scale', 'options': {'a': 'Very interested', 'b': 'Somewhat interested', 'c': 'Neutral', 'd': 'Not very interested', 'e': 'Not at all interested'}}
+2024-09-25 16:12:46,202 INFO: Session after transform: <FileSystemSession {'last_question': 'What do you think about a new product idea that take pictures of birds?', 'last_transformed_question': {'question': 'How interested would you be in a new product that captures images of birds in your backyard to help with birdwatching and nature photography?', 'type': 'Likert scale', 'options': {'a': 'Very interested', 'b': 'Somewhat interested', 'c': 'Neutral', 'd': 'Not very interested', 'e': 'Not at all interested'}}}>
+2024-09-25 16:12:46,276 INFO: 127.0.0.1 - - [25/Sep/2024 16:12:46] "POST /transform-question HTTP/1.1" 200 -
+2024-09-25 16:12:47,999 INFO: Entered approve_question_route
+2024-09-25 16:12:47,999 INFO: Retrieved from session - transformed: {'question': 'How interested would you be in a new product that captures images of birds in your backyard to help with birdwatching and nature photography?', 'type': 'Likert scale', 'options': {'a': 'Very interested', 'b': 'Somewhat interested', 'c': 'Neutral', 'd': 'Not very interested', 'e': 'Not at all interested'}}, original: What do you think about a new product idea that take pictures of birds?
+2024-09-25 16:12:48,000 INFO: Saved approved question to /Users/JudeHoffner/Library/CloudStorage/Dropbox-Personal/Market Research Disrupter/voxbox-project/backend/data/approved_question_Mstd6pmn3qg4S_o6J3zsqXIqwqwgC8T7i2MWbna98Fs.json
+2024-09-25 16:12:48,005 INFO: Data loaded successfully
+2024-09-25 16:12:48,013 INFO: Options: {'a': 'Very interested', 'b': 'Somewhat interested', 'c': 'Neutral', 'd': 'Not very interested', 'e': 'Not at all interested'}
+2024-09-25 16:12:48,013 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:12:48,014 INFO: Options: {'a': 'Very interested', 'b': 'Somewhat interested', 'c': 'Neutral', 'd': 'Not very interested', 'e': 'Not at all interested'}
+2024-09-25 16:12:48,014 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:12:48,014 INFO: Options: {'a': 'Very interested', 'b': 'Somewhat interested', 'c': 'Neutral', 'd': 'Not very interested', 'e': 'Not at all interested'}
+2024-09-25 16:12:48,014 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:12:48,015 INFO: Options: {'a': 'Very interested', 'b': 'Somewhat interested', 'c': 'Neutral', 'd': 'Not very interested', 'e': 'Not at all interested'}
+2024-09-25 16:12:48,016 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:12:48,017 INFO: Options: {'a': 'Very interested', 'b': 'Somewhat interested', 'c': 'Neutral', 'd': 'Not very interested', 'e': 'Not at all interested'}
+2024-09-25 16:12:48,017 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:12:48,018 INFO: Options: {'a': 'Very interested', 'b': 'Somewhat interested', 'c': 'Neutral', 'd': 'Not very interested', 'e': 'Not at all interested'}
+2024-09-25 16:12:48,018 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:12:48,018 INFO: Options: {'a': 'Very interested', 'b': 'Somewhat interested', 'c': 'Neutral', 'd': 'Not very interested', 'e': 'Not at all interested'}
+2024-09-25 16:12:48,019 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:12:48,019 INFO: Options: {'a': 'Very interested', 'b': 'Somewhat interested', 'c': 'Neutral', 'd': 'Not very interested', 'e': 'Not at all interested'}
+2024-09-25 16:12:48,019 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:12:48,019 INFO: Options: {'a': 'Very interested', 'b': 'Somewhat interested', 'c': 'Neutral', 'd': 'Not very interested', 'e': 'Not at all interested'}
+2024-09-25 16:12:48,020 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:12:48,020 INFO: Options: {'a': 'Very interested', 'b': 'Somewhat interested', 'c': 'Neutral', 'd': 'Not very interested', 'e': 'Not at all interested'}
+2024-09-25 16:12:48,020 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:12:48,024 INFO: Survey results written to /Users/JudeHoffner/Library/CloudStorage/Dropbox-Personal/Market Research Disrupter/voxbox-project/backend/data/survey_results_Mstd6pmn3qg4S_o6J3zsqXIqwqwgC8T7i2MWbna98Fs.json
+2024-09-25 16:12:48,024 INFO: Saved survey results to /Users/JudeHoffner/Library/CloudStorage/Dropbox-Personal/Market Research Disrupter/voxbox-project/backend/data/survey_results_Mstd6pmn3qg4S_o6J3zsqXIqwqwgC8T7i2MWbna98Fs.json
+2024-09-25 16:12:48,025 INFO: Loaded survey data: Question: How interested would you be in a new product that captures images of birds in your backyard to help with birdwatching and nature photography?, Aggregate results: 5, Individual responses: 10
+2024-09-25 16:12:48,025 INFO: Analysis prompt formatted successfully.
+2024-09-25 16:12:48,258 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-25 16:12:48,475 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_GQoWJ8e9AcECubBxSamdAtw7/messages "HTTP/1.1 200 OK"
+2024-09-25 16:12:49,347 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_GQoWJ8e9AcECubBxSamdAtw7/runs "HTTP/1.1 200 OK"
+2024-09-25 16:12:49,476 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_GQoWJ8e9AcECubBxSamdAtw7/runs/run_xozwlNtISyN84EH46W7iLVLe "HTTP/1.1 200 OK"
+2024-09-25 16:12:50,646 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_GQoWJ8e9AcECubBxSamdAtw7/runs/run_xozwlNtISyN84EH46W7iLVLe "HTTP/1.1 200 OK"
+2024-09-25 16:12:52,244 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_GQoWJ8e9AcECubBxSamdAtw7/runs/run_xozwlNtISyN84EH46W7iLVLe "HTTP/1.1 200 OK"
+2024-09-25 16:12:53,627 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_GQoWJ8e9AcECubBxSamdAtw7/runs/run_xozwlNtISyN84EH46W7iLVLe "HTTP/1.1 200 OK"
+2024-09-25 16:12:54,774 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_GQoWJ8e9AcECubBxSamdAtw7/messages "HTTP/1.1 200 OK"
+2024-09-25 16:12:54,775 INFO: Analysis received from assistant.
+2024-09-25 16:12:54,775 INFO: Parsed analysis data successfully
+2024-09-25 16:12:54,776 INFO: Analysis saved to /Users/JudeHoffner/Library/CloudStorage/Dropbox-Personal/Market Research Disrupter/voxbox-project/backend/data/survey_analysis_Mstd6pmn3qg4S_o6J3zsqXIqwqwgC8T7i2MWbna98Fs.json
+2024-09-25 16:12:54,776 INFO: Analysis complete. Results saved and returned.
+2024-09-25 16:12:54,776 INFO: Approved question: {'question': 'How interested would you be in a new product that captures images of birds in your backyard to help with birdwatching and nature photography?', 'type': 'Likert scale', 'options': {'a': 'Very interested', 'b': 'Somewhat interested', 'c': 'Neutral', 'd': 'Not very interested', 'e': 'Not at all interested'}}
+2024-09-25 16:12:54,848 INFO: 127.0.0.1 - - [25/Sep/2024 16:12:54] "POST /approve-question HTTP/1.1" 200 -
+2024-09-25 16:16:40,802 INFO: 127.0.0.1 - - [25/Sep/2024 16:16:40] "GET / HTTP/1.1" 200 -
+2024-09-25 16:16:40,826 INFO: 127.0.0.1 - - [25/Sep/2024 16:16:40] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2024-09-25 16:16:40,826 INFO: 127.0.0.1 - - [25/Sep/2024 16:16:40] "[36mGET /app.js HTTP/1.1[0m" 304 -
+2024-09-25 16:20:06,204 INFO: 127.0.0.1 - - [25/Sep/2024 16:20:06] "GET / HTTP/1.1" 200 -
+2024-09-25 16:20:06,231 INFO: 127.0.0.1 - - [25/Sep/2024 16:20:06] "[36mGET /app.js HTTP/1.1[0m" 304 -
+2024-09-25 16:20:06,232 INFO: 127.0.0.1 - - [25/Sep/2024 16:20:06] "GET /styles.css HTTP/1.1" 200 -
+2024-09-25 16:22:25,621 INFO: Flask app starting. Testing logging...
+2024-09-25 16:22:26,305 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.4.41:5001
+2024-09-25 16:22:26,305 INFO: [33mPress CTRL+C to quit[0m
+2024-09-25 16:22:26,305 INFO:  * Restarting with stat
+2024-09-25 16:22:26,328 INFO: Flask app starting. Testing logging...
+2024-09-25 16:22:26,783 WARNING:  * Debugger is active!
+2024-09-25 16:22:26,791 INFO:  * Debugger PIN: 960-184-702
+2024-09-25 16:22:29,825 INFO: 127.0.0.1 - - [25/Sep/2024 16:22:29] "GET / HTTP/1.1" 200 -
+2024-09-25 16:22:29,849 INFO: 127.0.0.1 - - [25/Sep/2024 16:22:29] "[36mGET /app.js HTTP/1.1[0m" 304 -
+2024-09-25 16:22:29,849 INFO: 127.0.0.1 - - [25/Sep/2024 16:22:29] "GET /styles.css HTTP/1.1" 200 -
+2024-09-25 16:22:48,719 INFO: Entered transform_question_route
+2024-09-25 16:22:48,721 INFO: Received question: Is it time to become a professional unicorn trainer?
+2024-09-25 16:22:48,721 INFO: Calling transform_question function
+2024-09-25 16:22:48,721 INFO: Transforming question: Is it time to become a professional unicorn trainer?
+2024-09-25 16:22:48,988 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-25 16:22:49,137 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_QZwFISEuhNVc9uNcIThYJRaD/messages "HTTP/1.1 200 OK"
+2024-09-25 16:22:49,620 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_QZwFISEuhNVc9uNcIThYJRaD/runs "HTTP/1.1 200 OK"
+2024-09-25 16:22:49,776 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QZwFISEuhNVc9uNcIThYJRaD/runs/run_HAwpUr4NxvWiGjMwMeNU7NKM "HTTP/1.1 200 OK"
+2024-09-25 16:22:49,934 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QZwFISEuhNVc9uNcIThYJRaD/runs/run_HAwpUr4NxvWiGjMwMeNU7NKM "HTTP/1.1 200 OK"
+2024-09-25 16:22:50,280 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QZwFISEuhNVc9uNcIThYJRaD/runs/run_HAwpUr4NxvWiGjMwMeNU7NKM "HTTP/1.1 200 OK"
+2024-09-25 16:22:50,521 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QZwFISEuhNVc9uNcIThYJRaD/runs/run_HAwpUr4NxvWiGjMwMeNU7NKM "HTTP/1.1 200 OK"
+2024-09-25 16:22:50,664 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QZwFISEuhNVc9uNcIThYJRaD/runs/run_HAwpUr4NxvWiGjMwMeNU7NKM "HTTP/1.1 200 OK"
+2024-09-25 16:22:50,794 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QZwFISEuhNVc9uNcIThYJRaD/runs/run_HAwpUr4NxvWiGjMwMeNU7NKM "HTTP/1.1 200 OK"
+2024-09-25 16:22:50,948 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QZwFISEuhNVc9uNcIThYJRaD/runs/run_HAwpUr4NxvWiGjMwMeNU7NKM "HTTP/1.1 200 OK"
+2024-09-25 16:22:51,185 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QZwFISEuhNVc9uNcIThYJRaD/runs/run_HAwpUr4NxvWiGjMwMeNU7NKM "HTTP/1.1 200 OK"
+2024-09-25 16:22:51,320 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QZwFISEuhNVc9uNcIThYJRaD/runs/run_HAwpUr4NxvWiGjMwMeNU7NKM "HTTP/1.1 200 OK"
+2024-09-25 16:22:51,480 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QZwFISEuhNVc9uNcIThYJRaD/runs/run_HAwpUr4NxvWiGjMwMeNU7NKM "HTTP/1.1 200 OK"
+2024-09-25 16:22:51,703 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QZwFISEuhNVc9uNcIThYJRaD/runs/run_HAwpUr4NxvWiGjMwMeNU7NKM "HTTP/1.1 200 OK"
+2024-09-25 16:22:51,839 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QZwFISEuhNVc9uNcIThYJRaD/messages "HTTP/1.1 200 OK"
+2024-09-25 16:22:51,840 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_tYCG31S3YkhGATGLdL1TQaXz', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "Do you believe that now is a suitable time to pursue a career as a professional unicorn trainer?",\n    "type": "Multiple Choice",\n    "options": {\n        "a": "Yes, I think it\'s a viable career path currently.",\n        "b": "No, I don\'t believe the timing is right for such a career choice.",\n        "c": "I\'m unsure or have no strong opinion on this matter.",\n        "d": "I would need more information to make an informed decision.",\n        "e": "Other (please specify)"\n    }\n}'), type='text')], created_at=1727295770, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_HAwpUr4NxvWiGjMwMeNU7NKM', status=None, thread_id='thread_QZwFISEuhNVc9uNcIThYJRaD'), Message(id='msg_KeROjPnWdZYgjO2oTswMILWU', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "Is it time to become a professional unicorn trainer?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727295769, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_QZwFISEuhNVc9uNcIThYJRaD')], object='list', first_id='msg_tYCG31S3YkhGATGLdL1TQaXz', last_id='msg_KeROjPnWdZYgjO2oTswMILWU', has_more=False)
+2024-09-25 16:22:51,840 INFO: Transformed question: {'question': 'Do you believe that now is a suitable time to pursue a career as a professional unicorn trainer?', 'type': 'Multiple Choice', 'options': {'a': "Yes, I think it's a viable career path currently.", 'b': "No, I don't believe the timing is right for such a career choice.", 'c': "I'm unsure or have no strong opinion on this matter.", 'd': 'I would need more information to make an informed decision.', 'e': 'Other (please specify)'}}
+2024-09-25 16:22:51,840 INFO: Transformed question: {'question': 'Do you believe that now is a suitable time to pursue a career as a professional unicorn trainer?', 'type': 'Multiple Choice', 'options': {'a': "Yes, I think it's a viable career path currently.", 'b': "No, I don't believe the timing is right for such a career choice.", 'c': "I'm unsure or have no strong opinion on this matter.", 'd': 'I would need more information to make an informed decision.', 'e': 'Other (please specify)'}}
+2024-09-25 16:22:51,840 INFO: Session after transform: <FileSystemSession {'last_question': 'Is it time to become a professional unicorn trainer?', 'last_transformed_question': {'question': 'Do you believe that now is a suitable time to pursue a career as a professional unicorn trainer?', 'type': 'Multiple Choice', 'options': {'a': "Yes, I think it's a viable career path currently.", 'b': "No, I don't believe the timing is right for such a career choice.", 'c': "I'm unsure or have no strong opinion on this matter.", 'd': 'I would need more information to make an informed decision.', 'e': 'Other (please specify)'}}}>
+2024-09-25 16:22:51,970 INFO: 127.0.0.1 - - [25/Sep/2024 16:22:51] "POST /transform-question HTTP/1.1" 200 -
+2024-09-25 16:22:54,502 INFO: Entered approve_question_route
+2024-09-25 16:22:54,504 INFO: Retrieved from session - transformed: {'question': 'Do you believe that now is a suitable time to pursue a career as a professional unicorn trainer?', 'type': 'Multiple Choice', 'options': {'a': "Yes, I think it's a viable career path currently.", 'b': "No, I don't believe the timing is right for such a career choice.", 'c': "I'm unsure or have no strong opinion on this matter.", 'd': 'I would need more information to make an informed decision.', 'e': 'Other (please specify)'}}, original: Is it time to become a professional unicorn trainer?
+2024-09-25 16:22:54,505 INFO: Saved approved question to /Users/JudeHoffner/Library/CloudStorage/Dropbox-Personal/Market Research Disrupter/voxbox-project/backend/data/approved_question_qGDUuu2XFILd9YNXypEmbJr21wywvtGzqNAj0ykLeP4.json
+2024-09-25 16:22:54,511 INFO: Data loaded successfully
+2024-09-25 16:22:54,514 INFO: Options: {'a': "Yes, I think it's a viable career path currently.", 'b': "No, I don't believe the timing is right for such a career choice.", 'c': "I'm unsure or have no strong opinion on this matter.", 'd': 'I would need more information to make an informed decision.', 'e': 'Other (please specify)'}
+2024-09-25 16:22:54,514 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:22:54,515 INFO: Options: {'a': "Yes, I think it's a viable career path currently.", 'b': "No, I don't believe the timing is right for such a career choice.", 'c': "I'm unsure or have no strong opinion on this matter.", 'd': 'I would need more information to make an informed decision.', 'e': 'Other (please specify)'}
+2024-09-25 16:22:54,515 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:22:54,515 INFO: Options: {'a': "Yes, I think it's a viable career path currently.", 'b': "No, I don't believe the timing is right for such a career choice.", 'c': "I'm unsure or have no strong opinion on this matter.", 'd': 'I would need more information to make an informed decision.', 'e': 'Other (please specify)'}
+2024-09-25 16:22:54,515 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:22:54,515 INFO: Options: {'a': "Yes, I think it's a viable career path currently.", 'b': "No, I don't believe the timing is right for such a career choice.", 'c': "I'm unsure or have no strong opinion on this matter.", 'd': 'I would need more information to make an informed decision.', 'e': 'Other (please specify)'}
+2024-09-25 16:22:54,515 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:22:54,515 INFO: Options: {'a': "Yes, I think it's a viable career path currently.", 'b': "No, I don't believe the timing is right for such a career choice.", 'c': "I'm unsure or have no strong opinion on this matter.", 'd': 'I would need more information to make an informed decision.', 'e': 'Other (please specify)'}
+2024-09-25 16:22:54,515 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:22:54,515 INFO: Options: {'a': "Yes, I think it's a viable career path currently.", 'b': "No, I don't believe the timing is right for such a career choice.", 'c': "I'm unsure or have no strong opinion on this matter.", 'd': 'I would need more information to make an informed decision.', 'e': 'Other (please specify)'}
+2024-09-25 16:22:54,516 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:22:54,516 INFO: Options: {'a': "Yes, I think it's a viable career path currently.", 'b': "No, I don't believe the timing is right for such a career choice.", 'c': "I'm unsure or have no strong opinion on this matter.", 'd': 'I would need more information to make an informed decision.', 'e': 'Other (please specify)'}
+2024-09-25 16:22:54,516 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:22:54,516 INFO: Options: {'a': "Yes, I think it's a viable career path currently.", 'b': "No, I don't believe the timing is right for such a career choice.", 'c': "I'm unsure or have no strong opinion on this matter.", 'd': 'I would need more information to make an informed decision.', 'e': 'Other (please specify)'}
+2024-09-25 16:22:54,516 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:22:54,516 INFO: Options: {'a': "Yes, I think it's a viable career path currently.", 'b': "No, I don't believe the timing is right for such a career choice.", 'c': "I'm unsure or have no strong opinion on this matter.", 'd': 'I would need more information to make an informed decision.', 'e': 'Other (please specify)'}
+2024-09-25 16:22:54,516 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:22:54,516 INFO: Options: {'a': "Yes, I think it's a viable career path currently.", 'b': "No, I don't believe the timing is right for such a career choice.", 'c': "I'm unsure or have no strong opinion on this matter.", 'd': 'I would need more information to make an informed decision.', 'e': 'Other (please specify)'}
+2024-09-25 16:22:54,516 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:22:54,517 INFO: Survey results written to /Users/JudeHoffner/Library/CloudStorage/Dropbox-Personal/Market Research Disrupter/voxbox-project/backend/data/survey_results_qGDUuu2XFILd9YNXypEmbJr21wywvtGzqNAj0ykLeP4.json
+2024-09-25 16:22:54,518 INFO: Saved survey results to /Users/JudeHoffner/Library/CloudStorage/Dropbox-Personal/Market Research Disrupter/voxbox-project/backend/data/survey_results_qGDUuu2XFILd9YNXypEmbJr21wywvtGzqNAj0ykLeP4.json
+2024-09-25 16:22:54,518 INFO: Loaded survey data: Question: Do you believe that now is a suitable time to pursue a career as a professional unicorn trainer?, Aggregate results: 5, Individual responses: 10
+2024-09-25 16:22:54,518 INFO: Analysis prompt formatted successfully.
+2024-09-25 16:22:54,846 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-25 16:22:54,990 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_G2LlocGKFqTFHWLnBiefCGzO/messages "HTTP/1.1 200 OK"
+2024-09-25 16:22:55,435 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_G2LlocGKFqTFHWLnBiefCGzO/runs "HTTP/1.1 200 OK"
+2024-09-25 16:22:56,488 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_G2LlocGKFqTFHWLnBiefCGzO/runs/run_pX7lAxoMazoj1ObpZidb7iYV "HTTP/1.1 200 OK"
+2024-09-25 16:22:57,680 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_G2LlocGKFqTFHWLnBiefCGzO/runs/run_pX7lAxoMazoj1ObpZidb7iYV "HTTP/1.1 200 OK"
+2024-09-25 16:22:58,843 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_G2LlocGKFqTFHWLnBiefCGzO/runs/run_pX7lAxoMazoj1ObpZidb7iYV "HTTP/1.1 200 OK"
+2024-09-25 16:22:59,989 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_G2LlocGKFqTFHWLnBiefCGzO/runs/run_pX7lAxoMazoj1ObpZidb7iYV "HTTP/1.1 200 OK"
+2024-09-25 16:23:01,129 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_G2LlocGKFqTFHWLnBiefCGzO/messages "HTTP/1.1 200 OK"
+2024-09-25 16:23:01,131 INFO: Analysis received from assistant.
+2024-09-25 16:23:01,131 ERROR: Error parsing AI response JSON: Expecting value: line 1 column 1 (char 0)
+2024-09-25 16:23:01,131 ERROR: An error occurred in the main function: Expecting value: line 1 column 1 (char 0)
+2024-09-25 16:23:01,131 ERROR: Error in approve_question_route: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/Users/JudeHoffner/Library/CloudStorage/Dropbox-Personal/Market Research Disrupter/voxbox-project/backend/api/routes.py", line 112, in approve_question_route
+    analysis_result = create_survey_analysis.main(
+  File "/Users/JudeHoffner/Library/CloudStorage/Dropbox-Personal/Market Research Disrupter/voxbox-project/backend/api/create_survey_analysis.py", line 130, in main
+    analysis_data = parse_ai_response(ai_response)
+  File "/Users/JudeHoffner/Library/CloudStorage/Dropbox-Personal/Market Research Disrupter/voxbox-project/backend/api/create_survey_analysis.py", line 101, in parse_ai_response
+    analysis_data = json.loads(response)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.15/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.15/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/opt/homebrew/Cellar/python@3.10/3.10.15/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-09-25 16:23:01,152 INFO: 127.0.0.1 - - [25/Sep/2024 16:23:01] "[35m[1mPOST /approve-question HTTP/1.1[0m" 500 -
+2024-09-25 16:23:15,191 INFO: Entered transform_question_route
+2024-09-25 16:23:15,192 INFO: Received question: Is it time to become a professional unicorn trainer?
+2024-09-25 16:23:15,192 INFO: Calling transform_question function
+2024-09-25 16:23:15,192 INFO: Transforming question: Is it time to become a professional unicorn trainer?
+2024-09-25 16:23:15,457 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-25 16:23:15,655 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_fAh4oc11CZX2nkYlwodV8eFG/messages "HTTP/1.1 200 OK"
+2024-09-25 16:23:16,434 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_fAh4oc11CZX2nkYlwodV8eFG/runs "HTTP/1.1 200 OK"
+2024-09-25 16:23:16,582 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_fAh4oc11CZX2nkYlwodV8eFG/runs/run_sNS5NnYr3hc2ua5xUwfR4Df8 "HTTP/1.1 200 OK"
+2024-09-25 16:23:16,728 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_fAh4oc11CZX2nkYlwodV8eFG/runs/run_sNS5NnYr3hc2ua5xUwfR4Df8 "HTTP/1.1 200 OK"
+2024-09-25 16:23:16,872 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_fAh4oc11CZX2nkYlwodV8eFG/runs/run_sNS5NnYr3hc2ua5xUwfR4Df8 "HTTP/1.1 200 OK"
+2024-09-25 16:23:17,228 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_fAh4oc11CZX2nkYlwodV8eFG/runs/run_sNS5NnYr3hc2ua5xUwfR4Df8 "HTTP/1.1 200 OK"
+2024-09-25 16:23:17,465 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_fAh4oc11CZX2nkYlwodV8eFG/runs/run_sNS5NnYr3hc2ua5xUwfR4Df8 "HTTP/1.1 200 OK"
+2024-09-25 16:23:17,602 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_fAh4oc11CZX2nkYlwodV8eFG/runs/run_sNS5NnYr3hc2ua5xUwfR4Df8 "HTTP/1.1 200 OK"
+2024-09-25 16:23:17,760 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_fAh4oc11CZX2nkYlwodV8eFG/runs/run_sNS5NnYr3hc2ua5xUwfR4Df8 "HTTP/1.1 200 OK"
+2024-09-25 16:23:17,917 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_fAh4oc11CZX2nkYlwodV8eFG/runs/run_sNS5NnYr3hc2ua5xUwfR4Df8 "HTTP/1.1 200 OK"
+2024-09-25 16:23:18,079 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_fAh4oc11CZX2nkYlwodV8eFG/runs/run_sNS5NnYr3hc2ua5xUwfR4Df8 "HTTP/1.1 200 OK"
+2024-09-25 16:23:18,418 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_fAh4oc11CZX2nkYlwodV8eFG/runs/run_sNS5NnYr3hc2ua5xUwfR4Df8 "HTTP/1.1 200 OK"
+2024-09-25 16:23:18,575 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_fAh4oc11CZX2nkYlwodV8eFG/runs/run_sNS5NnYr3hc2ua5xUwfR4Df8 "HTTP/1.1 200 OK"
+2024-09-25 16:23:18,733 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_fAh4oc11CZX2nkYlwodV8eFG/messages "HTTP/1.1 200 OK"
+2024-09-25 16:23:18,736 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_J4HR1L80D9as00STwlRkYkDL', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "Do you believe there is a demand for professional unicorn trainers?",\n    "type": "Multiple Choice",\n    "options": {\n        "a": "Yes, I believe there is a growing demand for professional unicorn trainers.",\n        "b": "No, I do not think there is a sufficient demand for professional unicorn trainers.",\n        "c": "I am unsure about the demand for professional unicorn trainers.",\n        "d": "I have not considered the demand for professional unicorn trainers.",\n        "e": "Other (please specify)"\n    }\n}'), type='text')], created_at=1727295796, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_sNS5NnYr3hc2ua5xUwfR4Df8', status=None, thread_id='thread_fAh4oc11CZX2nkYlwodV8eFG'), Message(id='msg_NrPi23iIcdfda144d26B4zZG', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "Is it time to become a professional unicorn trainer?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727295795, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_fAh4oc11CZX2nkYlwodV8eFG')], object='list', first_id='msg_J4HR1L80D9as00STwlRkYkDL', last_id='msg_NrPi23iIcdfda144d26B4zZG', has_more=False)
+2024-09-25 16:23:18,737 INFO: Transformed question: {'question': 'Do you believe there is a demand for professional unicorn trainers?', 'type': 'Multiple Choice', 'options': {'a': 'Yes, I believe there is a growing demand for professional unicorn trainers.', 'b': 'No, I do not think there is a sufficient demand for professional unicorn trainers.', 'c': 'I am unsure about the demand for professional unicorn trainers.', 'd': 'I have not considered the demand for professional unicorn trainers.', 'e': 'Other (please specify)'}}
+2024-09-25 16:23:18,737 INFO: Transformed question: {'question': 'Do you believe there is a demand for professional unicorn trainers?', 'type': 'Multiple Choice', 'options': {'a': 'Yes, I believe there is a growing demand for professional unicorn trainers.', 'b': 'No, I do not think there is a sufficient demand for professional unicorn trainers.', 'c': 'I am unsure about the demand for professional unicorn trainers.', 'd': 'I have not considered the demand for professional unicorn trainers.', 'e': 'Other (please specify)'}}
+2024-09-25 16:23:18,737 INFO: Session after transform: <FileSystemSession {'last_question': 'Is it time to become a professional unicorn trainer?', 'last_transformed_question': {'question': 'Do you believe there is a demand for professional unicorn trainers?', 'type': 'Multiple Choice', 'options': {'a': 'Yes, I believe there is a growing demand for professional unicorn trainers.', 'b': 'No, I do not think there is a sufficient demand for professional unicorn trainers.', 'c': 'I am unsure about the demand for professional unicorn trainers.', 'd': 'I have not considered the demand for professional unicorn trainers.', 'e': 'Other (please specify)'}}}>
+2024-09-25 16:23:18,796 INFO: 127.0.0.1 - - [25/Sep/2024 16:23:18] "POST /transform-question HTTP/1.1" 200 -
+2024-09-25 16:23:20,051 INFO: Entered approve_question_route
+2024-09-25 16:23:20,052 INFO: Retrieved from session - transformed: {'question': 'Do you believe there is a demand for professional unicorn trainers?', 'type': 'Multiple Choice', 'options': {'a': 'Yes, I believe there is a growing demand for professional unicorn trainers.', 'b': 'No, I do not think there is a sufficient demand for professional unicorn trainers.', 'c': 'I am unsure about the demand for professional unicorn trainers.', 'd': 'I have not considered the demand for professional unicorn trainers.', 'e': 'Other (please specify)'}}, original: Is it time to become a professional unicorn trainer?
+2024-09-25 16:23:20,052 INFO: Saved approved question to /Users/JudeHoffner/Library/CloudStorage/Dropbox-Personal/Market Research Disrupter/voxbox-project/backend/data/approved_question_qGDUuu2XFILd9YNXypEmbJr21wywvtGzqNAj0ykLeP4.json
+2024-09-25 16:23:20,054 INFO: Data loaded successfully
+2024-09-25 16:23:20,055 INFO: Options: {'a': 'Yes, I believe there is a growing demand for professional unicorn trainers.', 'b': 'No, I do not think there is a sufficient demand for professional unicorn trainers.', 'c': 'I am unsure about the demand for professional unicorn trainers.', 'd': 'I have not considered the demand for professional unicorn trainers.', 'e': 'Other (please specify)'}
+2024-09-25 16:23:20,055 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:23:20,055 INFO: Options: {'a': 'Yes, I believe there is a growing demand for professional unicorn trainers.', 'b': 'No, I do not think there is a sufficient demand for professional unicorn trainers.', 'c': 'I am unsure about the demand for professional unicorn trainers.', 'd': 'I have not considered the demand for professional unicorn trainers.', 'e': 'Other (please specify)'}
+2024-09-25 16:23:20,055 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:23:20,055 INFO: Options: {'a': 'Yes, I believe there is a growing demand for professional unicorn trainers.', 'b': 'No, I do not think there is a sufficient demand for professional unicorn trainers.', 'c': 'I am unsure about the demand for professional unicorn trainers.', 'd': 'I have not considered the demand for professional unicorn trainers.', 'e': 'Other (please specify)'}
+2024-09-25 16:23:20,055 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:23:20,055 INFO: Options: {'a': 'Yes, I believe there is a growing demand for professional unicorn trainers.', 'b': 'No, I do not think there is a sufficient demand for professional unicorn trainers.', 'c': 'I am unsure about the demand for professional unicorn trainers.', 'd': 'I have not considered the demand for professional unicorn trainers.', 'e': 'Other (please specify)'}
+2024-09-25 16:23:20,056 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:23:20,056 INFO: Options: {'a': 'Yes, I believe there is a growing demand for professional unicorn trainers.', 'b': 'No, I do not think there is a sufficient demand for professional unicorn trainers.', 'c': 'I am unsure about the demand for professional unicorn trainers.', 'd': 'I have not considered the demand for professional unicorn trainers.', 'e': 'Other (please specify)'}
+2024-09-25 16:23:20,056 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:23:20,056 INFO: Options: {'a': 'Yes, I believe there is a growing demand for professional unicorn trainers.', 'b': 'No, I do not think there is a sufficient demand for professional unicorn trainers.', 'c': 'I am unsure about the demand for professional unicorn trainers.', 'd': 'I have not considered the demand for professional unicorn trainers.', 'e': 'Other (please specify)'}
+2024-09-25 16:23:20,056 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:23:20,056 INFO: Options: {'a': 'Yes, I believe there is a growing demand for professional unicorn trainers.', 'b': 'No, I do not think there is a sufficient demand for professional unicorn trainers.', 'c': 'I am unsure about the demand for professional unicorn trainers.', 'd': 'I have not considered the demand for professional unicorn trainers.', 'e': 'Other (please specify)'}
+2024-09-25 16:23:20,056 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:23:20,056 INFO: Options: {'a': 'Yes, I believe there is a growing demand for professional unicorn trainers.', 'b': 'No, I do not think there is a sufficient demand for professional unicorn trainers.', 'c': 'I am unsure about the demand for professional unicorn trainers.', 'd': 'I have not considered the demand for professional unicorn trainers.', 'e': 'Other (please specify)'}
+2024-09-25 16:23:20,056 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:23:20,056 INFO: Options: {'a': 'Yes, I believe there is a growing demand for professional unicorn trainers.', 'b': 'No, I do not think there is a sufficient demand for professional unicorn trainers.', 'c': 'I am unsure about the demand for professional unicorn trainers.', 'd': 'I have not considered the demand for professional unicorn trainers.', 'e': 'Other (please specify)'}
+2024-09-25 16:23:20,056 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:23:20,056 INFO: Options: {'a': 'Yes, I believe there is a growing demand for professional unicorn trainers.', 'b': 'No, I do not think there is a sufficient demand for professional unicorn trainers.', 'c': 'I am unsure about the demand for professional unicorn trainers.', 'd': 'I have not considered the demand for professional unicorn trainers.', 'e': 'Other (please specify)'}
+2024-09-25 16:23:20,056 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:23:20,057 INFO: Survey results written to /Users/JudeHoffner/Library/CloudStorage/Dropbox-Personal/Market Research Disrupter/voxbox-project/backend/data/survey_results_qGDUuu2XFILd9YNXypEmbJr21wywvtGzqNAj0ykLeP4.json
+2024-09-25 16:23:20,057 INFO: Saved survey results to /Users/JudeHoffner/Library/CloudStorage/Dropbox-Personal/Market Research Disrupter/voxbox-project/backend/data/survey_results_qGDUuu2XFILd9YNXypEmbJr21wywvtGzqNAj0ykLeP4.json
+2024-09-25 16:23:20,058 INFO: Loaded survey data: Question: Do you believe there is a demand for professional unicorn trainers?, Aggregate results: 5, Individual responses: 10
+2024-09-25 16:23:20,058 INFO: Analysis prompt formatted successfully.
+2024-09-25 16:23:20,235 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-25 16:23:20,511 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_qA1iOgAlAXqRq9NCOO2MJfqg/messages "HTTP/1.1 200 OK"
+2024-09-25 16:23:21,033 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_qA1iOgAlAXqRq9NCOO2MJfqg/runs "HTTP/1.1 200 OK"
+2024-09-25 16:23:21,178 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_qA1iOgAlAXqRq9NCOO2MJfqg/runs/run_0pNgcVhuIf1oVETVIPUA9yO7 "HTTP/1.1 200 OK"
+2024-09-25 16:23:22,320 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_qA1iOgAlAXqRq9NCOO2MJfqg/runs/run_0pNgcVhuIf1oVETVIPUA9yO7 "HTTP/1.1 200 OK"
+2024-09-25 16:23:23,463 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_qA1iOgAlAXqRq9NCOO2MJfqg/runs/run_0pNgcVhuIf1oVETVIPUA9yO7 "HTTP/1.1 200 OK"
+2024-09-25 16:23:24,703 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_qA1iOgAlAXqRq9NCOO2MJfqg/runs/run_0pNgcVhuIf1oVETVIPUA9yO7 "HTTP/1.1 200 OK"
+2024-09-25 16:23:25,991 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_qA1iOgAlAXqRq9NCOO2MJfqg/runs/run_0pNgcVhuIf1oVETVIPUA9yO7 "HTTP/1.1 200 OK"
+2024-09-25 16:23:27,142 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_qA1iOgAlAXqRq9NCOO2MJfqg/messages "HTTP/1.1 200 OK"
+2024-09-25 16:23:27,145 INFO: Analysis received from assistant.
+2024-09-25 16:23:27,146 INFO: Parsed analysis data successfully
+2024-09-25 16:23:27,147 INFO: Analysis saved to /Users/JudeHoffner/Library/CloudStorage/Dropbox-Personal/Market Research Disrupter/voxbox-project/backend/data/survey_analysis_qGDUuu2XFILd9YNXypEmbJr21wywvtGzqNAj0ykLeP4.json
+2024-09-25 16:23:27,147 INFO: Analysis complete. Results saved and returned.
+2024-09-25 16:23:27,147 INFO: Approved question: {'question': 'Do you believe there is a demand for professional unicorn trainers?', 'type': 'Multiple Choice', 'options': {'a': 'Yes, I believe there is a growing demand for professional unicorn trainers.', 'b': 'No, I do not think there is a sufficient demand for professional unicorn trainers.', 'c': 'I am unsure about the demand for professional unicorn trainers.', 'd': 'I have not considered the demand for professional unicorn trainers.', 'e': 'Other (please specify)'}}
+2024-09-25 16:23:27,190 INFO: 127.0.0.1 - - [25/Sep/2024 16:23:27] "POST /approve-question HTTP/1.1" 200 -
+2024-09-25 16:31:55,420 INFO: Flask app starting. Testing logging...
+2024-09-25 16:31:56,403 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.4.41:5001
+2024-09-25 16:31:56,403 INFO: [33mPress CTRL+C to quit[0m
+2024-09-25 16:31:56,404 INFO:  * Restarting with stat
+2024-09-25 16:31:56,425 INFO: Flask app starting. Testing logging...
+2024-09-25 16:31:56,888 WARNING:  * Debugger is active!
+2024-09-25 16:31:56,896 INFO:  * Debugger PIN: 960-184-702
+2024-09-25 16:32:02,965 INFO: 127.0.0.1 - - [25/Sep/2024 16:32:02] "GET / HTTP/1.1" 200 -
+2024-09-25 16:32:02,997 INFO: 127.0.0.1 - - [25/Sep/2024 16:32:02] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2024-09-25 16:32:02,997 INFO: 127.0.0.1 - - [25/Sep/2024 16:32:02] "[36mGET /app.js HTTP/1.1[0m" 304 -
+2024-09-25 16:32:18,728 INFO: Entered transform_question_route
+2024-09-25 16:32:18,728 INFO: Received question: Is it time to move to the south pacific?
+2024-09-25 16:32:18,728 INFO: Calling transform_question function
+2024-09-25 16:32:18,728 INFO: Transforming question: Is it time to move to the south pacific?
+2024-09-25 16:32:19,463 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-25 16:32:19,632 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_QDKnwKVQbfTEfQcGskv7bVzB/messages "HTTP/1.1 200 OK"
+2024-09-25 16:32:20,150 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_QDKnwKVQbfTEfQcGskv7bVzB/runs "HTTP/1.1 200 OK"
+2024-09-25 16:32:20,303 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QDKnwKVQbfTEfQcGskv7bVzB/runs/run_4YSVltr9jKLfNnsgABRNRu3f "HTTP/1.1 200 OK"
+2024-09-25 16:32:20,510 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QDKnwKVQbfTEfQcGskv7bVzB/runs/run_4YSVltr9jKLfNnsgABRNRu3f "HTTP/1.1 200 OK"
+2024-09-25 16:32:20,818 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QDKnwKVQbfTEfQcGskv7bVzB/runs/run_4YSVltr9jKLfNnsgABRNRu3f "HTTP/1.1 200 OK"
+2024-09-25 16:32:21,032 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QDKnwKVQbfTEfQcGskv7bVzB/runs/run_4YSVltr9jKLfNnsgABRNRu3f "HTTP/1.1 200 OK"
+2024-09-25 16:32:21,220 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QDKnwKVQbfTEfQcGskv7bVzB/runs/run_4YSVltr9jKLfNnsgABRNRu3f "HTTP/1.1 200 OK"
+2024-09-25 16:32:21,364 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QDKnwKVQbfTEfQcGskv7bVzB/runs/run_4YSVltr9jKLfNnsgABRNRu3f "HTTP/1.1 200 OK"
+2024-09-25 16:32:21,562 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QDKnwKVQbfTEfQcGskv7bVzB/runs/run_4YSVltr9jKLfNnsgABRNRu3f "HTTP/1.1 200 OK"
+2024-09-25 16:32:21,688 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QDKnwKVQbfTEfQcGskv7bVzB/runs/run_4YSVltr9jKLfNnsgABRNRu3f "HTTP/1.1 200 OK"
+2024-09-25 16:32:21,810 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QDKnwKVQbfTEfQcGskv7bVzB/runs/run_4YSVltr9jKLfNnsgABRNRu3f "HTTP/1.1 200 OK"
+2024-09-25 16:32:21,960 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QDKnwKVQbfTEfQcGskv7bVzB/runs/run_4YSVltr9jKLfNnsgABRNRu3f "HTTP/1.1 200 OK"
+2024-09-25 16:32:22,106 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QDKnwKVQbfTEfQcGskv7bVzB/runs/run_4YSVltr9jKLfNnsgABRNRu3f "HTTP/1.1 200 OK"
+2024-09-25 16:32:22,248 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_QDKnwKVQbfTEfQcGskv7bVzB/messages "HTTP/1.1 200 OK"
+2024-09-25 16:32:22,250 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_ihqEIdcrR1kfckuR0kEHhxGs', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "Do you believe relocating to the South Pacific is a timely decision?",\n    "type": "Likert scale",\n    "options": {\n        "a": "Strongly Agree",\n        "b": "Agree",\n        "c": "Neutral",\n        "d": "Disagree",\n        "e": "Strongly Disagree"\n    }\n}'), type='text')], created_at=1727296340, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_4YSVltr9jKLfNnsgABRNRu3f', status=None, thread_id='thread_QDKnwKVQbfTEfQcGskv7bVzB'), Message(id='msg_NLSYBHx65V5fOBqCMIDeWY6b', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "Is it time to move to the south pacific?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727296339, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_QDKnwKVQbfTEfQcGskv7bVzB')], object='list', first_id='msg_ihqEIdcrR1kfckuR0kEHhxGs', last_id='msg_NLSYBHx65V5fOBqCMIDeWY6b', has_more=False)
+2024-09-25 16:32:22,250 INFO: Transformed question: {'question': 'Do you believe relocating to the South Pacific is a timely decision?', 'type': 'Likert scale', 'options': {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}}
+2024-09-25 16:32:22,250 INFO: Transformed question: {'question': 'Do you believe relocating to the South Pacific is a timely decision?', 'type': 'Likert scale', 'options': {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}}
+2024-09-25 16:32:22,250 INFO: Session after transform: <FileSystemSession {'last_question': 'Is it time to move to the south pacific?', 'last_transformed_question': {'question': 'Do you believe relocating to the South Pacific is a timely decision?', 'type': 'Likert scale', 'options': {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}}}>
+2024-09-25 16:32:22,314 INFO: 127.0.0.1 - - [25/Sep/2024 16:32:22] "POST /transform-question HTTP/1.1" 200 -
+2024-09-25 16:32:23,746 INFO: Entered approve_question_route
+2024-09-25 16:32:23,746 INFO: Retrieved from session - transformed: {'question': 'Do you believe relocating to the South Pacific is a timely decision?', 'type': 'Likert scale', 'options': {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}}, original: Is it time to move to the south pacific?
+2024-09-25 16:32:23,747 INFO: Saved approved question to /Users/JudeHoffner/Library/CloudStorage/Dropbox-Personal/Market Research Disrupter/voxbox-project/backend/data/approved_question_Bq7i0xzLssEH1HSovlyWmlhFegwTf6JieHFs-t-VEVo.json
+2024-09-25 16:32:23,768 INFO: Data loaded successfully
+2024-09-25 16:32:23,773 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,773 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,773 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,773 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,773 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,773 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,773 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,773 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,773 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,773 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,773 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,773 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,773 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,773 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,773 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,773 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,773 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,773 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,774 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,774 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,774 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,774 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,774 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,774 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,774 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,774 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,774 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,774 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,774 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,774 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,774 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,774 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,774 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,774 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,774 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,774 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,774 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,774 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,774 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,774 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,774 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,774 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,774 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,774 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,774 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,774 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,774 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,775 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,775 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,775 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,775 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,775 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,775 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,775 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,775 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,775 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,775 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,775 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,775 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,775 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,775 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,775 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,775 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,775 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,775 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,775 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,776 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,776 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,776 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,776 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,776 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,776 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,776 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,776 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,776 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,776 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,776 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,776 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,776 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,776 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,776 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,776 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,776 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,776 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,776 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,776 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,776 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,776 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,776 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,776 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,776 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,776 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,776 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,776 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,776 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,777 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,777 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,777 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,777 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,777 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,777 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,777 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,777 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,777 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,777 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,777 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,777 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,777 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,777 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,777 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,777 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,777 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,777 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,777 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,777 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,777 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,777 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,777 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,777 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,777 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,777 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,777 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,777 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,777 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,778 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,778 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,778 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,778 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,778 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,778 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,778 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,778 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,778 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,778 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,778 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,778 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,778 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,778 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,778 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,778 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,778 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,778 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,778 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,778 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,778 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,778 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,778 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,778 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,778 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,778 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,778 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,778 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,778 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,778 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,779 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,779 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,779 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,779 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,779 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,779 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,779 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,779 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,779 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,779 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,779 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,779 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,779 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,779 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,779 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,779 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,779 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,779 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,779 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,779 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,779 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,779 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,779 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,779 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,779 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,779 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,779 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,779 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,779 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,779 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,780 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,780 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,780 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,780 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,780 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,780 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,780 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,780 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,780 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,780 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,780 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,780 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,780 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,780 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,780 INFO: Options: {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}
+2024-09-25 16:32:23,780 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-25 16:32:23,782 INFO: Survey results written to /Users/JudeHoffner/Library/CloudStorage/Dropbox-Personal/Market Research Disrupter/voxbox-project/backend/data/survey_results_Bq7i0xzLssEH1HSovlyWmlhFegwTf6JieHFs-t-VEVo.json
+2024-09-25 16:32:23,785 INFO: Saved survey results to /Users/JudeHoffner/Library/CloudStorage/Dropbox-Personal/Market Research Disrupter/voxbox-project/backend/data/survey_results_Bq7i0xzLssEH1HSovlyWmlhFegwTf6JieHFs-t-VEVo.json
+2024-09-25 16:32:23,786 INFO: Loaded survey data: Question: Do you believe relocating to the South Pacific is a timely decision?, Aggregate results: 5, Individual responses: 100
+2024-09-25 16:32:23,786 INFO: Analysis prompt formatted successfully.
+2024-09-25 16:32:23,942 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-25 16:32:24,176 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_6EllBMgbTCxgEJyGe4gQiNGg/messages "HTTP/1.1 200 OK"
+2024-09-25 16:32:24,707 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_6EllBMgbTCxgEJyGe4gQiNGg/runs "HTTP/1.1 200 OK"
+2024-09-25 16:32:24,885 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_6EllBMgbTCxgEJyGe4gQiNGg/runs/run_qNcLcNHDwbL8hW7JWF02bH8J "HTTP/1.1 200 OK"
+2024-09-25 16:32:26,024 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_6EllBMgbTCxgEJyGe4gQiNGg/runs/run_qNcLcNHDwbL8hW7JWF02bH8J "HTTP/1.1 200 OK"
+2024-09-25 16:32:27,188 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_6EllBMgbTCxgEJyGe4gQiNGg/runs/run_qNcLcNHDwbL8hW7JWF02bH8J "HTTP/1.1 200 OK"
+2024-09-25 16:32:28,390 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_6EllBMgbTCxgEJyGe4gQiNGg/runs/run_qNcLcNHDwbL8hW7JWF02bH8J "HTTP/1.1 200 OK"
+2024-09-25 16:32:29,570 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_6EllBMgbTCxgEJyGe4gQiNGg/messages "HTTP/1.1 200 OK"
+2024-09-25 16:32:29,571 INFO: Analysis received from assistant.
+2024-09-25 16:32:29,571 INFO: Parsed analysis data successfully
+2024-09-25 16:32:29,571 INFO: Analysis saved to /Users/JudeHoffner/Library/CloudStorage/Dropbox-Personal/Market Research Disrupter/voxbox-project/backend/data/survey_analysis_Bq7i0xzLssEH1HSovlyWmlhFegwTf6JieHFs-t-VEVo.json
+2024-09-25 16:32:29,571 INFO: Analysis complete. Results saved and returned.
+2024-09-25 16:32:29,571 INFO: Approved question: {'question': 'Do you believe relocating to the South Pacific is a timely decision?', 'type': 'Likert scale', 'options': {'a': 'Strongly Agree', 'b': 'Agree', 'c': 'Neutral', 'd': 'Disagree', 'e': 'Strongly Disagree'}}
+2024-09-25 16:32:29,588 INFO: 127.0.0.1 - - [25/Sep/2024 16:32:29] "POST /approve-question HTTP/1.1" 200 -

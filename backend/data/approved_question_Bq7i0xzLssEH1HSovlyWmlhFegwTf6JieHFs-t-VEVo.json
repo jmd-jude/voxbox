@@ -1,0 +1,14 @@
+{
+  "original": "Is it time to move to the south pacific?",
+  "transformed": {
+    "question": "Do you believe relocating to the South Pacific is a timely decision?",
+    "type": "Likert scale",
+    "options": {
+      "a": "Strongly Agree",
+      "b": "Agree",
+      "c": "Neutral",
+      "d": "Disagree",
+      "e": "Strongly Disagree"
+    }
+  }
+}

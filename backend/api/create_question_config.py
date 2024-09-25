@@ -4,13 +4,14 @@ import re
 import time
 import openai
 from dotenv import load_dotenv
+from .config import Config
 
 # Load environment variables
 load_dotenv()
 
 # Set up OpenAI client
 client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-ASSISTANT_ID = "asst_GEqxbSSDWkKNAcxWdWJqMhYd"
+ASSISTANT_ID = Config.ASSISTANTS["question_config_generator"]
 
 DEMOGRAPHIC_VARIABLES = {
     "Gender": ["Male", "Female"],
