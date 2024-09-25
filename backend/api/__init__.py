@@ -11,24 +11,24 @@ def create_app():
     base_dir = os.path.abspath(os.path.dirname(__file__))
     
     # Create the Flask app
-    app = Flask(__name__, 
-                template_folder=os.path.join(base_dir, 'templates'), 
-                static_folder=os.path.join(base_dir, 'static'), 
+    app = Flask(__name__,
+                template_folder=os.path.join(base_dir, 'templates'),
+                static_folder=os.path.join(base_dir, 'static'),
                 static_url_path='')
     
     # Print out the template and static folder paths for debugging
     print("Template folder path:", app.template_folder)
     print("Static folder path:", app.static_folder)
-    
+
     # Load the app configurations
     app.config.from_object(Config)
     Config.init_app(app)
-    
+
     # Initialize CORS and session
     CORS(app)
     Session(app)
     print("CORS and Session initialized")
-
+    
     # Register routes
     with app.app_context():
         print("Registering routes")

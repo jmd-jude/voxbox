@@ -1,13 +1,14 @@
 {
-  "original": "Shirts or skins?",
+  "original": "rainbow or chocolate sprinkles?",
   "transformed": {
-    "question": "Which type of team uniform do you prefer for sports games?",
+    "question": "When it comes to toppings on desserts, which do you prefer?",
     "type": "Multiple Choice",
     "options": {
-      "a": "Shirts",
-      "b": "Skins",
-      "c": "Doesn't matter, as long as the team is easily distinguishable",
-      "d": "Not sure / No preference"
+      "a": "Rainbow sprinkles",
+      "b": "Chocolate sprinkles",
+      "c": "No sprinkles",
+      "d": "Other (please specify)",
+      "e": "I don't like sprinkles"
     }
   }
 }

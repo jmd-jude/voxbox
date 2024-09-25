@@ -2945,3 +2945,295 @@ TypeError: main() missing 3 required positional arguments: 'approved_question_pa
 2024-09-24 17:18:45,763 INFO: Analysis complete. Results saved and returned.
 2024-09-24 17:18:45,763 INFO: Approved question: {'question': 'What is your current marital status?', 'type': 'Multiple choice', 'options': {'a': 'Married', 'b': 'Single', 'c': 'Divorced', 'd': 'Widowed', 'e': 'Prefer not to say'}}
 2024-09-24 17:18:45,765 INFO: 127.0.0.1 - - [24/Sep/2024 17:18:45] "POST /approve-question HTTP/1.1" 200 -
+2024-09-24 21:13:48,704 INFO: Flask app starting. Testing logging...
+2024-09-24 21:13:49,554 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.4.41:5001
+2024-09-24 21:13:49,554 INFO: [33mPress CTRL+C to quit[0m
+2024-09-24 21:13:49,555 INFO:  * Restarting with stat
+2024-09-24 21:13:49,574 INFO: Flask app starting. Testing logging...
+2024-09-24 21:13:50,103 WARNING:  * Debugger is active!
+2024-09-24 21:13:50,113 INFO:  * Debugger PIN: 873-171-222
+2024-09-24 21:13:57,191 INFO: 127.0.0.1 - - [24/Sep/2024 21:13:57] "GET / HTTP/1.1" 200 -
+2024-09-24 21:13:57,227 INFO: 127.0.0.1 - - [24/Sep/2024 21:13:57] "[36mGET /app.js HTTP/1.1[0m" 304 -
+2024-09-24 21:13:57,228 INFO: 127.0.0.1 - - [24/Sep/2024 21:13:57] "GET /styles.css HTTP/1.1" 200 -
+2024-09-24 21:13:57,237 INFO: 127.0.0.1 - - [24/Sep/2024 21:13:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-24 21:14:08,768 INFO: Entered transform_question_route
+2024-09-24 21:14:08,768 INFO: Received question: heads or tails
+2024-09-24 21:14:08,768 INFO: Calling transform_question function
+2024-09-24 21:14:08,768 INFO: Transforming question: heads or tails
+2024-09-24 21:14:09,095 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 21:14:09,290 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_ycu5zE7syu74LEZGpu7mQtuu/messages "HTTP/1.1 200 OK"
+2024-09-24 21:14:09,828 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_ycu5zE7syu74LEZGpu7mQtuu/runs "HTTP/1.1 200 OK"
+2024-09-24 21:14:09,986 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ycu5zE7syu74LEZGpu7mQtuu/runs/run_0FUiGJyLAcSGJr33grLY2LgC "HTTP/1.1 200 OK"
+2024-09-24 21:14:10,134 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ycu5zE7syu74LEZGpu7mQtuu/runs/run_0FUiGJyLAcSGJr33grLY2LgC "HTTP/1.1 200 OK"
+2024-09-24 21:14:10,327 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ycu5zE7syu74LEZGpu7mQtuu/runs/run_0FUiGJyLAcSGJr33grLY2LgC "HTTP/1.1 200 OK"
+2024-09-24 21:14:10,477 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ycu5zE7syu74LEZGpu7mQtuu/runs/run_0FUiGJyLAcSGJr33grLY2LgC "HTTP/1.1 200 OK"
+2024-09-24 21:14:10,711 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ycu5zE7syu74LEZGpu7mQtuu/runs/run_0FUiGJyLAcSGJr33grLY2LgC "HTTP/1.1 200 OK"
+2024-09-24 21:14:10,937 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ycu5zE7syu74LEZGpu7mQtuu/runs/run_0FUiGJyLAcSGJr33grLY2LgC "HTTP/1.1 200 OK"
+2024-09-24 21:14:11,066 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ycu5zE7syu74LEZGpu7mQtuu/runs/run_0FUiGJyLAcSGJr33grLY2LgC "HTTP/1.1 200 OK"
+2024-09-24 21:14:11,257 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ycu5zE7syu74LEZGpu7mQtuu/runs/run_0FUiGJyLAcSGJr33grLY2LgC "HTTP/1.1 200 OK"
+2024-09-24 21:14:11,414 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ycu5zE7syu74LEZGpu7mQtuu/runs/run_0FUiGJyLAcSGJr33grLY2LgC "HTTP/1.1 200 OK"
+2024-09-24 21:14:11,551 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ycu5zE7syu74LEZGpu7mQtuu/runs/run_0FUiGJyLAcSGJr33grLY2LgC "HTTP/1.1 200 OK"
+2024-09-24 21:14:11,737 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ycu5zE7syu74LEZGpu7mQtuu/messages "HTTP/1.1 200 OK"
+2024-09-24 21:14:11,741 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_qaNlqdcyKyYq5JKws72Rv9k9', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "Which side do you think a fair coin will land on?",\n    "type": "multiple choice",\n    "options": {\n        "a": "Heads",\n        "b": "Tails",\n        "c": "I prefer not to answer",\n        "d": "Not sure",\n        "e": "Other"\n    }\n}'), type='text')], created_at=1727226850, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_0FUiGJyLAcSGJr33grLY2LgC', status=None, thread_id='thread_ycu5zE7syu74LEZGpu7mQtuu'), Message(id='msg_j1dRDoTE8LqFWgE5jnrUIm9E', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "heads or tails"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727226849, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_ycu5zE7syu74LEZGpu7mQtuu')], object='list', first_id='msg_qaNlqdcyKyYq5JKws72Rv9k9', last_id='msg_j1dRDoTE8LqFWgE5jnrUIm9E', has_more=False)
+2024-09-24 21:14:11,742 INFO: Transformed question: {'question': 'Which side do you think a fair coin will land on?', 'type': 'multiple choice', 'options': {'a': 'Heads', 'b': 'Tails', 'c': 'I prefer not to answer', 'd': 'Not sure', 'e': 'Other'}}
+2024-09-24 21:14:11,742 INFO: Transformed question: {'question': 'Which side do you think a fair coin will land on?', 'type': 'multiple choice', 'options': {'a': 'Heads', 'b': 'Tails', 'c': 'I prefer not to answer', 'd': 'Not sure', 'e': 'Other'}}
+2024-09-24 21:14:11,742 INFO: Session after transform: <FileSystemSession {'survey_analysis': {'key_finding': '1. Key Finding: The survey reveals that there is a balanced preference between Mac and Other devices, with PCs slightly behind, and a notable percentage indicating no preference or choosing both Mac and PC.', 'quick_stats': ['2. Quick Stats:', '   - Mac and Other devices each have 30% preference, making them the top choices.', '   - PCs are the preference for 20% of the respondents, indicating a slightly lower popularity.', '   - 10% of respondents either find the question not applicable or prefer both Mac and PC, showing some ambiguity in choices.'], 'interpretation': '3. Interpretation: The equal preference between Mac and Other devices suggests a diverse user base with preferences for different operating systems or brands. The popularity of PCs, although slightly lower, indicates a continued significant user base. The presence of respondents choosing both Mac and PC or indicating the question as not applicable could indicate a segment of users with mixed device usage or a lack of strong preference due to varied needs or experiences. Understanding these preferences can inform product development and marketing strategies tailored to different user segments. 4. Fun Fact: The fact that an equal percentage of respondents prefer Mac and Other devices is intriguing, highlighting the competitive landscape in the computing device market and the strong appeal of both options to consumers.', 'fun_fact': 'No fun fact available.'}, 'last_question': 'heads or tails', 'last_transformed_question': {'question': 'Which side do you think a fair coin will land on?', 'type': 'multiple choice', 'options': {'a': 'Heads', 'b': 'Tails', 'c': 'I prefer not to answer', 'd': 'Not sure', 'e': 'Other'}}}>
+2024-09-24 21:14:11,745 INFO: 127.0.0.1 - - [24/Sep/2024 21:14:11] "POST /transform-question HTTP/1.1" 200 -
+2024-09-24 21:14:19,464 INFO: Entered approve_question_route
+2024-09-24 21:14:19,465 INFO: Retrieved from session - transformed: {'question': 'Which side do you think a fair coin will land on?', 'type': 'multiple choice', 'options': {'a': 'Heads', 'b': 'Tails', 'c': 'I prefer not to answer', 'd': 'Not sure', 'e': 'Other'}}, original: heads or tails
+2024-09-24 21:14:19,465 INFO: Saved approved question to data/approved_question_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 21:14:19,470 INFO: Data loaded successfully
+2024-09-24 21:14:19,473 INFO: Options: {'a': 'Heads', 'b': 'Tails', 'c': 'I prefer not to answer', 'd': 'Not sure', 'e': 'Other'}
+2024-09-24 21:14:19,473 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:14:19,473 INFO: Options: {'a': 'Heads', 'b': 'Tails', 'c': 'I prefer not to answer', 'd': 'Not sure', 'e': 'Other'}
+2024-09-24 21:14:19,473 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:14:19,473 INFO: Options: {'a': 'Heads', 'b': 'Tails', 'c': 'I prefer not to answer', 'd': 'Not sure', 'e': 'Other'}
+2024-09-24 21:14:19,473 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:14:19,474 INFO: Options: {'a': 'Heads', 'b': 'Tails', 'c': 'I prefer not to answer', 'd': 'Not sure', 'e': 'Other'}
+2024-09-24 21:14:19,474 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:14:19,474 INFO: Options: {'a': 'Heads', 'b': 'Tails', 'c': 'I prefer not to answer', 'd': 'Not sure', 'e': 'Other'}
+2024-09-24 21:14:19,474 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:14:19,474 INFO: Options: {'a': 'Heads', 'b': 'Tails', 'c': 'I prefer not to answer', 'd': 'Not sure', 'e': 'Other'}
+2024-09-24 21:14:19,474 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:14:19,474 INFO: Options: {'a': 'Heads', 'b': 'Tails', 'c': 'I prefer not to answer', 'd': 'Not sure', 'e': 'Other'}
+2024-09-24 21:14:19,474 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:14:19,474 INFO: Options: {'a': 'Heads', 'b': 'Tails', 'c': 'I prefer not to answer', 'd': 'Not sure', 'e': 'Other'}
+2024-09-24 21:14:19,474 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:14:19,474 INFO: Options: {'a': 'Heads', 'b': 'Tails', 'c': 'I prefer not to answer', 'd': 'Not sure', 'e': 'Other'}
+2024-09-24 21:14:19,474 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:14:19,474 INFO: Options: {'a': 'Heads', 'b': 'Tails', 'c': 'I prefer not to answer', 'd': 'Not sure', 'e': 'Other'}
+2024-09-24 21:14:19,474 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:14:19,475 INFO: Survey results written to /Users/JudeHoffner/Projects/voxbox-project/backend/data/survey_results_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 21:14:19,475 INFO: Saved survey results to data/survey_results_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 21:14:19,475 INFO: Loaded survey data: Question: Which side do you think a fair coin will land on?, Aggregate results: 5, Individual responses: 10
+2024-09-24 21:14:19,475 INFO: Analysis prompt formatted successfully.
+2024-09-24 21:14:19,711 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 21:14:19,909 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_BRL3RJYYtxSYm963oKENpAJI/messages "HTTP/1.1 200 OK"
+2024-09-24 21:14:22,067 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_BRL3RJYYtxSYm963oKENpAJI/runs "HTTP/1.1 200 OK"
+2024-09-24 21:14:22,212 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_BRL3RJYYtxSYm963oKENpAJI/runs/run_W0OK8XabbaIMHasWkfHhfwyb "HTTP/1.1 200 OK"
+2024-09-24 21:14:23,352 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_BRL3RJYYtxSYm963oKENpAJI/runs/run_W0OK8XabbaIMHasWkfHhfwyb "HTTP/1.1 200 OK"
+2024-09-24 21:14:24,513 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_BRL3RJYYtxSYm963oKENpAJI/runs/run_W0OK8XabbaIMHasWkfHhfwyb "HTTP/1.1 200 OK"
+2024-09-24 21:14:25,708 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_BRL3RJYYtxSYm963oKENpAJI/runs/run_W0OK8XabbaIMHasWkfHhfwyb "HTTP/1.1 200 OK"
+2024-09-24 21:14:26,859 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_BRL3RJYYtxSYm963oKENpAJI/runs/run_W0OK8XabbaIMHasWkfHhfwyb "HTTP/1.1 200 OK"
+2024-09-24 21:14:28,004 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_BRL3RJYYtxSYm963oKENpAJI/messages "HTTP/1.1 200 OK"
+2024-09-24 21:14:28,006 INFO: Analysis received from assistant.
+2024-09-24 21:14:28,006 INFO: Parsed analysis data successfully
+2024-09-24 21:14:28,007 INFO: Analysis saved to data/survey_analysis_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 21:14:28,007 INFO: Analysis complete. Results saved and returned.
+2024-09-24 21:14:28,007 INFO: Approved question: {'question': 'Which side do you think a fair coin will land on?', 'type': 'multiple choice', 'options': {'a': 'Heads', 'b': 'Tails', 'c': 'I prefer not to answer', 'd': 'Not sure', 'e': 'Other'}}
+2024-09-24 21:14:28,010 INFO: 127.0.0.1 - - [24/Sep/2024 21:14:28] "POST /approve-question HTTP/1.1" 200 -
+2024-09-24 21:14:44,526 INFO: Entered transform_question_route
+2024-09-24 21:14:44,527 INFO: Received question: rain or shine?
+2024-09-24 21:14:44,527 INFO: Calling transform_question function
+2024-09-24 21:14:44,527 INFO: Transforming question: rain or shine?
+2024-09-24 21:14:44,732 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 21:14:44,880 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_5vlJICoX4wt5xVHGdUh4un9n/messages "HTTP/1.1 200 OK"
+2024-09-24 21:14:45,411 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_5vlJICoX4wt5xVHGdUh4un9n/runs "HTTP/1.1 200 OK"
+2024-09-24 21:14:45,564 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_5vlJICoX4wt5xVHGdUh4un9n/runs/run_zDqvLMwDraNDHZyYc4cjGnLg "HTTP/1.1 200 OK"
+2024-09-24 21:14:45,694 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_5vlJICoX4wt5xVHGdUh4un9n/runs/run_zDqvLMwDraNDHZyYc4cjGnLg "HTTP/1.1 200 OK"
+2024-09-24 21:14:45,863 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_5vlJICoX4wt5xVHGdUh4un9n/runs/run_zDqvLMwDraNDHZyYc4cjGnLg "HTTP/1.1 200 OK"
+2024-09-24 21:14:46,018 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_5vlJICoX4wt5xVHGdUh4un9n/runs/run_zDqvLMwDraNDHZyYc4cjGnLg "HTTP/1.1 200 OK"
+2024-09-24 21:14:46,185 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_5vlJICoX4wt5xVHGdUh4un9n/runs/run_zDqvLMwDraNDHZyYc4cjGnLg "HTTP/1.1 200 OK"
+2024-09-24 21:14:46,318 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_5vlJICoX4wt5xVHGdUh4un9n/runs/run_zDqvLMwDraNDHZyYc4cjGnLg "HTTP/1.1 200 OK"
+2024-09-24 21:14:46,495 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_5vlJICoX4wt5xVHGdUh4un9n/runs/run_zDqvLMwDraNDHZyYc4cjGnLg "HTTP/1.1 200 OK"
+2024-09-24 21:14:46,706 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_5vlJICoX4wt5xVHGdUh4un9n/runs/run_zDqvLMwDraNDHZyYc4cjGnLg "HTTP/1.1 200 OK"
+2024-09-24 21:14:46,868 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_5vlJICoX4wt5xVHGdUh4un9n/runs/run_zDqvLMwDraNDHZyYc4cjGnLg "HTTP/1.1 200 OK"
+2024-09-24 21:14:47,013 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_5vlJICoX4wt5xVHGdUh4un9n/messages "HTTP/1.1 200 OK"
+2024-09-24 21:14:47,016 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_p7zKAQJr3ruxyrBK07yYKERL', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "Which weather condition do you prefer for outdoor activities?",\n    "type": "Multiple Choice",\n    "options": {\n        "a": "Sunny",\n        "b": "Rainy",\n        "c": "Partly Cloudy",\n        "d": "Overcast",\n        "e": "No Preference"\n    }\n}'), type='text')], created_at=1727226885, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_zDqvLMwDraNDHZyYc4cjGnLg', status=None, thread_id='thread_5vlJICoX4wt5xVHGdUh4un9n'), Message(id='msg_S5jIHOR4M9uJv1jkAiqhdcDh', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "rain or shine?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727226884, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_5vlJICoX4wt5xVHGdUh4un9n')], object='list', first_id='msg_p7zKAQJr3ruxyrBK07yYKERL', last_id='msg_S5jIHOR4M9uJv1jkAiqhdcDh', has_more=False)
+2024-09-24 21:14:47,017 INFO: Transformed question: {'question': 'Which weather condition do you prefer for outdoor activities?', 'type': 'Multiple Choice', 'options': {'a': 'Sunny', 'b': 'Rainy', 'c': 'Partly Cloudy', 'd': 'Overcast', 'e': 'No Preference'}}
+2024-09-24 21:14:47,017 INFO: Transformed question: {'question': 'Which weather condition do you prefer for outdoor activities?', 'type': 'Multiple Choice', 'options': {'a': 'Sunny', 'b': 'Rainy', 'c': 'Partly Cloudy', 'd': 'Overcast', 'e': 'No Preference'}}
+2024-09-24 21:14:47,017 INFO: Session after transform: <FileSystemSession {'survey_analysis': {'key_finding': '1. Key Finding: The survey reveals that there is a balanced preference between Mac and Other devices, with PCs slightly behind, and a notable percentage indicating no preference or choosing both Mac and PC.', 'quick_stats': ['2. Quick Stats:', '   - Mac and Other devices each have 30% preference, making them the top choices.', '   - PCs are the preference for 20% of the respondents, indicating a slightly lower popularity.', '   - 10% of respondents either find the question not applicable or prefer both Mac and PC, showing some ambiguity in choices.'], 'interpretation': '3. Interpretation: The equal preference between Mac and Other devices suggests a diverse user base with preferences for different operating systems or brands. The popularity of PCs, although slightly lower, indicates a continued significant user base. The presence of respondents choosing both Mac and PC or indicating the question as not applicable could indicate a segment of users with mixed device usage or a lack of strong preference due to varied needs or experiences. Understanding these preferences can inform product development and marketing strategies tailored to different user segments. 4. Fun Fact: The fact that an equal percentage of respondents prefer Mac and Other devices is intriguing, highlighting the competitive landscape in the computing device market and the strong appeal of both options to consumers.', 'fun_fact': 'No fun fact available.'}, 'last_question': 'rain or shine?', 'last_transformed_question': {'question': 'Which weather condition do you prefer for outdoor activities?', 'type': 'Multiple Choice', 'options': {'a': 'Sunny', 'b': 'Rainy', 'c': 'Partly Cloudy', 'd': 'Overcast', 'e': 'No Preference'}}}>
+2024-09-24 21:14:47,022 INFO: 127.0.0.1 - - [24/Sep/2024 21:14:47] "POST /transform-question HTTP/1.1" 200 -
+2024-09-24 21:14:48,943 INFO: Entered approve_question_route
+2024-09-24 21:14:48,943 INFO: Retrieved from session - transformed: {'question': 'Which weather condition do you prefer for outdoor activities?', 'type': 'Multiple Choice', 'options': {'a': 'Sunny', 'b': 'Rainy', 'c': 'Partly Cloudy', 'd': 'Overcast', 'e': 'No Preference'}}, original: rain or shine?
+2024-09-24 21:14:48,944 INFO: Saved approved question to data/approved_question_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 21:14:48,947 INFO: Data loaded successfully
+2024-09-24 21:14:48,948 INFO: Options: {'a': 'Sunny', 'b': 'Rainy', 'c': 'Partly Cloudy', 'd': 'Overcast', 'e': 'No Preference'}
+2024-09-24 21:14:48,948 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:14:48,948 INFO: Options: {'a': 'Sunny', 'b': 'Rainy', 'c': 'Partly Cloudy', 'd': 'Overcast', 'e': 'No Preference'}
+2024-09-24 21:14:48,948 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:14:48,948 INFO: Options: {'a': 'Sunny', 'b': 'Rainy', 'c': 'Partly Cloudy', 'd': 'Overcast', 'e': 'No Preference'}
+2024-09-24 21:14:48,948 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:14:48,948 INFO: Options: {'a': 'Sunny', 'b': 'Rainy', 'c': 'Partly Cloudy', 'd': 'Overcast', 'e': 'No Preference'}
+2024-09-24 21:14:48,948 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:14:48,949 INFO: Options: {'a': 'Sunny', 'b': 'Rainy', 'c': 'Partly Cloudy', 'd': 'Overcast', 'e': 'No Preference'}
+2024-09-24 21:14:48,949 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:14:48,949 INFO: Options: {'a': 'Sunny', 'b': 'Rainy', 'c': 'Partly Cloudy', 'd': 'Overcast', 'e': 'No Preference'}
+2024-09-24 21:14:48,949 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:14:48,949 INFO: Options: {'a': 'Sunny', 'b': 'Rainy', 'c': 'Partly Cloudy', 'd': 'Overcast', 'e': 'No Preference'}
+2024-09-24 21:14:48,949 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:14:48,949 INFO: Options: {'a': 'Sunny', 'b': 'Rainy', 'c': 'Partly Cloudy', 'd': 'Overcast', 'e': 'No Preference'}
+2024-09-24 21:14:48,949 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:14:48,949 INFO: Options: {'a': 'Sunny', 'b': 'Rainy', 'c': 'Partly Cloudy', 'd': 'Overcast', 'e': 'No Preference'}
+2024-09-24 21:14:48,949 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:14:48,949 INFO: Options: {'a': 'Sunny', 'b': 'Rainy', 'c': 'Partly Cloudy', 'd': 'Overcast', 'e': 'No Preference'}
+2024-09-24 21:14:48,950 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:14:48,951 INFO: Survey results written to /Users/JudeHoffner/Projects/voxbox-project/backend/data/survey_results_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 21:14:48,952 INFO: Saved survey results to data/survey_results_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 21:14:48,952 INFO: Loaded survey data: Question: Which weather condition do you prefer for outdoor activities?, Aggregate results: 5, Individual responses: 10
+2024-09-24 21:14:48,952 INFO: Analysis prompt formatted successfully.
+2024-09-24 21:14:49,165 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 21:14:49,318 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_ozXWagOPNHTilqJPwIXACoqu/messages "HTTP/1.1 200 OK"
+2024-09-24 21:14:49,753 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_ozXWagOPNHTilqJPwIXACoqu/runs "HTTP/1.1 200 OK"
+2024-09-24 21:14:49,890 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ozXWagOPNHTilqJPwIXACoqu/runs/run_iPhYrq4iHoQMmhVqtdyNtwaS "HTTP/1.1 200 OK"
+2024-09-24 21:14:51,067 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ozXWagOPNHTilqJPwIXACoqu/runs/run_iPhYrq4iHoQMmhVqtdyNtwaS "HTTP/1.1 200 OK"
+2024-09-24 21:14:52,223 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ozXWagOPNHTilqJPwIXACoqu/runs/run_iPhYrq4iHoQMmhVqtdyNtwaS "HTTP/1.1 200 OK"
+2024-09-24 21:14:53,426 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ozXWagOPNHTilqJPwIXACoqu/runs/run_iPhYrq4iHoQMmhVqtdyNtwaS "HTTP/1.1 200 OK"
+2024-09-24 21:14:54,553 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_ozXWagOPNHTilqJPwIXACoqu/messages "HTTP/1.1 200 OK"
+2024-09-24 21:14:54,558 INFO: Analysis received from assistant.
+2024-09-24 21:14:54,558 INFO: Parsed analysis data successfully
+2024-09-24 21:14:54,559 INFO: Analysis saved to data/survey_analysis_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 21:14:54,559 INFO: Analysis complete. Results saved and returned.
+2024-09-24 21:14:54,559 INFO: Approved question: {'question': 'Which weather condition do you prefer for outdoor activities?', 'type': 'Multiple Choice', 'options': {'a': 'Sunny', 'b': 'Rainy', 'c': 'Partly Cloudy', 'd': 'Overcast', 'e': 'No Preference'}}
+2024-09-24 21:14:54,562 INFO: 127.0.0.1 - - [24/Sep/2024 21:14:54] "POST /approve-question HTTP/1.1" 200 -
+2024-09-24 21:15:31,113 INFO: Entered transform_question_route
+2024-09-24 21:15:31,114 INFO: Received question: rainbow or chocolate sprinkles?
+2024-09-24 21:15:31,114 INFO: Calling transform_question function
+2024-09-24 21:15:31,114 INFO: Transforming question: rainbow or chocolate sprinkles?
+2024-09-24 21:15:31,409 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 21:15:31,563 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_IIg49NuIpCQ4SBIG4pAFkMGh/messages "HTTP/1.1 200 OK"
+2024-09-24 21:15:31,994 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_IIg49NuIpCQ4SBIG4pAFkMGh/runs "HTTP/1.1 200 OK"
+2024-09-24 21:15:32,143 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_IIg49NuIpCQ4SBIG4pAFkMGh/runs/run_tfm4EJGh6CMCJHRiylbkkZKR "HTTP/1.1 200 OK"
+2024-09-24 21:15:32,276 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_IIg49NuIpCQ4SBIG4pAFkMGh/runs/run_tfm4EJGh6CMCJHRiylbkkZKR "HTTP/1.1 200 OK"
+2024-09-24 21:15:32,615 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_IIg49NuIpCQ4SBIG4pAFkMGh/runs/run_tfm4EJGh6CMCJHRiylbkkZKR "HTTP/1.1 200 OK"
+2024-09-24 21:15:32,826 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_IIg49NuIpCQ4SBIG4pAFkMGh/runs/run_tfm4EJGh6CMCJHRiylbkkZKR "HTTP/1.1 200 OK"
+2024-09-24 21:15:32,959 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_IIg49NuIpCQ4SBIG4pAFkMGh/runs/run_tfm4EJGh6CMCJHRiylbkkZKR "HTTP/1.1 200 OK"
+2024-09-24 21:15:33,089 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_IIg49NuIpCQ4SBIG4pAFkMGh/runs/run_tfm4EJGh6CMCJHRiylbkkZKR "HTTP/1.1 200 OK"
+2024-09-24 21:15:33,270 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_IIg49NuIpCQ4SBIG4pAFkMGh/runs/run_tfm4EJGh6CMCJHRiylbkkZKR "HTTP/1.1 200 OK"
+2024-09-24 21:15:33,399 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_IIg49NuIpCQ4SBIG4pAFkMGh/runs/run_tfm4EJGh6CMCJHRiylbkkZKR "HTTP/1.1 200 OK"
+2024-09-24 21:15:33,537 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_IIg49NuIpCQ4SBIG4pAFkMGh/runs/run_tfm4EJGh6CMCJHRiylbkkZKR "HTTP/1.1 200 OK"
+2024-09-24 21:15:33,654 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_IIg49NuIpCQ4SBIG4pAFkMGh/messages "HTTP/1.1 200 OK"
+2024-09-24 21:15:33,655 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_jcF8T9vdnrcD172nvRfPRBtb', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "When it comes to toppings on desserts, which do you prefer?",\n    "type": "Multiple Choice",\n    "options": {\n        "a": "Rainbow sprinkles",\n        "b": "Chocolate sprinkles",\n        "c": "No sprinkles",\n        "d": "Other (please specify)",\n        "e": "I don\'t like sprinkles"\n    }\n}'), type='text')], created_at=1727226932, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_tfm4EJGh6CMCJHRiylbkkZKR', status=None, thread_id='thread_IIg49NuIpCQ4SBIG4pAFkMGh'), Message(id='msg_lftP4aZelOEmhNDCfyw60vgj', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "rainbow or chocolate sprinkles?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727226931, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_IIg49NuIpCQ4SBIG4pAFkMGh')], object='list', first_id='msg_jcF8T9vdnrcD172nvRfPRBtb', last_id='msg_lftP4aZelOEmhNDCfyw60vgj', has_more=False)
+2024-09-24 21:15:33,655 INFO: Transformed question: {'question': 'When it comes to toppings on desserts, which do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Rainbow sprinkles', 'b': 'Chocolate sprinkles', 'c': 'No sprinkles', 'd': 'Other (please specify)', 'e': "I don't like sprinkles"}}
+2024-09-24 21:15:33,656 INFO: Transformed question: {'question': 'When it comes to toppings on desserts, which do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Rainbow sprinkles', 'b': 'Chocolate sprinkles', 'c': 'No sprinkles', 'd': 'Other (please specify)', 'e': "I don't like sprinkles"}}
+2024-09-24 21:15:33,656 INFO: Session after transform: <FileSystemSession {'survey_analysis': {'key_finding': '1. Key Finding: The survey reveals that there is a balanced preference between Mac and Other devices, with PCs slightly behind, and a notable percentage indicating no preference or choosing both Mac and PC.', 'quick_stats': ['2. Quick Stats:', '   - Mac and Other devices each have 30% preference, making them the top choices.', '   - PCs are the preference for 20% of the respondents, indicating a slightly lower popularity.', '   - 10% of respondents either find the question not applicable or prefer both Mac and PC, showing some ambiguity in choices.'], 'interpretation': '3. Interpretation: The equal preference between Mac and Other devices suggests a diverse user base with preferences for different operating systems or brands. The popularity of PCs, although slightly lower, indicates a continued significant user base. The presence of respondents choosing both Mac and PC or indicating the question as not applicable could indicate a segment of users with mixed device usage or a lack of strong preference due to varied needs or experiences. Understanding these preferences can inform product development and marketing strategies tailored to different user segments. 4. Fun Fact: The fact that an equal percentage of respondents prefer Mac and Other devices is intriguing, highlighting the competitive landscape in the computing device market and the strong appeal of both options to consumers.', 'fun_fact': 'No fun fact available.'}, 'last_question': 'rainbow or chocolate sprinkles?', 'last_transformed_question': {'question': 'When it comes to toppings on desserts, which do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Rainbow sprinkles', 'b': 'Chocolate sprinkles', 'c': 'No sprinkles', 'd': 'Other (please specify)', 'e': "I don't like sprinkles"}}}>
+2024-09-24 21:15:33,659 INFO: 127.0.0.1 - - [24/Sep/2024 21:15:33] "POST /transform-question HTTP/1.1" 200 -
+2024-09-24 21:15:35,881 INFO: Entered approve_question_route
+2024-09-24 21:15:35,882 INFO: Retrieved from session - transformed: {'question': 'When it comes to toppings on desserts, which do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Rainbow sprinkles', 'b': 'Chocolate sprinkles', 'c': 'No sprinkles', 'd': 'Other (please specify)', 'e': "I don't like sprinkles"}}, original: rainbow or chocolate sprinkles?
+2024-09-24 21:15:35,883 INFO: Saved approved question to data/approved_question_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 21:15:35,886 INFO: Data loaded successfully
+2024-09-24 21:15:35,887 INFO: Options: {'a': 'Rainbow sprinkles', 'b': 'Chocolate sprinkles', 'c': 'No sprinkles', 'd': 'Other (please specify)', 'e': "I don't like sprinkles"}
+2024-09-24 21:15:35,888 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:15:35,888 INFO: Options: {'a': 'Rainbow sprinkles', 'b': 'Chocolate sprinkles', 'c': 'No sprinkles', 'd': 'Other (please specify)', 'e': "I don't like sprinkles"}
+2024-09-24 21:15:35,888 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:15:35,888 INFO: Options: {'a': 'Rainbow sprinkles', 'b': 'Chocolate sprinkles', 'c': 'No sprinkles', 'd': 'Other (please specify)', 'e': "I don't like sprinkles"}
+2024-09-24 21:15:35,888 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:15:35,888 INFO: Options: {'a': 'Rainbow sprinkles', 'b': 'Chocolate sprinkles', 'c': 'No sprinkles', 'd': 'Other (please specify)', 'e': "I don't like sprinkles"}
+2024-09-24 21:15:35,888 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:15:35,889 INFO: Options: {'a': 'Rainbow sprinkles', 'b': 'Chocolate sprinkles', 'c': 'No sprinkles', 'd': 'Other (please specify)', 'e': "I don't like sprinkles"}
+2024-09-24 21:15:35,889 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:15:35,889 INFO: Options: {'a': 'Rainbow sprinkles', 'b': 'Chocolate sprinkles', 'c': 'No sprinkles', 'd': 'Other (please specify)', 'e': "I don't like sprinkles"}
+2024-09-24 21:15:35,889 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:15:35,889 INFO: Options: {'a': 'Rainbow sprinkles', 'b': 'Chocolate sprinkles', 'c': 'No sprinkles', 'd': 'Other (please specify)', 'e': "I don't like sprinkles"}
+2024-09-24 21:15:35,889 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:15:35,889 INFO: Options: {'a': 'Rainbow sprinkles', 'b': 'Chocolate sprinkles', 'c': 'No sprinkles', 'd': 'Other (please specify)', 'e': "I don't like sprinkles"}
+2024-09-24 21:15:35,889 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:15:35,889 INFO: Options: {'a': 'Rainbow sprinkles', 'b': 'Chocolate sprinkles', 'c': 'No sprinkles', 'd': 'Other (please specify)', 'e': "I don't like sprinkles"}
+2024-09-24 21:15:35,889 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:15:35,890 INFO: Options: {'a': 'Rainbow sprinkles', 'b': 'Chocolate sprinkles', 'c': 'No sprinkles', 'd': 'Other (please specify)', 'e': "I don't like sprinkles"}
+2024-09-24 21:15:35,890 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:15:35,891 INFO: Survey results written to /Users/JudeHoffner/Projects/voxbox-project/backend/data/survey_results_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 21:15:35,892 INFO: Saved survey results to data/survey_results_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 21:15:35,892 INFO: Loaded survey data: Question: When it comes to toppings on desserts, which do you prefer?, Aggregate results: 4, Individual responses: 10
+2024-09-24 21:15:35,892 INFO: Analysis prompt formatted successfully.
+2024-09-24 21:15:36,135 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 21:15:36,305 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_bHeQdYzc40NEc3u8P9XVGGc0/messages "HTTP/1.1 200 OK"
+2024-09-24 21:15:36,681 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_bHeQdYzc40NEc3u8P9XVGGc0/runs "HTTP/1.1 200 OK"
+2024-09-24 21:15:36,935 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_bHeQdYzc40NEc3u8P9XVGGc0/runs/run_UXo9iBSuJ4mpczV7fV07XkAi "HTTP/1.1 200 OK"
+2024-09-24 21:15:38,109 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_bHeQdYzc40NEc3u8P9XVGGc0/runs/run_UXo9iBSuJ4mpczV7fV07XkAi "HTTP/1.1 200 OK"
+2024-09-24 21:15:39,271 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_bHeQdYzc40NEc3u8P9XVGGc0/runs/run_UXo9iBSuJ4mpczV7fV07XkAi "HTTP/1.1 200 OK"
+2024-09-24 21:15:40,431 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_bHeQdYzc40NEc3u8P9XVGGc0/runs/run_UXo9iBSuJ4mpczV7fV07XkAi "HTTP/1.1 200 OK"
+2024-09-24 21:15:41,577 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_bHeQdYzc40NEc3u8P9XVGGc0/messages "HTTP/1.1 200 OK"
+2024-09-24 21:15:41,581 INFO: Analysis received from assistant.
+2024-09-24 21:15:41,581 INFO: Parsed analysis data successfully
+2024-09-24 21:15:41,582 INFO: Analysis saved to data/survey_analysis_wbuJTi-lgw_Vh9kqHaaVTVQBtS2exk6gvFw5Aukdx3M.json
+2024-09-24 21:15:41,582 INFO: Analysis complete. Results saved and returned.
+2024-09-24 21:15:41,582 INFO: Approved question: {'question': 'When it comes to toppings on desserts, which do you prefer?', 'type': 'Multiple Choice', 'options': {'a': 'Rainbow sprinkles', 'b': 'Chocolate sprinkles', 'c': 'No sprinkles', 'd': 'Other (please specify)', 'e': "I don't like sprinkles"}}
+2024-09-24 21:15:41,586 INFO: 127.0.0.1 - - [24/Sep/2024 21:15:41] "POST /approve-question HTTP/1.1" 200 -
+2024-09-24 21:29:35,706 INFO:  * Detected change in '/Users/JudeHoffner/Projects/voxbox-project/backend/api/routes.py', reloading
+2024-09-24 21:29:35,817 INFO:  * Restarting with stat
+2024-09-24 21:29:35,850 INFO: Flask app starting. Testing logging...
+2024-09-24 21:29:36,555 WARNING:  * Debugger is active!
+2024-09-24 21:29:36,562 INFO:  * Debugger PIN: 873-171-222
+2024-09-24 21:39:01,231 INFO: Flask app starting. Testing logging...
+2024-09-24 21:39:02,182 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.4.41:5001
+2024-09-24 21:39:02,182 INFO: [33mPress CTRL+C to quit[0m
+2024-09-24 21:39:02,182 INFO:  * Restarting with stat
+2024-09-24 21:39:02,203 INFO: Flask app starting. Testing logging...
+2024-09-24 21:39:02,716 WARNING:  * Debugger is active!
+2024-09-24 21:39:02,729 INFO:  * Debugger PIN: 873-171-222
+2024-09-24 21:39:23,274 INFO: 127.0.0.1 - - [24/Sep/2024 21:39:23] "GET / HTTP/1.1" 200 -
+2024-09-24 21:39:23,343 INFO: 127.0.0.1 - - [24/Sep/2024 21:39:23] "GET /styles.css HTTP/1.1" 200 -
+2024-09-24 21:39:23,343 INFO: 127.0.0.1 - - [24/Sep/2024 21:39:23] "GET /app.js HTTP/1.1" 200 -
+2024-09-24 21:39:34,604 INFO: Entered transform_question_route
+2024-09-24 21:39:34,605 INFO: Received question: Should I stay or should I go?
+2024-09-24 21:39:34,605 INFO: Calling transform_question function
+2024-09-24 21:39:34,605 INFO: Transforming question: Should I stay or should I go?
+2024-09-24 21:39:34,878 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 21:39:35,261 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_vAQW0Gj2WXxacPGSNvQ2Timq/messages "HTTP/1.1 200 OK"
+2024-09-24 21:39:35,947 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_vAQW0Gj2WXxacPGSNvQ2Timq/runs "HTTP/1.1 200 OK"
+2024-09-24 21:39:36,181 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_vAQW0Gj2WXxacPGSNvQ2Timq/runs/run_KkfOPo568T99GzlArXUD3ag7 "HTTP/1.1 200 OK"
+2024-09-24 21:39:36,305 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_vAQW0Gj2WXxacPGSNvQ2Timq/runs/run_KkfOPo568T99GzlArXUD3ag7 "HTTP/1.1 200 OK"
+2024-09-24 21:39:36,430 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_vAQW0Gj2WXxacPGSNvQ2Timq/runs/run_KkfOPo568T99GzlArXUD3ag7 "HTTP/1.1 200 OK"
+2024-09-24 21:39:36,580 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_vAQW0Gj2WXxacPGSNvQ2Timq/runs/run_KkfOPo568T99GzlArXUD3ag7 "HTTP/1.1 200 OK"
+2024-09-24 21:39:36,714 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_vAQW0Gj2WXxacPGSNvQ2Timq/runs/run_KkfOPo568T99GzlArXUD3ag7 "HTTP/1.1 200 OK"
+2024-09-24 21:39:36,857 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_vAQW0Gj2WXxacPGSNvQ2Timq/runs/run_KkfOPo568T99GzlArXUD3ag7 "HTTP/1.1 200 OK"
+2024-09-24 21:39:36,996 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_vAQW0Gj2WXxacPGSNvQ2Timq/runs/run_KkfOPo568T99GzlArXUD3ag7 "HTTP/1.1 200 OK"
+2024-09-24 21:39:37,149 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_vAQW0Gj2WXxacPGSNvQ2Timq/runs/run_KkfOPo568T99GzlArXUD3ag7 "HTTP/1.1 200 OK"
+2024-09-24 21:39:37,299 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_vAQW0Gj2WXxacPGSNvQ2Timq/runs/run_KkfOPo568T99GzlArXUD3ag7 "HTTP/1.1 200 OK"
+2024-09-24 21:39:37,440 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_vAQW0Gj2WXxacPGSNvQ2Timq/runs/run_KkfOPo568T99GzlArXUD3ag7 "HTTP/1.1 200 OK"
+2024-09-24 21:39:37,654 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_vAQW0Gj2WXxacPGSNvQ2Timq/runs/run_KkfOPo568T99GzlArXUD3ag7 "HTTP/1.1 200 OK"
+2024-09-24 21:39:37,790 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_vAQW0Gj2WXxacPGSNvQ2Timq/messages "HTTP/1.1 200 OK"
+2024-09-24 21:39:37,794 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_EmRtKEQIsGCiAJdlMKZOoEvh', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "When making a decision about my current situation, which option do you believe is most appropriate?",\n    "type": "Multiple Choice",\n    "options": {\n        "a": "Stay in the current situation",\n        "b": "Leave the current situation",\n        "c": "Unsure / Undecided",\n        "d": "Seek further information",\n        "e": "Other (please specify)"\n    }\n}'), type='text')], created_at=1727228376, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_KkfOPo568T99GzlArXUD3ag7', status=None, thread_id='thread_vAQW0Gj2WXxacPGSNvQ2Timq'), Message(id='msg_hvR8cJE6r4PbpS75Cw8QGDP2', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "Should I stay or should I go?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727228375, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_vAQW0Gj2WXxacPGSNvQ2Timq')], object='list', first_id='msg_EmRtKEQIsGCiAJdlMKZOoEvh', last_id='msg_hvR8cJE6r4PbpS75Cw8QGDP2', has_more=False)
+2024-09-24 21:39:37,794 INFO: Transformed question: {'question': 'When making a decision about my current situation, which option do you believe is most appropriate?', 'type': 'Multiple Choice', 'options': {'a': 'Stay in the current situation', 'b': 'Leave the current situation', 'c': 'Unsure / Undecided', 'd': 'Seek further information', 'e': 'Other (please specify)'}}
+2024-09-24 21:39:37,795 INFO: Transformed question: {'question': 'When making a decision about my current situation, which option do you believe is most appropriate?', 'type': 'Multiple Choice', 'options': {'a': 'Stay in the current situation', 'b': 'Leave the current situation', 'c': 'Unsure / Undecided', 'd': 'Seek further information', 'e': 'Other (please specify)'}}
+2024-09-24 21:39:37,795 INFO: Session after transform: <FileSystemSession {'last_question': 'Should I stay or should I go?', 'last_transformed_question': {'question': 'When making a decision about my current situation, which option do you believe is most appropriate?', 'type': 'Multiple Choice', 'options': {'a': 'Stay in the current situation', 'b': 'Leave the current situation', 'c': 'Unsure / Undecided', 'd': 'Seek further information', 'e': 'Other (please specify)'}}}>
+2024-09-24 21:39:37,800 INFO: 127.0.0.1 - - [24/Sep/2024 21:39:37] "POST /transform-question HTTP/1.1" 200 -
+2024-09-24 21:39:40,227 INFO: Entered approve_question_route
+2024-09-24 21:39:40,228 INFO: Retrieved from session - transformed: {'question': 'When making a decision about my current situation, which option do you believe is most appropriate?', 'type': 'Multiple Choice', 'options': {'a': 'Stay in the current situation', 'b': 'Leave the current situation', 'c': 'Unsure / Undecided', 'd': 'Seek further information', 'e': 'Other (please specify)'}}, original: Should I stay or should I go?
+2024-09-24 21:39:40,229 INFO: Saved approved question to /Users/JudeHoffner/Projects/voxbox-project/backend/data/approved_question_lArLNy6pW5BtaD2LhliqY4XHOe9PQK-PptyTvDT6JIo.json
+2024-09-24 21:39:40,236 INFO: Data loaded successfully
+2024-09-24 21:39:40,242 INFO: Options: {'a': 'Stay in the current situation', 'b': 'Leave the current situation', 'c': 'Unsure / Undecided', 'd': 'Seek further information', 'e': 'Other (please specify)'}
+2024-09-24 21:39:40,242 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:39:40,243 INFO: Options: {'a': 'Stay in the current situation', 'b': 'Leave the current situation', 'c': 'Unsure / Undecided', 'd': 'Seek further information', 'e': 'Other (please specify)'}
+2024-09-24 21:39:40,243 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:39:40,243 INFO: Options: {'a': 'Stay in the current situation', 'b': 'Leave the current situation', 'c': 'Unsure / Undecided', 'd': 'Seek further information', 'e': 'Other (please specify)'}
+2024-09-24 21:39:40,243 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:39:40,243 INFO: Options: {'a': 'Stay in the current situation', 'b': 'Leave the current situation', 'c': 'Unsure / Undecided', 'd': 'Seek further information', 'e': 'Other (please specify)'}
+2024-09-24 21:39:40,243 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:39:40,243 INFO: Options: {'a': 'Stay in the current situation', 'b': 'Leave the current situation', 'c': 'Unsure / Undecided', 'd': 'Seek further information', 'e': 'Other (please specify)'}
+2024-09-24 21:39:40,243 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:39:40,244 INFO: Options: {'a': 'Stay in the current situation', 'b': 'Leave the current situation', 'c': 'Unsure / Undecided', 'd': 'Seek further information', 'e': 'Other (please specify)'}
+2024-09-24 21:39:40,244 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:39:40,244 INFO: Options: {'a': 'Stay in the current situation', 'b': 'Leave the current situation', 'c': 'Unsure / Undecided', 'd': 'Seek further information', 'e': 'Other (please specify)'}
+2024-09-24 21:39:40,244 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:39:40,244 INFO: Options: {'a': 'Stay in the current situation', 'b': 'Leave the current situation', 'c': 'Unsure / Undecided', 'd': 'Seek further information', 'e': 'Other (please specify)'}
+2024-09-24 21:39:40,244 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:39:40,244 INFO: Options: {'a': 'Stay in the current situation', 'b': 'Leave the current situation', 'c': 'Unsure / Undecided', 'd': 'Seek further information', 'e': 'Other (please specify)'}
+2024-09-24 21:39:40,244 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:39:40,244 INFO: Options: {'a': 'Stay in the current situation', 'b': 'Leave the current situation', 'c': 'Unsure / Undecided', 'd': 'Seek further information', 'e': 'Other (please specify)'}
+2024-09-24 21:39:40,244 INFO: Weights: [0.2, 0.2, 0.2, 0.2, 0.2]
+2024-09-24 21:39:40,246 INFO: Survey results written to /Users/JudeHoffner/Projects/voxbox-project/backend/data/survey_results_lArLNy6pW5BtaD2LhliqY4XHOe9PQK-PptyTvDT6JIo.json
+2024-09-24 21:39:40,246 INFO: Saved survey results to /Users/JudeHoffner/Projects/voxbox-project/backend/data/survey_results_lArLNy6pW5BtaD2LhliqY4XHOe9PQK-PptyTvDT6JIo.json
+2024-09-24 21:39:40,247 INFO: Loaded survey data: Question: When making a decision about my current situation, which option do you believe is most appropriate?, Aggregate results: 5, Individual responses: 10
+2024-09-24 21:39:40,247 INFO: Analysis prompt formatted successfully.
+2024-09-24 21:39:40,409 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-24 21:39:40,555 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_k5rmUCBBByUwwZe6GSuH1NnB/messages "HTTP/1.1 200 OK"
+2024-09-24 21:39:41,086 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_k5rmUCBBByUwwZe6GSuH1NnB/runs "HTTP/1.1 200 OK"
+2024-09-24 21:39:41,214 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_k5rmUCBBByUwwZe6GSuH1NnB/runs/run_SmIrwDhzUJX2LmtAVuP14avZ "HTTP/1.1 200 OK"
+2024-09-24 21:39:42,387 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_k5rmUCBBByUwwZe6GSuH1NnB/runs/run_SmIrwDhzUJX2LmtAVuP14avZ "HTTP/1.1 200 OK"
+2024-09-24 21:39:43,556 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_k5rmUCBBByUwwZe6GSuH1NnB/runs/run_SmIrwDhzUJX2LmtAVuP14avZ "HTTP/1.1 200 OK"
+2024-09-24 21:39:44,713 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_k5rmUCBBByUwwZe6GSuH1NnB/runs/run_SmIrwDhzUJX2LmtAVuP14avZ "HTTP/1.1 200 OK"
+2024-09-24 21:39:45,894 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_k5rmUCBBByUwwZe6GSuH1NnB/messages "HTTP/1.1 200 OK"
+2024-09-24 21:39:45,898 INFO: Analysis received from assistant.
+2024-09-24 21:39:45,898 INFO: Parsed analysis data successfully
+2024-09-24 21:39:45,899 INFO: Analysis saved to /Users/JudeHoffner/Projects/voxbox-project/backend/data/survey_analysis_lArLNy6pW5BtaD2LhliqY4XHOe9PQK-PptyTvDT6JIo.json
+2024-09-24 21:39:45,899 INFO: Analysis complete. Results saved and returned.
+2024-09-24 21:39:45,899 INFO: Approved question: {'question': 'When making a decision about my current situation, which option do you believe is most appropriate?', 'type': 'Multiple Choice', 'options': {'a': 'Stay in the current situation', 'b': 'Leave the current situation', 'c': 'Unsure / Undecided', 'd': 'Seek further information', 'e': 'Other (please specify)'}}
+2024-09-24 21:39:45,903 INFO: 127.0.0.1 - - [24/Sep/2024 21:39:45] "POST /approve-question HTTP/1.1" 200 -
