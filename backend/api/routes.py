@@ -199,7 +199,7 @@ def export_data():
             output = io.StringIO()
             writer = csv.writer(output)
             
-            # Write column names
+            # Write out column names
             writer.writerow([description[0] for description in cursor.description])
             
             # Write data rows

@@ -138,4 +138,4 @@ if __name__ == "__main__":
         session_id = sys.argv[2]
         main(user_id, session_id)
     else:
-        print("Please provide a user ID and a session ID")
+        print("Please provide a user ID and session ID")
