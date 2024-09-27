@@ -48,7 +48,7 @@ if __name__ == '__main__':
     print("Starting Flask server...")
     try:
         # Run the app with debug mode
-        app.run(debug=True, host="0.0.0.0", port=5001)
+        app.run(debug=True, host="0.0.0.0")
     except Exception as e:
         logging.error(f"An error occurred: {str(e)}", exc_info=True)
         print(f"An error occurred: {str(e)}")
