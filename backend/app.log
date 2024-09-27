@@ -9464,3 +9464,11 @@ This summary captures the diverse range of opinions and attitudes towards the po
 2024-09-27 14:31:35,791 INFO: Analysis complete. Results saved to database for user 081da7b8-3aea-4812-8679-f97fa13dacca, session d748fc51-642c-4f14-84a2-ab5604032945
 2024-09-27 14:31:35,791 INFO: Approved question for user 081da7b8-3aea-4812-8679-f97fa13dacca, session d748fc51-642c-4f14-84a2-ab5604032945: {'question': 'When considering preferences, do you lean towards large or small?', 'type': 'Multiple Choice', 'options': {'a': 'Large', 'b': 'Small', 'c': 'No preference', 'd': 'Varies depending on context'}}
 2024-09-27 14:31:35,798 INFO: 127.0.0.1 - - [27/Sep/2024 14:31:35] "POST /approve-question HTTP/1.1" 200 -
+2024-09-27 16:17:06,934 INFO: Flask app starting. Testing logging...
+2024-09-27 16:17:41,356 INFO: Flask app starting. Testing logging...
+2024-09-27 16:17:42,154 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.68.51:5001
+2024-09-27 16:17:42,154 INFO: [33mPress CTRL+C to quit[0m
+2024-09-27 16:17:42,155 INFO:  * Restarting with stat
