@@ -56,3 +56,6 @@ instance/
 *.tmp
 *.bak
 *.swpapp.zip
+
+# Frontend directory
+/frontend/
