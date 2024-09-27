@@ -8,12 +8,11 @@
 </head>
 <body>
     <div id="app">
+        <input type="hidden" id="user-id">
+        
         <!-- Landing Page -->
         <section id="landing" class="view">
             <h1>VoxPop: Your Pocket Pollster for Life's Biggest, Smallest, and Fantastically Silliest Questions</h1>
-            <!-- 
-            <div class="coming-soon">Coming soon! VoxBox: Exclusive focus group voices just for you!</div>
-            -->
             <p>Need advice or just want to know what people think? Ask a question!</p>
             <div class="example-questions">
                 <p>Should I quit my job and travel the world?</p>
@@ -25,7 +24,7 @@
             </div>
             <button id="get-started">Get Started</button>
         </section>
-
+        
         <!-- Question Input -->
         <section id="question-input" class="view hidden">
             <h2>What's on your mind?</h2>
@@ -33,7 +32,7 @@
             <textarea id="user-question" placeholder="Enter your question (up to 250 words)" maxlength="250"></textarea>
             <button id="generate-poll">Generate Poll Question</button>
         </section>
-
+        
         <!-- Question Refinement -->
         <section id="question-refinement" class="view hidden">
             <h2>Your Poll-Ready Question</h2>
@@ -43,20 +42,45 @@
             <button id="approve-question">This Looks Good!</button>
             <button id="try-again">Let's Try Again</button>
         </section>
-
+        
         <!-- Loading Animation -->
         <section id="loading" class="view hidden">
             <div class="loading-animation"></div>
             <p>VoxPop's elite data scientists have dropped everything to focus solely on this question. Hundreds of hours of research... about to unfold.</p>
         </section>
-
+        
         <!-- Results Display -->
         <section id="results" class="view hidden">
             <h2>And the nation has spoken!</h2>
-            <div id="results-content"></div>
-            <button id="new-question">Let's Go Again</button>
+            <div id="results-content">
+                <div id="key-finding">
+                    <h3>Key Finding</h3>
+                    <p id="key-finding-text"></p>
+                </div>
+                
+                <button id="reveal-button" class="btn btn-primary">We've run a focus group just for you. Curious to see what they had to say?</button>
+                
+                <div id="additional-results" class="hidden">
+                    <div id="quick-stats" class="result-section">
+                        <h3>Quick Stats</h3>
+                        <ul id="quick-stats-list"></ul>
+                    </div>
+                    
+                    <div id="in-their-voices" class="result-section">
+                        <h3>In Their Voices</h3>
+                        <div id="in-their-voices-text"></div>
+                    </div>
+                    
+                    <div id="fun-fact" class="result-section">
+                        <h3>Fun Fact</h3>
+                        <p id="fun-fact-text"></p>
+                    </div>
+                </div>
+            </div>
+            <button id="new-question" class="hidden">Let's Go Again</button>
         </section>
     </div>
-    <script src="/app.js"></script>
+    <script src="/app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </body>
 </html>

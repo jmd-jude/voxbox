@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const approveQuestionBtn = document.getElementById('approve-question');
     const tryAgainBtn = document.getElementById('try-again');
     const newQuestionBtn = document.getElementById('new-question');
+    const revealButton = document.getElementById('reveal-button');
+    const additionalResults = document.getElementById('additional-results');
 
     // Function to switch views
     function showView(viewToShow) {
@@ -22,8 +24,39 @@ document.addEventListener('DOMContentLoaded', () => {
         viewToShow.classList.remove('hidden');
     }
 
+    // Session management function
+    function getOrCreateSessionId() {
+        let sessionId = localStorage.getItem('sessionId');
+        if (!sessionId) {
+            sessionId = 'session_' + Math.random().toString(36).substr(2, 9);
+            localStorage.setItem('sessionId', sessionId);
+        }
+        return sessionId;
+    }
+
+    // New: Start new survey session
+    async function startNewSurvey() {
+        try {
+            const response = await fetch('/start-new-survey', {
+                method: 'POST'
+            });
+            const data = await response.json();
+            if (data.session_id) {
+                console.log('New survey started with session ID:', data.session_id);
+                localStorage.setItem('sessionId', data.session_id);
+            } else {
+                console.error('Failed to start new survey:', data.error);
+            }
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    }
+
     // Event Listeners
-    getStartedBtn.addEventListener('click', () => showView(views.questionInput));
+    getStartedBtn.addEventListener('click', async () => {
+        await startNewSurvey();
+        showView(views.questionInput);
+    });
 
     generatePollBtn.addEventListener('click', async () => {
         const userQuestion = userQuestionInput.value.trim();
@@ -58,19 +91,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     tryAgainBtn.addEventListener('click', () => showView(views.questionInput));
 
-    newQuestionBtn.addEventListener('click', () => {
+    newQuestionBtn.addEventListener('click', async () => {
         userQuestionInput.value = '';
+        await startNewSurvey();
         showView(views.questionInput);
+    });
+
+    // New: Reveal button event listener
+    revealButton.addEventListener('click', () => {
+        additionalResults.classList.remove('hidden');
+        newQuestionBtn.classList.remove('hidden');
+        revealButton.classList.add('hidden');
     });
 
     // API interaction functions
     async function getRefinedQuestion(question) {
+        const sessionId = getOrCreateSessionId();
         const response = await fetch('/transform-question', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ question }),
+            body: JSON.stringify({ question, session_id: sessionId }),
         });
         if (!response.ok) {
             throw new Error('Failed to get refined question');
@@ -79,12 +121,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function conductSurvey() {
+        const sessionId = getOrCreateSessionId();
         const response = await fetch('/approve-question', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ approved: true }),
+            body: JSON.stringify({ approved: true, session_id: sessionId }),
         });
         if (!response.ok) {
             throw new Error('Failed to conduct survey');
@@ -96,32 +139,50 @@ document.addEventListener('DOMContentLoaded', () => {
     function displayRefinedQuestion(data) {
         document.getElementById('original-question').textContent = `Your question: ${data.original_question}`;
         document.getElementById('refined-question').textContent = `Refined question: ${data.transformed_question.question}`;
-        // Removed the part that displays choices
     }
 
     function displayResults(data) {
-        const resultsContent = document.getElementById('results-content');
-        resultsContent.innerHTML = ''; // Clear previous results
-
         // Display key finding
-        const keyFinding = document.createElement('div');
-        keyFinding.innerHTML = `<h3>Key Finding</h3><p>${data.analysis.key_finding}</p>`;
-        resultsContent.appendChild(keyFinding);
+        document.getElementById('key-finding-text').textContent = data.analysis.key_finding;
 
-        // Display quick stats
-        const quickStats = document.createElement('div');
-        quickStats.innerHTML = `<h3>Quick Stats</h3><ul>${data.analysis.quick_stats.map(stat => `<li>${stat}</li>`).join('')}</ul>`;
-        resultsContent.appendChild(quickStats);
+        // Prepare quick stats
+        const quickStatsList = document.getElementById('quick-stats-list');
+        quickStatsList.innerHTML = '';
+        data.analysis.quick_stats.forEach(stat => {
+            const li = document.createElement('li');
+            li.textContent = stat;
+            quickStatsList.appendChild(li);
+        });
 
-        // Display interpretation
-        const interpretation = document.createElement('div');
-        interpretation.innerHTML = `<h3>Deep Thoughts</h3><p>${data.analysis.interpretation}</p>`;
-        resultsContent.appendChild(interpretation);
+        // Display in their voices (formerly deep thoughts)
+        const inTheirVoicesContainer = document.getElementById('in-their-voices-text');
+        inTheirVoicesContainer.innerHTML = ''; // Clear previous content
+        if (Array.isArray(data.analysis.interpretation)) {
+            data.analysis.interpretation.forEach(person => {
+                const personDiv = document.createElement('div');
+                personDiv.innerHTML = `
+                    <p><strong>${person.name}, ${person.age}</strong> - ${person.description}</p>
+                    <p><em>"${person.quote}"</em></p>
+                `;
+                inTheirVoicesContainer.appendChild(personDiv);
+            });
+        } else {
+            inTheirVoicesContainer.textContent = "No interpretation data available.";
+        }
 
         // Display fun fact
-        const funFact = document.createElement('div');
-        funFact.innerHTML = `<h3>Fun Fact</h3><p>${data.analysis.fun_fact}</p>`;
-        resultsContent.appendChild(funFact);
-    
+        document.getElementById('fun-fact-text').textContent = data.analysis.fun_fact;
+
+        // Show reveal button, hide additional results and "Let's Go Again" button
+        revealButton.classList.remove('hidden');
+        additionalResults.classList.add('hidden');
+        newQuestionBtn.classList.add('hidden');
+
+        // Trigger confetti
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 }
+        });
     }
 });

@@ -7,15 +7,19 @@ load_dotenv()
 class Config:
     SECRET_KEY = 'your_secret_key_here'
     OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///../instance/app.db'
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
     
     # Define the path to the data directory
     DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data')
 
     # Session configuration
     SESSION_TYPE = 'filesystem'  # Storing session data in the server's file system
+    DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data')
     SESSION_FILE_DIR = os.path.join(DATA_DIR, 'flask_session')  # Directory for session files
     SESSION_PERMANENT = False  # Sessions expire when the browser is closed
     SESSION_USE_SIGNER = True  # Sign the session cookie for added security
+    SESSION_KEY_PREFIX = 'voxpop_'
     
     # OpenAI configuration
     OPENAI_MODEL = 'gpt-3.5-turbo'

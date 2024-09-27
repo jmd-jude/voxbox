@@ -41,6 +41,12 @@ h2 {
     color: #2c3e50;
 }
 
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
 p {
     margin-bottom: 15px;
 }
@@ -117,6 +123,72 @@ textarea {
     margin-bottom: 15px;
 }
 
+#key-finding {
+    background-color: #3498db;
+    color: rgb(2, 0, 0);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#reveal-button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#quick-stats-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#quick-stats-list li {
+    margin-bottom: 5px;
+}
+
+/* New styles for result sections */
+.result-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Style for the "In Their Voices" section */
+#in-their-voices-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Style for each person's quote */
+#in-their-voices-text > div {
+    width: 48%; /* Adjust this value to change how many quotes appear per row */
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+#in-their-voices-text > div:hover {
+    transform: translateY(-5px);
+}
+
+/* Style for the person's name and description */
+#in-their-voices-text > div p:first-child {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style for the quote */
+#in-their-voices-text > div p:last-child {
+    font-style: italic;
+    color: #555;
+}
+
 @media (max-width: 600px) {
     #app {
         padding: 10px;
@@ -130,8 +202,16 @@ textarea {
         font-size: 18px;
     }
 
+    h3 {
+        font-size: 16px;
+    }
+
     button {
         width: 100%;
         margin-bottom: 10px;
+    }
+
+    #in-their-voices-text > div {
+        width: 100%;
     }
 }

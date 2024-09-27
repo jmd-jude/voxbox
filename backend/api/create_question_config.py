@@ -1,16 +1,17 @@
-import os
 import json
 import re
 import time
 import openai
 from dotenv import load_dotenv
 from .config import Config
+from .models import SurveyData
+from . import db
 
 # Load environment variables
 load_dotenv()
 
 # Set up OpenAI client
-client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = openai.OpenAI(api_key=Config.OPENAI_API_KEY)
 ASSISTANT_ID = Config.ASSISTANTS["question_config_generator"]
 
 DEMOGRAPHIC_VARIABLES = {
@@ -33,19 +34,13 @@ DEMOGRAPHIC_VARIABLES = {
     "HealthInsurance": ["Insured", "Uninsured"]
 }
 
-# Define the path to the data directory
-DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data')
-
-
-def read_approved_question(file_path):
+def read_approved_question(user_id, session_id):
     try:
-        with open(file_path, 'r') as file:
-            data = json.load(file)
-        return data.get("transformed", "")
+        question_data = SurveyData.get_data(session_id, 'transformed_question', user_id)
+        return question_data
     except Exception as e:
         print(f"Error reading latest question: {str(e)}")
         return ""
-
 
 def generate_question_config(question):
     prompt = f"""
@@ -105,51 +100,42 @@ def generate_question_config(question):
     last_message = messages.data[0]
     return last_message.content[0].text.value
 
-
-def save_json(data, file_path):
+def save_question_config(user_id, session_id, config_data):
     try:
-        json_match = re.search(r'```json\s*([\s\S]*?)\s*```', data)
+        json_match = re.search(r'```json\s*([\s\S]*?)\s*```', config_data)
         if json_match:
             json_str = json_match.group(1)
         else:
-            json_str = data
+            json_str = config_data
         json_data = json.loads(json_str)
-        with open(file_path, 'w') as file:
-            json.dump(json_data, file, indent=2)
-        print(f"Successfully saved {file_path}")
+        SurveyData.save_data(user_id=user_id, session_id=session_id, data_type='question_config', content=json_data)
+        print(f"Successfully saved question config for user {user_id}, session {session_id}")
         return True
     except json.JSONDecodeError as e:
         print(f"Error: Invalid JSON response. Details: {str(e)}")
         print("Full API Response:")
-        print(data)
+        print(config_data)
         return False
     except Exception as e:
-        print(f"Unexpected error while saving JSON: {str(e)}")
+        print(f"Unexpected error while saving question config: {str(e)}")
         return False
 
-
-def print_first_10_lines(file_path):
+def main(user_id, session_id):
     try:
-        with open(file_path, 'r') as file:
-            lines = file.readlines()
-        print(f"\nFirst 10 lines of {file_path}:")
-        for line in lines[:10]:
-            print(line.strip())
-    except FileNotFoundError:
-        print(f"Error: The file {file_path} was not found.")
-
-
-def main():
-    try:
-        latest_question = read_approved_question(os.path.join(DATA_DIR, 'approved_question.json'))
+        latest_question = read_approved_question(user_id, session_id)
         if not latest_question:
-            raise ValueError("No question found in approved_question.json")
+            raise ValueError("No question found for this user and session")
         question_config = generate_question_config(latest_question)
-        if save_json(question_config, os.path.join(DATA_DIR, 'question_config.json')):
-            print_first_10_lines(os.path.join(DATA_DIR, 'question_config.json'))
+        if save_question_config(user_id, session_id, question_config):
+            print("Question config generated and saved successfully")
     except Exception as e:
         print(f"An unexpected error occurred: {str(e)}")
 
-
 if __name__ == "__main__":
-    main()
+    import sys
+    if len(sys.argv) > 2:
+        user_id = sys.argv[1]
+        session_id = sys.argv[2]
+        main(user_id, session_id)
+    else:
+        print("Please provide a user ID and a session ID")

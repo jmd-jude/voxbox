@@ -4,15 +4,16 @@ from dotenv import load_dotenv
 import json
 import logging
 from .config import Config
+from .models import SurveyData
 
 # Set up logging
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Load environment variables
 load_dotenv()
 
 # Set up OpenAI client
-client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = openai.OpenAI(api_key=Config.OPENAI_API_KEY)
 
 ASSISTANT_ID = Config.ASSISTANTS["question_transformer"]
 
@@ -78,4 +79,22 @@ def transform_question(user_question):
 
     except Exception as e:
         logging.error(f"Error in OpenAI API call: {str(e)}")
+        raise
+
+def save_transformed_question(user_id, session_id, transformed_question):
+    try:
+        SurveyData.save_data(user_id=user_id, session_id=session_id, data_type='transformed_question', content=transformed_question)
+        logging.info(f"Transformed question saved to database for user {user_id}, session {session_id}")
+    except Exception as e:
+        logging.error(f"Error saving transformed question to database: {str(e)}")
+        raise
+
+# This function can be called from routes.py
+def process_and_save_question(user_id, session_id, user_question):
+    try:
+        transformed_question = transform_question(user_question)
+        save_transformed_question(user_id, session_id, transformed_question)
+        return transformed_question
+    except Exception as e:
+        logging.error(f"Error in process_and_save_question: {str(e)}")
         raise
