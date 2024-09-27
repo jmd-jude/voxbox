@@ -22,7 +22,7 @@ log_file = os.path.join(current_dir, 'app.log')
 logging.basicConfig(filename=log_file, level=logging.INFO,
                     format='%(asctime)s %(levelname)s: %(message)s')
 
-# Test log statement
+# Test log statements
 logging.info("Flask app starting. Testing logging...")
 
 from backend.api import create_app, db
