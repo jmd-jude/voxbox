@@ -9222,3 +9222,245 @@ This summary captures the diverse range of opinions and attitudes towards the po
 2024-09-27 11:44:21,860 INFO: Flask app starting. Testing logging...
 2024-09-27 11:44:22,703 WARNING:  * Debugger is active!
 2024-09-27 11:44:22,709 INFO:  * Debugger PIN: 960-184-702
+2024-09-27 14:21:34,220 INFO: Flask app starting. Testing logging...
+2024-09-27 14:21:35,784 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.68.51:5001
+2024-09-27 14:21:35,784 INFO: [33mPress CTRL+C to quit[0m
+2024-09-27 14:21:35,785 INFO:  * Restarting with stat
+2024-09-27 14:24:24,619 INFO: Flask app starting. Testing logging...
+2024-09-27 14:24:25,361 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.68.51:5001
+2024-09-27 14:24:25,361 INFO: [33mPress CTRL+C to quit[0m
+2024-09-27 14:24:25,362 INFO:  * Restarting with stat
+2024-09-27 14:25:17,907 INFO: Flask app starting. Testing logging...
+2024-09-27 14:25:18,675 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.68.51:5001
+2024-09-27 14:25:18,675 INFO: [33mPress CTRL+C to quit[0m
+2024-09-27 14:25:18,676 INFO:  * Restarting with stat
+2024-09-27 14:28:07,569 INFO: Flask app starting. Testing logging...
+2024-09-27 14:28:08,386 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.68.51:5001
+2024-09-27 14:28:08,386 INFO: [33mPress CTRL+C to quit[0m
+2024-09-27 14:28:08,387 INFO:  * Restarting with stat
+2024-09-27 14:29:14,982 INFO: Flask app starting. Testing logging...
+2024-09-27 14:29:15,769 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.68.51:5001
+2024-09-27 14:29:15,769 INFO: [33mPress CTRL+C to quit[0m
+2024-09-27 14:29:15,769 INFO:  * Restarting with stat
+2024-09-27 14:29:15,968 INFO: Flask app starting. Testing logging...
+2024-09-27 14:29:16,481 WARNING:  * Debugger is active!
+2024-09-27 14:29:16,489 INFO:  * Debugger PIN: 863-862-628
+2024-09-27 14:30:50,183 INFO: Rendering index.html
+2024-09-27 14:30:50,200 INFO: 127.0.0.1 - - [27/Sep/2024 14:30:50] "GET / HTTP/1.1" 200 -
+2024-09-27 14:30:50,248 INFO: 127.0.0.1 - - [27/Sep/2024 14:30:50] "GET /app.js HTTP/1.1" 200 -
+2024-09-27 14:30:50,248 INFO: 127.0.0.1 - - [27/Sep/2024 14:30:50] "GET /styles.css HTTP/1.1" 200 -
+2024-09-27 14:30:50,865 INFO: 127.0.0.1 - - [27/Sep/2024 14:30:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-27 14:30:52,287 INFO: Starting a new survey
+2024-09-27 14:30:52,287 INFO: New survey started for user 081da7b8-3aea-4812-8679-f97fa13dacca, New Session ID: d748fc51-642c-4f14-84a2-ab5604032945
+2024-09-27 14:30:52,290 INFO: 127.0.0.1 - - [27/Sep/2024 14:30:52] "POST /start-new-survey HTTP/1.1" 200 -
+2024-09-27 14:30:59,960 INFO: Entered transform_question_route
+2024-09-27 14:30:59,960 INFO: Received question for user 081da7b8-3aea-4812-8679-f97fa13dacca, session d748fc51-642c-4f14-84a2-ab5604032945: Big or small?
+2024-09-27 14:30:59,960 INFO: Calling process_and_save_question function
+2024-09-27 14:30:59,960 INFO: Transforming question: Big or small?
+2024-09-27 14:31:00,287 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-27 14:31:02,480 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_KOIxSzkKakDLVfhkadWXlQUC/messages "HTTP/1.1 200 OK"
+2024-09-27 14:31:02,991 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_KOIxSzkKakDLVfhkadWXlQUC/runs "HTTP/1.1 200 OK"
+2024-09-27 14:31:03,186 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_KOIxSzkKakDLVfhkadWXlQUC/runs/run_7srtuCjEl7jkM3t1iIMGEpIr "HTTP/1.1 200 OK"
+2024-09-27 14:31:03,381 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_KOIxSzkKakDLVfhkadWXlQUC/runs/run_7srtuCjEl7jkM3t1iIMGEpIr "HTTP/1.1 200 OK"
+2024-09-27 14:31:03,810 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_KOIxSzkKakDLVfhkadWXlQUC/runs/run_7srtuCjEl7jkM3t1iIMGEpIr "HTTP/1.1 200 OK"
+2024-09-27 14:31:04,117 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_KOIxSzkKakDLVfhkadWXlQUC/runs/run_7srtuCjEl7jkM3t1iIMGEpIr "HTTP/1.1 200 OK"
+2024-09-27 14:31:04,322 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_KOIxSzkKakDLVfhkadWXlQUC/runs/run_7srtuCjEl7jkM3t1iIMGEpIr "HTTP/1.1 200 OK"
+2024-09-27 14:31:04,509 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_KOIxSzkKakDLVfhkadWXlQUC/runs/run_7srtuCjEl7jkM3t1iIMGEpIr "HTTP/1.1 200 OK"
+2024-09-27 14:31:04,681 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_KOIxSzkKakDLVfhkadWXlQUC/messages "HTTP/1.1 200 OK"
+2024-09-27 14:31:04,685 INFO: Raw messages response: SyncCursorPage[Message](data=[Message(id='msg_scwQuqoUFNj9ZIrw45RYWImG', assistant_id='asst_GEqxbSSDWkKNAcxWdWJqMhYd', attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='{\n    "question": "When considering preferences, do you lean towards large or small?",\n    "type": "Multiple Choice",\n    "options": {\n        "a": "Large",\n        "b": "Small",\n        "c": "No preference",\n        "d": "Varies depending on context"\n    }\n}'), type='text')], created_at=1727461863, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='assistant', run_id='run_7srtuCjEl7jkM3t1iIMGEpIr', status=None, thread_id='thread_KOIxSzkKakDLVfhkadWXlQUC'), Message(id='msg_LW0inmUoTMKSo76NXoCubz2d', assistant_id=None, attachments=[], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value=' \n    Transform this user input into a high-quality polling question:\n    "Big or small?"\n\n    Requirements:\n    1. Clarify the intent and use neutral, objective language.\n    2. Frame for a broad audience and be specific.\n    3. Classify the question type (e.g., Likert scale, multiple choice, yes/no).\n    4. Provide 3-5 answer options in this format:\n       a) Option 1\n       b) Option 2\n       c) Option 3\n    5. If the question type doesn\'t suit multiple options, provide appropriate fallback options.\n\n    Respond only with a JSON object, without any code block formatting or extra text. The keys in the JSON should be "question", "type", and "options".\n    '), type='text')], created_at=1727461862, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_KOIxSzkKakDLVfhkadWXlQUC')], object='list', first_id='msg_scwQuqoUFNj9ZIrw45RYWImG', last_id='msg_LW0inmUoTMKSo76NXoCubz2d', has_more=False)
+2024-09-27 14:31:04,685 INFO: Transformed question: {'question': 'When considering preferences, do you lean towards large or small?', 'type': 'Multiple Choice', 'options': {'a': 'Large', 'b': 'Small', 'c': 'No preference', 'd': 'Varies depending on context'}}
+2024-09-27 14:31:04,707 INFO: Data saved successfully. User ID: 081da7b8-3aea-4812-8679-f97fa13dacca, Session ID: d748fc51-642c-4f14-84a2-ab5604032945, Type: transformed_question
+2024-09-27 14:31:04,707 INFO: Transformed question saved to database for user 081da7b8-3aea-4812-8679-f97fa13dacca, session d748fc51-642c-4f14-84a2-ab5604032945
+2024-09-27 14:31:04,707 INFO: Transformed question: {'question': 'When considering preferences, do you lean towards large or small?', 'type': 'Multiple Choice', 'options': {'a': 'Large', 'b': 'Small', 'c': 'No preference', 'd': 'Varies depending on context'}}
+2024-09-27 14:31:04,708 INFO: Data saved successfully. User ID: 081da7b8-3aea-4812-8679-f97fa13dacca, Session ID: d748fc51-642c-4f14-84a2-ab5604032945, Type: transformed_question
+2024-09-27 14:31:04,709 INFO: Data saved successfully. User ID: 081da7b8-3aea-4812-8679-f97fa13dacca, Session ID: d748fc51-642c-4f14-84a2-ab5604032945, Type: original_question
+2024-09-27 14:31:04,709 INFO: Transformed question saved to database for user 081da7b8-3aea-4812-8679-f97fa13dacca, session d748fc51-642c-4f14-84a2-ab5604032945
+2024-09-27 14:31:04,711 INFO: 127.0.0.1 - - [27/Sep/2024 14:31:04] "POST /transform-question HTTP/1.1" 200 -
+2024-09-27 14:31:06,715 INFO: Entered approve_question_route
+2024-09-27 14:31:06,715 INFO: User ID: 081da7b8-3aea-4812-8679-f97fa13dacca, Session ID: d748fc51-642c-4f14-84a2-ab5604032945, Approved: True
+2024-09-27 14:31:06,729 INFO: Data retrieved successfully. User ID: 081da7b8-3aea-4812-8679-f97fa13dacca, Session ID: d748fc51-642c-4f14-84a2-ab5604032945, Type: transformed_question
+2024-09-27 14:31:06,730 INFO: Data retrieved successfully. User ID: 081da7b8-3aea-4812-8679-f97fa13dacca, Session ID: d748fc51-642c-4f14-84a2-ab5604032945, Type: original_question
+2024-09-27 14:31:06,731 INFO: Retrieved from database - transformed: {'question': 'When considering preferences, do you lean towards large or small?', 'type': 'Multiple Choice', 'options': {'a': 'Large', 'b': 'Small', 'c': 'No preference', 'd': 'Varies depending on context'}}, original: Big or small?
+2024-09-27 14:31:06,731 INFO: Data retrieved successfully. User ID: 081da7b8-3aea-4812-8679-f97fa13dacca, Session ID: d748fc51-642c-4f14-84a2-ab5604032945, Type: transformed_question
+2024-09-27 14:31:07,024 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-27 14:31:07,237 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_D4xrBZFjdjM3dhukX0YF9OSP/messages "HTTP/1.1 200 OK"
+2024-09-27 14:31:07,754 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_D4xrBZFjdjM3dhukX0YF9OSP/runs "HTTP/1.1 200 OK"
+2024-09-27 14:31:07,988 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_D4xrBZFjdjM3dhukX0YF9OSP/runs/run_BnO5R7rwoyqGipSqsWgWsx4c "HTTP/1.1 200 OK"
+2024-09-27 14:31:09,194 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_D4xrBZFjdjM3dhukX0YF9OSP/runs/run_BnO5R7rwoyqGipSqsWgWsx4c "HTTP/1.1 200 OK"
+2024-09-27 14:31:10,421 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_D4xrBZFjdjM3dhukX0YF9OSP/runs/run_BnO5R7rwoyqGipSqsWgWsx4c "HTTP/1.1 200 OK"
+2024-09-27 14:31:11,659 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_D4xrBZFjdjM3dhukX0YF9OSP/runs/run_BnO5R7rwoyqGipSqsWgWsx4c "HTTP/1.1 200 OK"
+2024-09-27 14:31:12,818 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_D4xrBZFjdjM3dhukX0YF9OSP/messages "HTTP/1.1 200 OK"
+2024-09-27 14:31:12,825 INFO: Data saved successfully. User ID: 081da7b8-3aea-4812-8679-f97fa13dacca, Session ID: d748fc51-642c-4f14-84a2-ab5604032945, Type: question_config
+2024-09-27 14:31:12,826 INFO: Data retrieved successfully. User ID: 081da7b8-3aea-4812-8679-f97fa13dacca, Session ID: d748fc51-642c-4f14-84a2-ab5604032945, Type: question_config
+2024-09-27 14:31:12,877 INFO: Data loaded successfully
+2024-09-27 14:31:12,878 INFO: Data retrieved successfully. User ID: 081da7b8-3aea-4812-8679-f97fa13dacca, Session ID: d748fc51-642c-4f14-84a2-ab5604032945, Type: transformed_question
+2024-09-27 14:31:12,879 INFO: Data retrieved successfully. User ID: 081da7b8-3aea-4812-8679-f97fa13dacca, Session ID: d748fc51-642c-4f14-84a2-ab5604032945, Type: question_config
+2024-09-27 14:31:12,892 INFO: Data saved successfully. User ID: 081da7b8-3aea-4812-8679-f97fa13dacca, Session ID: d748fc51-642c-4f14-84a2-ab5604032945, Type: survey_results
+2024-09-27 14:31:12,892 INFO: Survey results saved to database for user 081da7b8-3aea-4812-8679-f97fa13dacca, session d748fc51-642c-4f14-84a2-ab5604032945
+2024-09-27 14:31:12,894 INFO: Data saved successfully. User ID: 081da7b8-3aea-4812-8679-f97fa13dacca, Session ID: d748fc51-642c-4f14-84a2-ab5604032945, Type: survey_results
+2024-09-27 14:31:12,894 INFO: Saved survey results to database for user 081da7b8-3aea-4812-8679-f97fa13dacca, session d748fc51-642c-4f14-84a2-ab5604032945
+2024-09-27 14:31:12,894 INFO: Data retrieved successfully. User ID: 081da7b8-3aea-4812-8679-f97fa13dacca, Session ID: d748fc51-642c-4f14-84a2-ab5604032945, Type: transformed_question
+2024-09-27 14:31:12,895 INFO: Data retrieved successfully. User ID: 081da7b8-3aea-4812-8679-f97fa13dacca, Session ID: d748fc51-642c-4f14-84a2-ab5604032945, Type: survey_results
+2024-09-27 14:31:12,895 INFO: Loaded survey data: Question: When considering preferences, do you lean towards large or small?, Aggregate results: 4, Individual responses: 100
+2024-09-27 14:31:12,895 INFO: Analysis prompt formatted successfully.
+2024-09-27 14:31:13,095 INFO: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2024-09-27 14:31:13,310 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_lFlYWwHbn3hWM9pyotPefw8f/messages "HTTP/1.1 200 OK"
+2024-09-27 14:31:14,665 INFO: HTTP Request: POST https://api.openai.com/v1/threads/thread_lFlYWwHbn3hWM9pyotPefw8f/runs "HTTP/1.1 200 OK"
+2024-09-27 14:31:14,837 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_lFlYWwHbn3hWM9pyotPefw8f/runs/run_hlKybFrFAd52aeAhqEYlNXYq "HTTP/1.1 200 OK"
+2024-09-27 14:31:16,056 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_lFlYWwHbn3hWM9pyotPefw8f/runs/run_hlKybFrFAd52aeAhqEYlNXYq "HTTP/1.1 200 OK"
+2024-09-27 14:31:17,233 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_lFlYWwHbn3hWM9pyotPefw8f/runs/run_hlKybFrFAd52aeAhqEYlNXYq "HTTP/1.1 200 OK"
+2024-09-27 14:31:18,557 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_lFlYWwHbn3hWM9pyotPefw8f/runs/run_hlKybFrFAd52aeAhqEYlNXYq "HTTP/1.1 200 OK"
+2024-09-27 14:31:19,759 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_lFlYWwHbn3hWM9pyotPefw8f/runs/run_hlKybFrFAd52aeAhqEYlNXYq "HTTP/1.1 200 OK"
+2024-09-27 14:31:20,976 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_lFlYWwHbn3hWM9pyotPefw8f/runs/run_hlKybFrFAd52aeAhqEYlNXYq "HTTP/1.1 200 OK"
+2024-09-27 14:31:22,448 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_lFlYWwHbn3hWM9pyotPefw8f/runs/run_hlKybFrFAd52aeAhqEYlNXYq "HTTP/1.1 200 OK"
+2024-09-27 14:31:23,700 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_lFlYWwHbn3hWM9pyotPefw8f/runs/run_hlKybFrFAd52aeAhqEYlNXYq "HTTP/1.1 200 OK"
+2024-09-27 14:31:24,911 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_lFlYWwHbn3hWM9pyotPefw8f/runs/run_hlKybFrFAd52aeAhqEYlNXYq "HTTP/1.1 200 OK"
+2024-09-27 14:31:26,340 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_lFlYWwHbn3hWM9pyotPefw8f/runs/run_hlKybFrFAd52aeAhqEYlNXYq "HTTP/1.1 200 OK"
+2024-09-27 14:31:27,555 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_lFlYWwHbn3hWM9pyotPefw8f/runs/run_hlKybFrFAd52aeAhqEYlNXYq "HTTP/1.1 200 OK"
+2024-09-27 14:31:29,461 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_lFlYWwHbn3hWM9pyotPefw8f/runs/run_hlKybFrFAd52aeAhqEYlNXYq "HTTP/1.1 200 OK"
+2024-09-27 14:31:30,845 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_lFlYWwHbn3hWM9pyotPefw8f/runs/run_hlKybFrFAd52aeAhqEYlNXYq "HTTP/1.1 200 OK"
+2024-09-27 14:31:34,575 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_lFlYWwHbn3hWM9pyotPefw8f/runs/run_hlKybFrFAd52aeAhqEYlNXYq "HTTP/1.1 200 OK"
+2024-09-27 14:31:35,785 INFO: HTTP Request: GET https://api.openai.com/v1/threads/thread_lFlYWwHbn3hWM9pyotPefw8f/messages "HTTP/1.1 200 OK"
+2024-09-27 14:31:35,787 INFO: Analysis received from assistant. Response: {
+    "key_finding": "Equal preferences for large and no preference.",
+    "quick_stats": [
+        "28% have no preference.",
+        "29% prefer large.",
+        "22% vary based on context."
+    ],
+    "interpretation": [
+        {
+            "name": "Emma",
+            "age": "32",
+            "description": "Fashion designer from New York City",
+            "quote": "With size, it's all about the occasion and presentation!"
+        },
+        {
+            "name": "Hank",
+            "age": "45",
+            "description": "Food critic from New Orleans",
+            "quote": "Big portion lover here, but sometimes small plates for variety!"
+        },
+        {
+            "name": "Jenny",
+            "age": "28",
+            "description": "Entrepreneur from Silicon Valley",
+            "quote": "It's about big ideas but small details in implementation."
+        },
+        {
+            "name": "Raj",
+            "age": "39",
+            "description": "Engineer from Mumbai",
+            "quote": "Varies based on the system size we're working with."
+        },
+        {
+            "name": "Lila",
+            "age": "60",
+            "description": "Retired teacher from London",
+            "quote": "It's the tiny joys that matter most now, after a life of big responsibilities."
+        }
+    ],
+    "fun_fact": "The focus group leader was surprised by the diversity of size preferences and how context influenced decisions."
+}
+2024-09-27 14:31:35,787 INFO: Raw AI Response: {
+    "key_finding": "Equal preferences for large and no preference.",
+    "quick_stats": [
+        "28% have no preference.",
+        "29% prefer large.",
+        "22% vary based on context."
+    ],
+    "interpretation": [
+        {
+            "name": "Emma",
+            "age": "32",
+            "description": "Fashion designer from New York City",
+            "quote": "With size, it's all about the occasion and presentation!"
+        },
+        {
+            "name": "Hank",
+            "age": "45",
+            "description": "Food critic from New Orleans",
+            "quote": "Big portion lover here, but sometimes small plates for variety!"
+        },
+        {
+            "name": "Jenny",
+            "age": "28",
+            "description": "Entrepreneur from Silicon Valley",
+            "quote": "It's about big ideas but small details in implementation."
+        },
+        {
+            "name": "Raj",
+            "age": "39",
+            "description": "Engineer from Mumbai",
+            "quote": "Varies based on the system size we're working with."
+        },
+        {
+            "name": "Lila",
+            "age": "60",
+            "description": "Retired teacher from London",
+            "quote": "It's the tiny joys that matter most now, after a life of big responsibilities."
+        }
+    ],
+    "fun_fact": "The focus group leader was surprised by the diversity of size preferences and how context influenced decisions."
+}
+2024-09-27 14:31:35,787 INFO: Preprocessed AI Response: {
+    "key_finding": "Equal preferences for large and no preference.",
+    "quick_stats": [
+        "28% have no preference.",
+        "29% prefer large.",
+        "22% vary based on context."
+    ],
+    "interpretation": [
+        {
+            "name": "Emma",
+            "age": "32",
+            "description": "Fashion designer from New York City",
+            "quote": "With size, it's all about the occasion and presentation!"
+        },
+        {
+            "name": "Hank",
+            "age": "45",
+            "description": "Food critic from New Orleans",
+            "quote": "Big portion lover here, but sometimes small plates for variety!"
+        },
+        {
+            "name": "Jenny",
+            "age": "28",
+            "description": "Entrepreneur from Silicon Valley",
+            "quote": "It's about big ideas but small details in implementation."
+        },
+        {
+            "name": "Raj",
+            "age": "39",
+            "description": "Engineer from Mumbai",
+            "quote": "Varies based on the system size we're working with."
+        },
+        {
+            "name": "Lila",
+            "age": "60",
+            "description": "Retired teacher from London",
+            "quote": "It's the tiny joys that matter most now, after a life of big responsibilities."
+        }
+    ],
+    "fun_fact": "The focus group leader was surprised by the diversity of size preferences and how context influenced decisions."
+}
+2024-09-27 14:31:35,787 INFO: Parsed analysis data successfully
+2024-09-27 14:31:35,791 INFO: Data saved successfully. User ID: 081da7b8-3aea-4812-8679-f97fa13dacca, Session ID: d748fc51-642c-4f14-84a2-ab5604032945, Type: survey_analysis
+2024-09-27 14:31:35,791 INFO: Analysis complete. Results saved to database for user 081da7b8-3aea-4812-8679-f97fa13dacca, session d748fc51-642c-4f14-84a2-ab5604032945
+2024-09-27 14:31:35,791 INFO: Approved question for user 081da7b8-3aea-4812-8679-f97fa13dacca, session d748fc51-642c-4f14-84a2-ab5604032945: {'question': 'When considering preferences, do you lean towards large or small?', 'type': 'Multiple Choice', 'options': {'a': 'Large', 'b': 'Small', 'c': 'No preference', 'd': 'Varies depending on context'}}
+2024-09-27 14:31:35,798 INFO: 127.0.0.1 - - [27/Sep/2024 14:31:35] "POST /approve-question HTTP/1.1" 200 -
