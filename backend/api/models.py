@@ -2,14 +2,19 @@ from . import db
 import json
 import logging
 from datetime import datetime
+from sqlalchemy import Index
 
 class SurveyData(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.String(64), nullable=True)
-    session_id = db.Column(db.String(64), nullable=False)
+    user_id = db.Column(db.String(64), nullable=True, index=True)
+    session_id = db.Column(db.String(64), nullable=False, index=True)
     data_type = db.Column(db.String(50), nullable=False)
     content = db.Column(db.Text, nullable=False)
-    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow, index=True)
+
+    __table_args__ = (
+        Index('idx_session_data_type', 'session_id', 'data_type'),
+    )
 
     @classmethod
     def save_data(cls, user_id, session_id, data_type, content):
@@ -21,6 +26,7 @@ class SurveyData(db.Model):
         except Exception as e:
             db.session.rollback()
             logging.error(f"Error saving data: {str(e)}")
+            raise
 
     @classmethod
     def get_data(cls, session_id, data_type, user_id=None):
