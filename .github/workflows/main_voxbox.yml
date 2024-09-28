@@ -1,7 +1,3 @@
-# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
-# More GitHub Actions for Azure: https://github.com/Azure/actions
-# More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
-
 name: Build and deploy Python app to Azure Web App - voxbox
 
 on:
@@ -13,15 +9,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
-
+      
       - name: Set up Python version
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
+      
       - name: Create and start virtual environment
         run: |
           python -m venv venv
@@ -29,12 +24,12 @@ jobs:
       
       - name: Install dependencies
         run: pip install -r requirements.txt
-
+      
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
-
+      
       - name: Zip artifact for deployment
         run: zip release.zip ./* -r
-
+      
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v4
         with:
@@ -51,16 +46,15 @@ jobs:
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
       id-token: write #This is required for requesting the JWT
-
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
           name: python-app
-
+      
       - name: Unzip artifact for deployment
         run: unzip release.zip
-
+      
       # Add a delay here
       - name: Wait for 30 seconds
         run: sleep 30
@@ -71,7 +65,7 @@ jobs:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_B0F4855848DE4E9BA4D2BF4860D58032 }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_3C23F545AFF74C14A93598195404CEB8 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_261E69F9324343A5ABCDE0468C53E3DF }}
-
+      
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
