@@ -142,6 +142,7 @@ Thumbs.db
 *.env
 !example.env
 flask_session/venv/
+backend/data/flask_session/
 
 # exclude venv from zip
 venv/
